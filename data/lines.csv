@@ -1,0 +1,56 @@
+id,from_id,from,to_id,to,voltage_kv,circuits_model,length_km,length_source,status,rating_mw_model,notes
+L1,KAR,Karuma,KAW,Kawanda,400,2,248,published,in service,1800,"Karuma–Kawanda 400 kV, about 248 km, energised 2023–24 to evacuate Karuma"
+L2,KAR,Karuma,LIR,Lira,400,2,80.1,map distance,in service,1800,"Karuma–Lira, built for 400 kV (Karuma Interconnection Project)"
+L3,KAR,Karuma,OLW,Olwiyo,400,2,77.1,map distance,in service,1800,"Karuma–Olwiyo, built for 400 kV (Karuma Interconnection Project)"
+L4,BUJ,Bujagali,KAW,Kawanda,220,2,74.6,map distance,in service,660,"Bujagali–Kawanda 220 kV (Bujagali Interconnection Project, 2012)"
+L5,KAW,Kawanda,MAS,Masaka West,220,1,137.1,map distance,in service,330,Kawanda–Masaka 220 kV
+L6,MBS,Mbarara South,MIR,Mirama,220,1,68.3,map distance,in service,330,Mbarara–Mirama 220 kV
+L7,MIR,Mirama,SHA,Shango (Rwanda),220,1,94,published,in service,330,Mirama–Shango 220 kV interconnector to Rwanda; trade since October 2023
+L8,NKE,Nkenda (Kasese),FTP,Fort Portal,220,1,65.2,map distance,in service,330,Nkenda–Fort Portal 220 kV
+L9,FTP,Fort Portal,HOI,Hoima,220,1,160.5,map distance,in service,330,Fort Portal–Hoima 220 kV
+L10,BUJ,Bujagali,NAL,Owen Falls (Nalubaale/Kiira),132,2,8.6,map distance,in service,280,Bujagali–Owen Falls 132 kV
+L11,ISI,Isimba,BUJ,Bujagali,132,2,58.1,map distance,in service,280,"Isimba–Bujagali 132 kV, about 40 km"
+L12,NAL,Owen Falls (Nalubaale/Kiira),LGZ,Lugazi,132,1,31.3,map distance,in service,140,Owen Falls–Lugazi 132 kV (original Owen Falls–Kampala corridor)
+L13,LGZ,Lugazi,MUK,Mukono,132,1,22.7,map distance,in service,140,Lugazi–Mukono 132 kV
+L14,MUK,Mukono,NMS,Namanve South,132,1,7.5,map distance,in service,140,Mukono–Namanve South 132 kV
+L15,NMS,Namanve South,LUG,Lugogo,132,2,11.3,map distance,in service,280,Namanve South–Lugogo 132 kV
+L16,NMS,Namanve South,LUZ,Luzira,132,1,8.5,map distance,in service,140,Namanve South–Luzira 132 kV
+L17,KAW,Kawanda,KAN,Kampala North,132,2,10.0,map distance,in service,280,Kawanda–Kampala North 132 kV
+L18,KAN,Kampala North,LUG,Lugogo,132,2,3.7,map distance,in service,280,Kampala North–Lugogo 132 kV
+L19,KAW,Kawanda,MUT,Mutundwe,132,2,15.3,map distance,in service,280,Kawanda–Mutundwe 132 kV
+L20,MUT,Mutundwe,QWY,Queensway,132,2,4.0,map distance,in service,280,Mutundwe–Queensway 132 kV
+L21,QWY,Queensway,LUG,Lugogo,132,2,4.8,map distance,in service,280,Queensway–Lugogo 132 kV
+L22,KAW,Kawanda,NMG,Namungoona,132,1,11.8,map distance,in service,140,Kawanda–Namungoona 132 kV
+L23,MUT,Mutundwe,ENT,Entebbe,132,2,29.7,map distance,in service,280,Mutundwe–Entebbe 132 kV
+L24,KAW,Kawanda,KPK,Kapeeka,132,1,40.1,map distance,in service,140,Kawanda–Kapeeka 132 kV
+L25,MUT,Mutundwe,KBS,Kabulasoke,132,1,84.5,published,in service,140,"Mutundwe–Kabulasoke 132 kV, 84.5 km (restrung)"
+L26,KBS,Kabulasoke,MAS,Masaka West,132,1,61.4,map distance,in service,140,Kabulasoke–Masaka West 132 kV
+L27,MAS,Masaka West,MBN,Mbarara North,132,1,131.1,map distance,in service,140,Masaka–Mbarara 132 kV
+L28,MBN,Mbarara North,MBS,Mbarara South,132,1,6.6,map distance,in service,140,Mbarara North–Mbarara South 132 kV
+L29,MAS,Masaka West,MTK,Mutukula,132,1,88.3,map distance,in service,140,Masaka–Mutukula 132 kV
+L30,MTK,Mutukula,KYA,Kyaka (Tanzania),132,1,33.6,map distance,in service,140,Mutukula–Kyaka 132 kV link to Tanzania (Kagera)
+L31,MIR,Mirama,KAB,Kabale,132,1,40.9,map distance,in service,140,Mirama–Kabale 132 kV
+L32,MBN,Mbarara North,NKE,Nkenda (Kasese),132,1,118.7,map distance,in service,140,Mbarara–Nkenda 132 kV (older route via Ishaka)
+L33,MBS,Mbarara South,NKE,Nkenda (Kasese),132,1,122.1,map distance,in service,140,Mbarara–Nkenda 132 kV (newer line)
+L34,NAL,Owen Falls (Nalubaale/Kiira),IGA,Iganga,132,2,42.2,map distance,in service,280,Owen Falls–Iganga 132 kV
+L35,IGA,Iganga,TOR,Tororo,132,2,85.5,map distance,in service,280,Iganga–Tororo 132 kV
+L36,TOR,Tororo,LES,Lessos (Kenya),132,2,141.6,map distance,in service,280,"Tororo–Lessos 132 kV, the original Uganda–Kenya interconnector"
+L37,TOR,Tororo,MBL,Mbale,132,1,46.7,map distance,in service,140,Tororo–Mbale 132 kV (second circuit being completed)
+L38,MBL,Mbale,OPU,Opuyo (Soroti),132,1,104.2,map distance,in service,140,Mbale–Opuyo 132 kV
+L39,OPU,Opuyo (Soroti),LIR,Lira,132,1,109.6,map distance,in service,140,Opuyo–Lira 132 kV
+L40,OPU,Opuyo (Soroti),MOR,Moroto,132,1,159.5,map distance,in service,140,Opuyo–Moroto 132 kV
+L41,LIR,Lira,KOL,Kole,132,2,22.0,map distance,in service,280,Lira–Kole 132 kV double circuit
+L42,KOL,Kole,GUL,Gulu,132,2,67,published,in service,280,"Kole–Gulu 132 kV double circuit, 67 km"
+L43,GUL,Gulu,OLW,Olwiyo,132,2,42.8,map distance,in service,280,Gulu–Olwiyo 132 kV double circuit
+L44,OLW,Olwiyo,NEB,Nebbi,132,2,112.3,map distance,in service,280,Olwiyo–Nebbi 132 kV double circuit (West Nile grid connection)
+L45,NEB,Nebbi,ARU,Arua,132,2,69.8,map distance,in service,280,Nebbi–Arua 132 kV double circuit
+L46,GUL,Gulu,AGA,Agago,132,1,51.2,map distance,in service,140,"Gulu–Agago 132 kV, commissioned 18 Nov 2023 (KfW funded)"
+U1,BUJ,Bujagali,TOR,Tororo,220,1,129.4,map distance,under construction,330,"Bujagali–Tororo 220 kV, part of the second Uganda–Kenya interconnector"
+U2,TOR,Tororo,LES,Lessos (Kenya),220,1,141.6,map distance,under construction,330,"Tororo–Lessos 220 kV, second Uganda–Kenya interconnector (KETRACO and UETCL)"
+U3,MAS,Masaka West,MBS,Mbarara South,400,1,135,published,under construction,900,"Masaka–Mbarara 400 kV, 135 km"
+P1,WOB,Wobulenzi,MAS,Masaka West,400,2,165,published,planned,1800,"Wobulenzi–Masaka 400 kV, 165 km (Uganda–Tanzania interconnector, procurement 2026)"
+P2,MAS,Masaka West,MTK,Mutukula,400,2,92,published,planned,1800,"Masaka–Mutukula 400 kV, 92 km (Uganda–Tanzania interconnector)"
+P3,MTK,Mutukula,MWZ,towards Mwanza (Tanzania),400,2,174.7,map distance,planned,1800,Mutukula–Mwanza 400 kV (Tanzanian section)
+P4,OLW,Olwiyo,BIB,Bibia,400,2,151.5,published,planned,1800,"Olwiyo–Bibia 400 kV (Uganda–South Sudan interconnector, 151.5 km in Uganda)"
+P5,BIB,Bibia,NIM,"Nimule, towards Juba (South Sudan)",400,2,4.4,map distance,planned,1800,"Bibia–Nimule–Gumbo 400 kV, designed for up to 1,000 MW"
+P6,NKE,Nkenda (Kasese),BEN,towards Beni (DR Congo),220,1,82.6,map distance,planned,330,Nkenda–Mpondwe–Beni interconnection to DR Congo (feasibility)

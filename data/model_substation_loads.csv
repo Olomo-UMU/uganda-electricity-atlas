@@ -1,0 +1,305 @@
+season,hour,id,name,load_mw
+dry,03:00,KAW,Kawanda,62.1
+dry,03:00,MUT,Mutundwe,62.1
+dry,03:00,QWY,Queensway,41.4
+dry,03:00,LUG,Lugogo,48.3
+dry,03:00,KAN,Kampala North,41.4
+dry,03:00,NMG,Namungoona,20.7
+dry,03:00,NMS,Namanve South,41.4
+dry,03:00,LUZ,Luzira,13.8
+dry,03:00,MUK,Mukono,20.7
+dry,03:00,ENT,Entebbe,20.7
+dry,03:00,KPK,Kapeeka,12.4
+dry,03:00,LGZ,Lugazi,10.4
+dry,03:00,KBS,Kabulasoke,5.5
+dry,03:00,MAS,Masaka West,22.1
+dry,03:00,MTK,Mutukula,2.1
+dry,03:00,NAL,Owen Falls (Nalubaale/Kiira),34.5
+dry,03:00,IGA,Iganga,20.7
+dry,03:00,TOR,Tororo,24.2
+dry,03:00,MBL,Mbale,17.3
+dry,03:00,OPU,Opuyo (Soroti),13.8
+dry,03:00,MOR,Moroto,4.1
+dry,03:00,LIR,Lira,15.2
+dry,03:00,KOL,Kole,3.5
+dry,03:00,GUL,Gulu,15.2
+dry,03:00,AGA,Agago,3.5
+dry,03:00,OLW,Olwiyo,2.1
+dry,03:00,NEB,Nebbi,5.5
+dry,03:00,ARU,Arua,9.7
+dry,03:00,HOI,Hoima,13.8
+dry,03:00,FTP,Fort Portal,10.4
+dry,03:00,NKE,Nkenda (Kasese),37.3
+dry,03:00,MBN,Mbarara North,19.3
+dry,03:00,MBS,Mbarara South,8.3
+dry,03:00,MIR,Mirama,4.1
+dry,03:00,KAB,Kabale,9.0
+dry,03:00,LES,Lessos (Kenya),100
+dry,03:00,SHA,Shango (Rwanda),40
+dry,03:00,KYA,Kyaka (Tanzania),20
+dry,08:00,KAW,Kawanda,85.7
+dry,08:00,MUT,Mutundwe,85.7
+dry,08:00,QWY,Queensway,57.1
+dry,08:00,LUG,Lugogo,66.6
+dry,08:00,KAN,Kampala North,57.1
+dry,08:00,NMG,Namungoona,28.6
+dry,08:00,NMS,Namanve South,57.1
+dry,08:00,LUZ,Luzira,19.0
+dry,08:00,MUK,Mukono,28.6
+dry,08:00,ENT,Entebbe,28.6
+dry,08:00,KPK,Kapeeka,17.1
+dry,08:00,LGZ,Lugazi,14.3
+dry,08:00,KBS,Kabulasoke,7.6
+dry,08:00,MAS,Masaka West,30.5
+dry,08:00,MTK,Mutukula,2.9
+dry,08:00,NAL,Owen Falls (Nalubaale/Kiira),47.6
+dry,08:00,IGA,Iganga,28.6
+dry,08:00,TOR,Tororo,33.3
+dry,08:00,MBL,Mbale,23.8
+dry,08:00,OPU,Opuyo (Soroti),19.0
+dry,08:00,MOR,Moroto,5.7
+dry,08:00,LIR,Lira,20.9
+dry,08:00,KOL,Kole,4.8
+dry,08:00,GUL,Gulu,20.9
+dry,08:00,AGA,Agago,4.8
+dry,08:00,OLW,Olwiyo,2.9
+dry,08:00,NEB,Nebbi,7.6
+dry,08:00,ARU,Arua,13.3
+dry,08:00,HOI,Hoima,19.0
+dry,08:00,FTP,Fort Portal,14.3
+dry,08:00,NKE,Nkenda (Kasese),43.8
+dry,08:00,MBN,Mbarara North,26.7
+dry,08:00,MBS,Mbarara South,11.4
+dry,08:00,MIR,Mirama,5.7
+dry,08:00,KAB,Kabale,12.4
+dry,08:00,LES,Lessos (Kenya),100
+dry,08:00,SHA,Shango (Rwanda),40
+dry,08:00,KYA,Kyaka (Tanzania),20
+dry,13:00,KAW,Kawanda,89.9
+dry,13:00,MUT,Mutundwe,89.9
+dry,13:00,QWY,Queensway,60.0
+dry,13:00,LUG,Lugogo,70.0
+dry,13:00,KAN,Kampala North,60.0
+dry,13:00,NMG,Namungoona,30.0
+dry,13:00,NMS,Namanve South,60.0
+dry,13:00,LUZ,Luzira,20.0
+dry,13:00,MUK,Mukono,30.0
+dry,13:00,ENT,Entebbe,30.0
+dry,13:00,KPK,Kapeeka,18.0
+dry,13:00,LGZ,Lugazi,15.0
+dry,13:00,KBS,Kabulasoke,8.0
+dry,13:00,MAS,Masaka West,32.0
+dry,13:00,MTK,Mutukula,3.0
+dry,13:00,NAL,Owen Falls (Nalubaale/Kiira),50.0
+dry,13:00,IGA,Iganga,30.0
+dry,13:00,TOR,Tororo,35.0
+dry,13:00,MBL,Mbale,25.0
+dry,13:00,OPU,Opuyo (Soroti),20.0
+dry,13:00,MOR,Moroto,6.0
+dry,13:00,LIR,Lira,22.0
+dry,13:00,KOL,Kole,5.0
+dry,13:00,GUL,Gulu,22.0
+dry,13:00,AGA,Agago,5.0
+dry,13:00,OLW,Olwiyo,3.0
+dry,13:00,NEB,Nebbi,8.0
+dry,13:00,ARU,Arua,14.0
+dry,13:00,HOI,Hoima,20.0
+dry,13:00,FTP,Fort Portal,15.0
+dry,13:00,NKE,Nkenda (Kasese),45.0
+dry,13:00,MBN,Mbarara North,28.0
+dry,13:00,MBS,Mbarara South,12.0
+dry,13:00,MIR,Mirama,6.0
+dry,13:00,KAB,Kabale,13.0
+dry,13:00,LES,Lessos (Kenya),100
+dry,13:00,SHA,Shango (Rwanda),40
+dry,13:00,KYA,Kyaka (Tanzania),20
+dry,20:00,KAW,Kawanda,107.1
+dry,20:00,MUT,Mutundwe,107.1
+dry,20:00,QWY,Queensway,71.4
+dry,20:00,LUG,Lugogo,83.3
+dry,20:00,KAN,Kampala North,71.4
+dry,20:00,NMG,Namungoona,35.7
+dry,20:00,NMS,Namanve South,71.4
+dry,20:00,LUZ,Luzira,23.8
+dry,20:00,MUK,Mukono,35.7
+dry,20:00,ENT,Entebbe,35.7
+dry,20:00,KPK,Kapeeka,21.4
+dry,20:00,LGZ,Lugazi,17.8
+dry,20:00,KBS,Kabulasoke,9.5
+dry,20:00,MAS,Masaka West,38.1
+dry,20:00,MTK,Mutukula,3.6
+dry,20:00,NAL,Owen Falls (Nalubaale/Kiira),59.5
+dry,20:00,IGA,Iganga,35.7
+dry,20:00,TOR,Tororo,41.6
+dry,20:00,MBL,Mbale,29.7
+dry,20:00,OPU,Opuyo (Soroti),23.8
+dry,20:00,MOR,Moroto,7.1
+dry,20:00,LIR,Lira,26.2
+dry,20:00,KOL,Kole,5.9
+dry,20:00,GUL,Gulu,26.2
+dry,20:00,AGA,Agago,5.9
+dry,20:00,OLW,Olwiyo,3.6
+dry,20:00,NEB,Nebbi,9.5
+dry,20:00,ARU,Arua,16.7
+dry,20:00,HOI,Hoima,23.8
+dry,20:00,FTP,Fort Portal,17.8
+dry,20:00,NKE,Nkenda (Kasese),49.7
+dry,20:00,MBN,Mbarara North,33.3
+dry,20:00,MBS,Mbarara South,14.3
+dry,20:00,MIR,Mirama,7.1
+dry,20:00,KAB,Kabale,15.5
+dry,20:00,LES,Lessos (Kenya),100
+dry,20:00,SHA,Shango (Rwanda),40
+dry,20:00,KYA,Kyaka (Tanzania),20
+rainy,03:00,KAW,Kawanda,62.1
+rainy,03:00,MUT,Mutundwe,62.1
+rainy,03:00,QWY,Queensway,41.4
+rainy,03:00,LUG,Lugogo,48.3
+rainy,03:00,KAN,Kampala North,41.4
+rainy,03:00,NMG,Namungoona,20.7
+rainy,03:00,NMS,Namanve South,41.4
+rainy,03:00,LUZ,Luzira,13.8
+rainy,03:00,MUK,Mukono,20.7
+rainy,03:00,ENT,Entebbe,20.7
+rainy,03:00,KPK,Kapeeka,12.4
+rainy,03:00,LGZ,Lugazi,10.4
+rainy,03:00,KBS,Kabulasoke,5.5
+rainy,03:00,MAS,Masaka West,22.1
+rainy,03:00,MTK,Mutukula,2.1
+rainy,03:00,NAL,Owen Falls (Nalubaale/Kiira),34.5
+rainy,03:00,IGA,Iganga,20.7
+rainy,03:00,TOR,Tororo,24.2
+rainy,03:00,MBL,Mbale,17.3
+rainy,03:00,OPU,Opuyo (Soroti),13.8
+rainy,03:00,MOR,Moroto,4.1
+rainy,03:00,LIR,Lira,15.2
+rainy,03:00,KOL,Kole,3.5
+rainy,03:00,GUL,Gulu,15.2
+rainy,03:00,AGA,Agago,3.5
+rainy,03:00,OLW,Olwiyo,2.1
+rainy,03:00,NEB,Nebbi,5.5
+rainy,03:00,ARU,Arua,9.7
+rainy,03:00,HOI,Hoima,13.8
+rainy,03:00,FTP,Fort Portal,10.4
+rainy,03:00,NKE,Nkenda (Kasese),37.3
+rainy,03:00,MBN,Mbarara North,19.3
+rainy,03:00,MBS,Mbarara South,8.3
+rainy,03:00,MIR,Mirama,4.1
+rainy,03:00,KAB,Kabale,9.0
+rainy,03:00,LES,Lessos (Kenya),100
+rainy,03:00,SHA,Shango (Rwanda),40
+rainy,03:00,KYA,Kyaka (Tanzania),20
+rainy,08:00,KAW,Kawanda,85.7
+rainy,08:00,MUT,Mutundwe,85.7
+rainy,08:00,QWY,Queensway,57.1
+rainy,08:00,LUG,Lugogo,66.6
+rainy,08:00,KAN,Kampala North,57.1
+rainy,08:00,NMG,Namungoona,28.6
+rainy,08:00,NMS,Namanve South,57.1
+rainy,08:00,LUZ,Luzira,19.0
+rainy,08:00,MUK,Mukono,28.6
+rainy,08:00,ENT,Entebbe,28.6
+rainy,08:00,KPK,Kapeeka,17.1
+rainy,08:00,LGZ,Lugazi,14.3
+rainy,08:00,KBS,Kabulasoke,7.6
+rainy,08:00,MAS,Masaka West,30.5
+rainy,08:00,MTK,Mutukula,2.9
+rainy,08:00,NAL,Owen Falls (Nalubaale/Kiira),47.6
+rainy,08:00,IGA,Iganga,28.6
+rainy,08:00,TOR,Tororo,33.3
+rainy,08:00,MBL,Mbale,23.8
+rainy,08:00,OPU,Opuyo (Soroti),19.0
+rainy,08:00,MOR,Moroto,5.7
+rainy,08:00,LIR,Lira,20.9
+rainy,08:00,KOL,Kole,4.8
+rainy,08:00,GUL,Gulu,20.9
+rainy,08:00,AGA,Agago,4.8
+rainy,08:00,OLW,Olwiyo,2.9
+rainy,08:00,NEB,Nebbi,7.6
+rainy,08:00,ARU,Arua,13.3
+rainy,08:00,HOI,Hoima,19.0
+rainy,08:00,FTP,Fort Portal,14.3
+rainy,08:00,NKE,Nkenda (Kasese),43.8
+rainy,08:00,MBN,Mbarara North,26.7
+rainy,08:00,MBS,Mbarara South,11.4
+rainy,08:00,MIR,Mirama,5.7
+rainy,08:00,KAB,Kabale,12.4
+rainy,08:00,LES,Lessos (Kenya),100
+rainy,08:00,SHA,Shango (Rwanda),40
+rainy,08:00,KYA,Kyaka (Tanzania),20
+rainy,13:00,KAW,Kawanda,89.9
+rainy,13:00,MUT,Mutundwe,89.9
+rainy,13:00,QWY,Queensway,60.0
+rainy,13:00,LUG,Lugogo,70.0
+rainy,13:00,KAN,Kampala North,60.0
+rainy,13:00,NMG,Namungoona,30.0
+rainy,13:00,NMS,Namanve South,60.0
+rainy,13:00,LUZ,Luzira,20.0
+rainy,13:00,MUK,Mukono,30.0
+rainy,13:00,ENT,Entebbe,30.0
+rainy,13:00,KPK,Kapeeka,18.0
+rainy,13:00,LGZ,Lugazi,15.0
+rainy,13:00,KBS,Kabulasoke,8.0
+rainy,13:00,MAS,Masaka West,32.0
+rainy,13:00,MTK,Mutukula,3.0
+rainy,13:00,NAL,Owen Falls (Nalubaale/Kiira),50.0
+rainy,13:00,IGA,Iganga,30.0
+rainy,13:00,TOR,Tororo,35.0
+rainy,13:00,MBL,Mbale,25.0
+rainy,13:00,OPU,Opuyo (Soroti),20.0
+rainy,13:00,MOR,Moroto,6.0
+rainy,13:00,LIR,Lira,22.0
+rainy,13:00,KOL,Kole,5.0
+rainy,13:00,GUL,Gulu,22.0
+rainy,13:00,AGA,Agago,5.0
+rainy,13:00,OLW,Olwiyo,3.0
+rainy,13:00,NEB,Nebbi,8.0
+rainy,13:00,ARU,Arua,14.0
+rainy,13:00,HOI,Hoima,20.0
+rainy,13:00,FTP,Fort Portal,15.0
+rainy,13:00,NKE,Nkenda (Kasese),45.0
+rainy,13:00,MBN,Mbarara North,28.0
+rainy,13:00,MBS,Mbarara South,12.0
+rainy,13:00,MIR,Mirama,6.0
+rainy,13:00,KAB,Kabale,13.0
+rainy,13:00,LES,Lessos (Kenya),100
+rainy,13:00,SHA,Shango (Rwanda),40
+rainy,13:00,KYA,Kyaka (Tanzania),20
+rainy,20:00,KAW,Kawanda,107.1
+rainy,20:00,MUT,Mutundwe,107.1
+rainy,20:00,QWY,Queensway,71.4
+rainy,20:00,LUG,Lugogo,83.3
+rainy,20:00,KAN,Kampala North,71.4
+rainy,20:00,NMG,Namungoona,35.7
+rainy,20:00,NMS,Namanve South,71.4
+rainy,20:00,LUZ,Luzira,23.8
+rainy,20:00,MUK,Mukono,35.7
+rainy,20:00,ENT,Entebbe,35.7
+rainy,20:00,KPK,Kapeeka,21.4
+rainy,20:00,LGZ,Lugazi,17.8
+rainy,20:00,KBS,Kabulasoke,9.5
+rainy,20:00,MAS,Masaka West,38.1
+rainy,20:00,MTK,Mutukula,3.6
+rainy,20:00,NAL,Owen Falls (Nalubaale/Kiira),59.5
+rainy,20:00,IGA,Iganga,35.7
+rainy,20:00,TOR,Tororo,41.6
+rainy,20:00,MBL,Mbale,29.7
+rainy,20:00,OPU,Opuyo (Soroti),23.8
+rainy,20:00,MOR,Moroto,7.1
+rainy,20:00,LIR,Lira,26.2
+rainy,20:00,KOL,Kole,5.9
+rainy,20:00,GUL,Gulu,26.2
+rainy,20:00,AGA,Agago,5.9
+rainy,20:00,OLW,Olwiyo,3.6
+rainy,20:00,NEB,Nebbi,9.5
+rainy,20:00,ARU,Arua,16.7
+rainy,20:00,HOI,Hoima,23.8
+rainy,20:00,FTP,Fort Portal,17.8
+rainy,20:00,NKE,Nkenda (Kasese),49.7
+rainy,20:00,MBN,Mbarara North,33.3
+rainy,20:00,MBS,Mbarara South,14.3
+rainy,20:00,MIR,Mirama,7.1
+rainy,20:00,KAB,Kabale,15.5
+rainy,20:00,LES,Lessos (Kenya),100
+rainy,20:00,SHA,Shango (Rwanda),40
+rainy,20:00,KYA,Kyaka (Tanzania),20

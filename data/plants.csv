@@ -1,0 +1,38 @@
+name,type,capacity_mw,in_service_year,connected_at_id,connected_at,region,lat,lon,notes
+Karuma,hydro,600,2024,KAR,Karuma,Northern,2.243,32.245,UEGCL. Run of river on the Victoria Nile
+Bujagali,hydro,250,2012,BUJ,Bujagali,Eastern,0.4975,33.14,Bujagali Energy Ltd. Run of river on the Nile
+Kiira,hydro,200,2000,NAL,Owen Falls (Nalubaale/Kiira),Eastern,0.4506,33.1858,UEGCL (Eskom Uganda concession until 2023). Lake Victoria outlet
+Isimba,hydro,183.2,2019,ISI,Isimba,Eastern,0.94,32.965,UEGCL. Run of river on the Nile
+Nalubaale,hydro,180,1954,NAL,Owen Falls (Nalubaale/Kiira),Eastern,0.4436,33.185,UEGCL. Former Owen Falls Dam
+Achwa 1 and 2,hydro,83,2019,AGA,Agago,Northern,3.148,32.514,ARPE. Run of river on the Achwa
+Kakira,bagasse,52,2005,NAL,Owen Falls (Nalubaale/Kiira),Eastern,0.5089,33.29,Madhvani Group. About half exported to the grid
+Namanve,thermal,50,2008,NMS,Namanve South,Central,0.344,32.7015,Heavy fuel oil. Peaking and emergency reserve
+Tororo thermal,thermal,50,2010,TOR,Tororo,Eastern,0.6375,34.118,Electro-Maxx. Licensed to sell up to 50 MW
+Kinyara,bagasse,40,2009,HOI,Hoima,Western,1.6355,31.6055,Kinyara Sugar Works
+Kabulasoke,solar,20,2019,KBS,Kabulasoke,Central,0.1625,31.7947,Xsabo Power
+Nkonge,solar,20,2023,KPK,Kapeeka,Central,0.6206,31.8286,Xsabo Nkonge Solarline (reported 20 MW)
+Tororo solar (North and South),solar,20,2017,TOR,Tororo,Eastern,0.6389,34.1192,Two 10 MW plants
+Ituka,solar,20,2025,NEB,Nebbi,Northern,2.7722,31.0389,"AMEA Power, Madi Okollo (reported)"
+Mpanga,hydro,18,2011,NKE,Nkenda (Kasese),Western,0.081,30.381,"Small hydro, Kitagwenda"
+Nyamagasani I and II,hydro,20,2021,NKE,Nkenda (Kasese),Western,0.1378,29.9347,"Small hydro, Kasese"
+Siti I and II,hydro,22.6,2019,MBL,Mbale,Eastern,1.2632,34.6474,"Small hydro, Bukwo"
+Kikagati,hydro,16,2022,MBS,Mbarara South,Western,-1.0425,30.6694,"Small hydro on the Kagera, shared with Tanzania"
+Lugazi,bagasse,14,2007,LGZ,Lugazi,Central,0.38,32.945,SCOUL
+Bugoye,hydro,13,2009,NKE,Nkenda (Kasese),Western,0.3,30.1005,"Small hydro, Mubuku river"
+Kaliro,bagasse,12,2014,IGA,Iganga,Eastern,0.9472,33.4869,Sugar & Allied Industries
+Ndugutu and Sindila,hydro,11.2,2019,FTP,Fort Portal,Western,0.623,29.979,"Small hydro, Bundibugyo"
+Mubuku I and III,hydro,15,2009,NKE,Nkenda (Kasese),Western,0.29,30.11,"Small hydro, Kasese"
+Mayuge solar,solar,10,2019,IGA,Iganga,Eastern,0.495,33.4075,Tryba Energy
+Soroti solar,solar,10,2016,OPU,Opuyo (Soroti),Eastern,1.7003,33.6592,Total Eren
+Nkusi,hydro,9.6,2018,HOI,Hoima,Western,0.1194,30.6686,"Small hydro, Kikuube"
+Nyamwamba,hydro,9.2,2018,NKE,Nkenda (Kasese),Western,0.23,29.985,"Small hydro, Kilembe"
+Kabalega (Buseruka),hydro,9,2013,HOI,Hoima,Western,1.545,31.1115,"Small hydro, Hoima"
+Kyambura,hydro,7.6,2019,NKE,Nkenda (Kasese),Western,0.1489,30.0886,"Small hydro, Rubirizi"
+Nyagak I and III,hydro,10.1,2025,ARU,Arua,Northern,2.4405,30.977,"Small hydro, Zombo (West Nile)"
+Kanungu,hydro,6.6,2011,MIR,Mirama,Western,-0.8814,29.6708,"Small hydro, Ishasha river"
+Muvumbe,hydro,6.5,2017,KAB,Kabale,Western,-1.3186,30.0789,"Small hydro, Kabale"
+Rwimi,hydro,5.6,2017,FTP,Fort Portal,Western,0.3861,30.1853,"Small hydro, Bunyangabu"
+Lubilia,hydro,5.4,2018,NKE,Nkenda (Kasese),Western,0.0836,29.7619,"Small hydro, Kasese"
+Waki,hydro,4.8,2018,HOI,Hoima,Western,1.766,31.366,"Small hydro, Buliisa"
+Busitema solar,solar,4,2022,TOR,Tororo,Eastern,0.5472,34.0236,Government of Uganda
+Mahoma,hydro,3,2018,FTP,Fort Portal,Western,0.4786,30.2731,"Small hydro, Kabarole"

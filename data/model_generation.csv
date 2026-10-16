@@ -1,0 +1,313 @@
+season,hour,plant,output_mw
+dry,03:00,Karuma,330
+dry,03:00,Bujagali,175
+dry,03:00,Kiira,45.7
+dry,03:00,Isimba,109.9
+dry,03:00,Nalubaale,41.2
+dry,03:00,Achwa 1 and 2,31.6
+dry,03:00,Kakira,21.6
+dry,03:00,Namanve,0
+dry,03:00,Tororo thermal,0
+dry,03:00,Kinyara,16.6
+dry,03:00,Kabulasoke,0.0
+dry,03:00,Nkonge,0.0
+dry,03:00,Tororo solar (North and South),0.0
+dry,03:00,Ituka,0.0
+dry,03:00,Mpanga,6.9
+dry,03:00,Nyamagasani I and II,7.6
+dry,03:00,Siti I and II,8.6
+dry,03:00,Kikagati,6.1
+dry,03:00,Lugazi,5.8
+dry,03:00,Bugoye,5.0
+dry,03:00,Kaliro,5.0
+dry,03:00,Ndugutu and Sindila,4.3
+dry,03:00,Mubuku I and III,5.7
+dry,03:00,Mayuge solar,0.0
+dry,03:00,Soroti solar,0.0
+dry,03:00,Nkusi,3.7
+dry,03:00,Nyamwamba,3.5
+dry,03:00,Kabalega (Buseruka),3.4
+dry,03:00,Kyambura,2.9
+dry,03:00,Nyagak I and III,3.8
+dry,03:00,Kanungu,2.5
+dry,03:00,Muvumbe,2.5
+dry,03:00,Rwimi,2.1
+dry,03:00,Lubilia,2.1
+dry,03:00,Waki,1.8
+dry,03:00,Busitema solar,0.0
+dry,03:00,Mahoma,1.1
+dry,03:00,"Owen Falls (slack, Nalubaale + Kiira total)",86.9
+dry,03:00,TOTAL generation,856.3
+dry,08:00,Karuma,473.2
+dry,08:00,Bujagali,230
+dry,08:00,Kiira,31.6
+dry,08:00,Isimba,161.2
+dry,08:00,Nalubaale,28.4
+dry,08:00,Achwa 1 and 2,31.6
+dry,08:00,Kakira,21.6
+dry,08:00,Namanve,0
+dry,08:00,Tororo thermal,0
+dry,08:00,Kinyara,16.6
+dry,08:00,Kabulasoke,6.6
+dry,08:00,Nkonge,6.6
+dry,08:00,Tororo solar (North and South),6.6
+dry,08:00,Ituka,6.6
+dry,08:00,Mpanga,6.9
+dry,08:00,Nyamagasani I and II,7.6
+dry,08:00,Siti I and II,8.6
+dry,08:00,Kikagati,6.1
+dry,08:00,Lugazi,5.8
+dry,08:00,Bugoye,5.0
+dry,08:00,Kaliro,5.0
+dry,08:00,Ndugutu and Sindila,4.3
+dry,08:00,Mubuku I and III,5.7
+dry,08:00,Mayuge solar,3.3
+dry,08:00,Soroti solar,3.3
+dry,08:00,Nkusi,3.7
+dry,08:00,Nyamwamba,3.5
+dry,08:00,Kabalega (Buseruka),3.4
+dry,08:00,Kyambura,2.9
+dry,08:00,Nyagak I and III,3.8
+dry,08:00,Kanungu,2.5
+dry,08:00,Muvumbe,2.5
+dry,08:00,Rwimi,2.1
+dry,08:00,Lubilia,2.1
+dry,08:00,Waki,1.8
+dry,08:00,Busitema solar,1.3
+dry,08:00,Mahoma,1.1
+dry,08:00,"Owen Falls (slack, Nalubaale + Kiira total)",60
+dry,08:00,TOTAL generation,1112.8
+dry,13:00,Karuma,480
+dry,13:00,Bujagali,230
+dry,13:00,Kiira,35.8
+dry,13:00,Isimba,161.2
+dry,13:00,Nalubaale,32.2
+dry,13:00,Achwa 1 and 2,31.6
+dry,13:00,Kakira,21.6
+dry,13:00,Namanve,0
+dry,13:00,Tororo thermal,0
+dry,13:00,Kinyara,16.6
+dry,13:00,Kabulasoke,12.7
+dry,13:00,Nkonge,12.7
+dry,13:00,Tororo solar (North and South),12.7
+dry,13:00,Ituka,12.7
+dry,13:00,Mpanga,6.9
+dry,13:00,Nyamagasani I and II,7.6
+dry,13:00,Siti I and II,8.6
+dry,13:00,Kikagati,6.1
+dry,13:00,Lugazi,5.8
+dry,13:00,Bugoye,5.0
+dry,13:00,Kaliro,5.0
+dry,13:00,Ndugutu and Sindila,4.3
+dry,13:00,Mubuku I and III,5.7
+dry,13:00,Mayuge solar,6.3
+dry,13:00,Soroti solar,6.3
+dry,13:00,Nkusi,3.7
+dry,13:00,Nyamwamba,3.5
+dry,13:00,Kabalega (Buseruka),3.4
+dry,13:00,Kyambura,2.9
+dry,13:00,Nyagak I and III,3.8
+dry,13:00,Kanungu,2.5
+dry,13:00,Muvumbe,2.5
+dry,13:00,Rwimi,2.1
+dry,13:00,Lubilia,2.1
+dry,13:00,Waki,1.8
+dry,13:00,Busitema solar,2.5
+dry,13:00,Mahoma,1.1
+dry,13:00,"Owen Falls (slack, Nalubaale + Kiira total)",68.0
+dry,13:00,TOTAL generation,1159.4
+dry,20:00,Karuma,540
+dry,20:00,Bujagali,240
+dry,20:00,Kiira,127.9
+dry,20:00,Isimba,168.5
+dry,20:00,Nalubaale,115.1
+dry,20:00,Achwa 1 and 2,31.6
+dry,20:00,Kakira,21.6
+dry,20:00,Namanve,0
+dry,20:00,Tororo thermal,0
+dry,20:00,Kinyara,16.6
+dry,20:00,Kabulasoke,0.0
+dry,20:00,Nkonge,0.0
+dry,20:00,Tororo solar (North and South),0.0
+dry,20:00,Ituka,0.0
+dry,20:00,Mpanga,6.9
+dry,20:00,Nyamagasani I and II,7.6
+dry,20:00,Siti I and II,8.6
+dry,20:00,Kikagati,6.1
+dry,20:00,Lugazi,5.8
+dry,20:00,Bugoye,5.0
+dry,20:00,Kaliro,5.0
+dry,20:00,Ndugutu and Sindila,4.3
+dry,20:00,Mubuku I and III,5.7
+dry,20:00,Mayuge solar,0.0
+dry,20:00,Soroti solar,0.0
+dry,20:00,Nkusi,3.7
+dry,20:00,Nyamwamba,3.5
+dry,20:00,Kabalega (Buseruka),3.4
+dry,20:00,Kyambura,2.9
+dry,20:00,Nyagak I and III,3.8
+dry,20:00,Kanungu,2.5
+dry,20:00,Muvumbe,2.5
+dry,20:00,Rwimi,2.1
+dry,20:00,Lubilia,2.1
+dry,20:00,Waki,1.8
+dry,20:00,Busitema solar,0.0
+dry,20:00,Mahoma,1.1
+dry,20:00,"Owen Falls (slack, Nalubaale + Kiira total)",243.0
+dry,20:00,TOTAL generation,1346.0
+rainy,03:00,Karuma,267.7
+rainy,03:00,Bujagali,175
+rainy,03:00,Kiira,31.6
+rainy,03:00,Isimba,109.9
+rainy,03:00,Nalubaale,28.4
+rainy,03:00,Achwa 1 and 2,58.4
+rainy,03:00,Kakira,21.6
+rainy,03:00,Namanve,0
+rainy,03:00,Tororo thermal,0
+rainy,03:00,Kinyara,16.6
+rainy,03:00,Kabulasoke,0.0
+rainy,03:00,Nkonge,0.0
+rainy,03:00,Tororo solar (North and South),0.0
+rainy,03:00,Ituka,0.0
+rainy,03:00,Mpanga,12.7
+rainy,03:00,Nyamagasani I and II,14.1
+rainy,03:00,Siti I and II,15.9
+rainy,03:00,Kikagati,11.3
+rainy,03:00,Lugazi,5.8
+rainy,03:00,Bugoye,9.2
+rainy,03:00,Kaliro,5.0
+rainy,03:00,Ndugutu and Sindila,7.9
+rainy,03:00,Mubuku I and III,10.6
+rainy,03:00,Mayuge solar,0.0
+rainy,03:00,Soroti solar,0.0
+rainy,03:00,Nkusi,6.8
+rainy,03:00,Nyamwamba,6.5
+rainy,03:00,Kabalega (Buseruka),6.3
+rainy,03:00,Kyambura,5.4
+rainy,03:00,Nyagak I and III,7.1
+rainy,03:00,Kanungu,4.6
+rainy,03:00,Muvumbe,4.6
+rainy,03:00,Rwimi,3.9
+rainy,03:00,Lubilia,3.8
+rainy,03:00,Waki,3.4
+rainy,03:00,Busitema solar,0.0
+rainy,03:00,Mahoma,2.1
+rainy,03:00,"Owen Falls (slack, Nalubaale + Kiira total)",60
+rainy,03:00,TOTAL generation,856.3
+rainy,08:00,Karuma,387.5
+rainy,08:00,Bujagali,230
+rainy,08:00,Kiira,31.6
+rainy,08:00,Isimba,161.2
+rainy,08:00,Nalubaale,28.4
+rainy,08:00,Achwa 1 and 2,58.4
+rainy,08:00,Kakira,21.6
+rainy,08:00,Namanve,0
+rainy,08:00,Tororo thermal,0
+rainy,08:00,Kinyara,16.6
+rainy,08:00,Kabulasoke,5.9
+rainy,08:00,Nkonge,5.9
+rainy,08:00,Tororo solar (North and South),5.9
+rainy,08:00,Ituka,5.9
+rainy,08:00,Mpanga,12.7
+rainy,08:00,Nyamagasani I and II,14.1
+rainy,08:00,Siti I and II,15.9
+rainy,08:00,Kikagati,11.3
+rainy,08:00,Lugazi,5.8
+rainy,08:00,Bugoye,9.2
+rainy,08:00,Kaliro,5.0
+rainy,08:00,Ndugutu and Sindila,7.9
+rainy,08:00,Mubuku I and III,10.6
+rainy,08:00,Mayuge solar,2.9
+rainy,08:00,Soroti solar,2.9
+rainy,08:00,Nkusi,6.8
+rainy,08:00,Nyamwamba,6.5
+rainy,08:00,Kabalega (Buseruka),6.3
+rainy,08:00,Kyambura,5.4
+rainy,08:00,Nyagak I and III,7.1
+rainy,08:00,Kanungu,4.6
+rainy,08:00,Muvumbe,4.6
+rainy,08:00,Rwimi,3.9
+rainy,08:00,Lubilia,3.8
+rainy,08:00,Waki,3.4
+rainy,08:00,Busitema solar,1.2
+rainy,08:00,Mahoma,2.1
+rainy,08:00,"Owen Falls (slack, Nalubaale + Kiira total)",60
+rainy,08:00,TOTAL generation,1112.8
+rainy,13:00,Karuma,405.5
+rainy,13:00,Bujagali,230
+rainy,13:00,Kiira,31.6
+rainy,13:00,Isimba,161.2
+rainy,13:00,Nalubaale,28.4
+rainy,13:00,Achwa 1 and 2,58.4
+rainy,13:00,Kakira,21.6
+rainy,13:00,Namanve,0
+rainy,13:00,Tororo thermal,0
+rainy,13:00,Kinyara,16.6
+rainy,13:00,Kabulasoke,11.4
+rainy,13:00,Nkonge,11.4
+rainy,13:00,Tororo solar (North and South),11.4
+rainy,13:00,Ituka,11.4
+rainy,13:00,Mpanga,12.7
+rainy,13:00,Nyamagasani I and II,14.1
+rainy,13:00,Siti I and II,15.9
+rainy,13:00,Kikagati,11.3
+rainy,13:00,Lugazi,5.8
+rainy,13:00,Bugoye,9.2
+rainy,13:00,Kaliro,5.0
+rainy,13:00,Ndugutu and Sindila,7.9
+rainy,13:00,Mubuku I and III,10.6
+rainy,13:00,Mayuge solar,5.7
+rainy,13:00,Soroti solar,5.7
+rainy,13:00,Nkusi,6.8
+rainy,13:00,Nyamwamba,6.5
+rainy,13:00,Kabalega (Buseruka),6.3
+rainy,13:00,Kyambura,5.4
+rainy,13:00,Nyagak I and III,7.1
+rainy,13:00,Kanungu,4.6
+rainy,13:00,Muvumbe,4.6
+rainy,13:00,Rwimi,3.9
+rainy,13:00,Lubilia,3.8
+rainy,13:00,Waki,3.4
+rainy,13:00,Busitema solar,2.3
+rainy,13:00,Mahoma,2.1
+rainy,13:00,"Owen Falls (slack, Nalubaale + Kiira total)",60
+rainy,13:00,TOTAL generation,1159.4
+rainy,20:00,Karuma,540
+rainy,20:00,Bujagali,240
+rainy,20:00,Kiira,81.0
+rainy,20:00,Isimba,168.5
+rainy,20:00,Nalubaale,72.9
+rainy,20:00,Achwa 1 and 2,58.4
+rainy,20:00,Kakira,21.6
+rainy,20:00,Namanve,0
+rainy,20:00,Tororo thermal,0
+rainy,20:00,Kinyara,16.6
+rainy,20:00,Kabulasoke,0.0
+rainy,20:00,Nkonge,0.0
+rainy,20:00,Tororo solar (North and South),0.0
+rainy,20:00,Ituka,0.0
+rainy,20:00,Mpanga,12.7
+rainy,20:00,Nyamagasani I and II,14.1
+rainy,20:00,Siti I and II,15.9
+rainy,20:00,Kikagati,11.3
+rainy,20:00,Lugazi,5.8
+rainy,20:00,Bugoye,9.2
+rainy,20:00,Kaliro,5.0
+rainy,20:00,Ndugutu and Sindila,7.9
+rainy,20:00,Mubuku I and III,10.6
+rainy,20:00,Mayuge solar,0.0
+rainy,20:00,Soroti solar,0.0
+rainy,20:00,Nkusi,6.8
+rainy,20:00,Nyamwamba,6.5
+rainy,20:00,Kabalega (Buseruka),6.3
+rainy,20:00,Kyambura,5.4
+rainy,20:00,Nyagak I and III,7.1
+rainy,20:00,Kanungu,4.6
+rainy,20:00,Muvumbe,4.6
+rainy,20:00,Rwimi,3.9
+rainy,20:00,Lubilia,3.8
+rainy,20:00,Waki,3.4
+rainy,20:00,Busitema solar,0.0
+rainy,20:00,Mahoma,2.1
+rainy,20:00,"Owen Falls (slack, Nalubaale + Kiira total)",153.8
+rainy,20:00,TOTAL generation,1346.0

@@ -1,0 +1,47 @@
+id,name,type,region,load_weight,lat,lon,notes
+KAW,Kawanda,grid substation,Central,9,0.418,32.535,400/220/132/33 kV. Main grid hub north of Kampala: receives Karuma (400 kV) and Bujagali (220 kV) power
+MUT,Mutundwe,grid substation,Central,9,0.294,32.548,132/33 kV. Feeds south and west Kampala; start of lines to Entebbe and Kabulasoke
+QWY,Queensway,grid substation,Central,6,0.3,32.58,132/33 kV. Central and south-east Kampala (upgraded)
+LUG,Lugogo,grid substation,Central,7,0.332,32.603,132/33/11 kV. Eastern Kampala business and residential areas
+KAN,Kampala North,grid substation,Central,6,0.348,32.577,132/33 kV. Northern Kampala (32/40 MVA transformer added)
+NMG,Namungoona,grid substation,Central,3,0.322,32.543,132/11 kV. Western Kampala (15/20 MVA transformer)
+NMS,Namanve South,grid substation,Central,6,0.342,32.695,132/33 kV. Kampala Industrial and Business Park; Namanve thermal plant nearby
+LUZ,Luzira,grid substation,Central,2,0.3,32.64,"132/33 kV. Port Bell, Luzira industrial area"
+MUK,Mukono,grid substation,Central,3,0.356,32.755,132/33 kV. Mukono town and Mukono Industrial Park
+ENT,Entebbe,grid substation,Central,3,0.064,32.47,132/33 kV. Entebbe town and airport (Mutundwe–Entebbe 132 kV line)
+KPK,Kapeeka,grid substation,Central,1.8,0.695,32.36,132/33 kV. Kapeeka (Nakaseke) industrial park
+LGZ,Lugazi,grid substation,Central,1.5,0.37,32.94,132/33 kV. Lugazi town and sugar estate (14 MW bagasse plant)
+KBS,Kabulasoke,grid substation,Central,0.8,0.163,31.795,132/33 kV. Gomba; 20 MW solar plant
+MAS,Masaka West,grid substation,Central,3.2,-0.33,31.7,220/132/33 kV. Masaka region; end of the Kawanda–Masaka 220 kV line
+MTK,Mutukula,grid substation,Central,0.3,-0.995,31.42,132/33 kV. Border station; 132 kV link to Kyaka (Tanzania)
+WOB,Wobulenzi,planned substation,Central,0,0.72,32.53,Planned 400 kV station on the Karuma–Kawanda corridor; start of the Uganda–Tanzania 400 kV interconnector
+NAL,Owen Falls (Nalubaale/Kiira),power station switchyard,Eastern,5,0.444,33.185,"132/33/11 kV switchyard at Jinja. Nalubaale 180 MW + Kiira 200 MW, regulating Lake Victoria outflow"
+BUJ,Bujagali,power station switchyard,Eastern,0,0.498,33.14,220/132 kV switchyard. 250 MW Bujagali hydro; 220 kV to Kawanda
+ISI,Isimba,power station switchyard,Eastern,0,0.94,32.965,132 kV switchyard. 183 MW Isimba hydro; 132 kV double circuit to Bujagali
+IGA,Iganga,grid substation,Eastern,3,0.615,33.485,132/33 kV. Busoga; Iganga Industrial Park
+TOR,Tororo,grid substation,Eastern,3.5,0.693,34.18,220/132/33 kV. Cement plants; Tororo thermal and solar; 132 kV link to Lessos (Kenya)
+MBL,Mbale,grid substation,Eastern,2.5,1.075,34.175,132/33 kV. Mbale city and Elgon region
+OPU,Opuyo (Soroti),grid substation,Eastern,2,1.73,33.63,132/33 kV. Teso; 10 MW Soroti solar plant
+MOR,Moroto,grid substation,Northern,0.6,2.53,34.66,132/33 kV. Karamoja; Opuyo–Moroto 132 kV line
+KAR,Karuma,power station switchyard,Northern,0,2.243,32.245,"400/132 kV switchyard. 600 MW Karuma hydro; 400 kV lines to Kawanda, Lira and Olwiyo"
+LIR,Lira,grid substation,Northern,2.2,2.25,32.9,"400/132/33 kV. Lango; 400 kV from Karuma, 132 kV to Opuyo and Gulu"
+KOL,Kole,grid substation,Northern,0.5,2.4,32.8,132 kV switching station on the Lira–Gulu line
+GUL,Gulu,grid substation,Northern,2.2,2.78,32.3,"132/33 kV, 40 MVA. Acholi sub-region"
+AGA,Agago,grid substation,Northern,0.5,3.05,32.62,132/33 kV. Collects Achwa 1 and 2 hydro (83 MW); Gulu–Agago 132 kV commissioned Nov 2023
+OLW,Olwiyo,grid substation,Northern,0.3,2.8,31.95,400/132 kV. 400 kV from Karuma; 132 kV to Gulu and West Nile
+NEB,Nebbi,grid substation,Northern,0.8,2.478,31.089,"132/33 kV, 40 MVA. West Nile"
+ARU,Arua,grid substation,Northern,1.4,3.02,30.91,"132/33 kV, 40 MVA. West Nile, formerly supplied by WENRECO from Nyagak hydro and diesel"
+BIB,Bibia,planned substation,Northern,0,3.58,32.03,Planned 400/132/33 kV station for the Uganda–South Sudan 400 kV interconnector
+HOI,Hoima,grid substation,Western,2,1.43,31.35,220/132/33 kV. Bunyoro; oil refinery and Kabaale industrial area; Kinyara 40 MW bagasse plant in the region
+FTP,Fort Portal,grid substation,Western,1.5,0.67,30.28,220/132/33 kV. Tooro; many small hydro plants on Rwenzori rivers
+NKE,Nkenda (Kasese),grid substation,Western,2.5,0.18,30.07,"220/132/33 kV. Kasese, Hima cement, Kilembe; collects Rwenzori small hydro"
+MBN,Mbarara North,grid substation,Western,2.8,-0.59,30.66,132/33 kV. Mbarara city
+MBS,Mbarara South,grid substation,Western,1.2,-0.64,30.64,220/132/33 kV. Regional hub for the south-west and exports to Rwanda
+MIR,Mirama,grid substation,Western,0.6,-1.04,30.25,220/132/33 kV. Ntungamo; border station for the Uganda–Rwanda 220 kV link
+KAB,Kabale,grid substation,Western,1.3,-1.25,29.99,132/33 kV. Kigezi; Mirama–Kabale 132 kV line
+LES,Lessos (Kenya),neighbouring grid,Kenya,0,0.4,35.3,"Kenyan 220/132 kV substation, interconnector to Tororo"
+SHA,Shango (Rwanda),neighbouring grid,Rwanda,0,-1.88,30.08,Rwandan 220 kV substation near Kigali
+KYA,Kyaka (Tanzania),neighbouring grid,Tanzania,0,-1.27,31.42,Tanzanian 132 kV substation feeding Kagera region
+MWZ,towards Mwanza (Tanzania),neighbouring grid,Tanzania,0,-2.12,32.3,Planned 400 kV continuation to Mwanza
+NIM,"Nimule, towards Juba (South Sudan)",neighbouring grid,South Sudan,0,3.6,32.06,Planned 400 kV line to Gumbo (Juba)
+BEN,towards Beni (DR Congo),neighbouring grid,DR Congo,0,0.49,29.47,Planned interconnection via Mpondwe to Beni
