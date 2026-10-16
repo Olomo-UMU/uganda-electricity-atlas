@@ -1,0 +1,108 @@
+item,gis_name,model_id,detail,offset_or_length,finding
+Substation,Lugogo,LUG,132 kV / 33 kV / 11 kV,1.0 km,moved to GIS position
+Substation,Kampala North,KAN,132 kV / 33 kV / 11 kV,0.2 km,moved to GIS position
+Substation,Namungoona,NMG,132 kV / 33 kV,1.6 km,moved to GIS position
+Substation,Mutundwe,MUT,132 kV / 33 kV,1.6 km,moved to GIS position
+Substation,Kabulasoke,KBS,132 kV / 33 kV,2.8 km,moved to GIS position
+Substation,Kawanda,KAW,220 kV / 132 kV,0.9 km,moved to GIS position
+Substation,Namanve,,132 kV / 33 kV,4.7 km,not in model (nearest model node Namanve South)
+Substation,Kahungye,,132 kV / 33 kV,76.5 km,not in model (nearest model node Fort Portal)
+Substation,Nkonge,,132 kV / 33 kV,68.4 km,not in model (nearest model node Kabulasoke)
+Substation,Lugazi,LGZ,66 kV / 11 kV,0.9 km,moved to GIS position
+Substation,Masaka West,MAS,220 kV / 132 kV / 33 kV,1.7 km,moved to GIS position
+Substation,Lira,LIR,132 kV / 33 kV,1.8 km,moved to GIS position
+Substation,Opuyo,OPU,132 kV / 33 kV,7.9 km,moved to GIS position
+Substation,Bujagali,BUJ,220 kV / 132 kV,0.6 km,moved to GIS position
+Substation,Nkenda,NKE,132 kV / 33 kV,9.9 km,moved to GIS position
+Substation,Mbarara North,MBN,132 kV / 33 kV,5.5 km,moved to GIS position
+Substation,Tororo,TOR,132 kV / 33 kV,9.2 km,moved to GIS position
+Substation,Nalubale,NAL,132 kV / 66 kV / 33 kV,0.3 km,moved to GIS position
+Substation,Queensway,QWY,132 kV / 33 kV,0.6 km,moved to GIS position
+Substation,Isimba (power station),ISI,,21.0 km,switchyard moved to the GIS dam site
+Substation,Karuma (power station),KAR,,2.7 km,switchyard moved to the GIS dam site
+Power station,Lugazi Sugar,Lugazi,9.5 MW in GIS; 14 MW in model,0.0 km,Operational
+Power station,Kabalega,Kabalega (Buseruka),9.0 MW in GIS; 9 MW in model,1.4 km,Operational
+Power station,Nalubaale,Nalubaale,180.0 MW in GIS; 180 MW in model,0.0 km,Operational
+Power station,Bujagali,Bujagali,255.0 MW in GIS; 250 MW in model,0.0 km,Operational
+Power station,Kiira,Kiira,200.0 MW in GIS; 200 MW in model,0.1 km,Operational
+Power station,Mpanga,Mpanga,18.0 MW in GIS; 18 MW in model,0.0 km,Operational
+Power station,Ishasha,Kanungu,6.4 MW in GIS; 6.6 MW in model,1.2 km,Operational
+Power station,Bugoye,Bugoye,13.0 MW in GIS; 13 MW in model,0.0 km,Operational
+Power station,Kasese Cobalt,,9.9 MW,,Operational (not in model)
+Power station,Kinyara Sugar,Kinyara,14.5 MW in GIS; 40 MW in model,0.0 km,Operational
+Power station,Namanve HFO,Namanve,49.0 MW in GIS; 50 MW in model,0.0 km,Operational
+Power station,Tororo HFO,Tororo thermal,86.0 MW in GIS; 50 MW in model,0.0 km,Operational
+Power station,Nyagak I,Nyagak I and III,3.5 MW in GIS; 10.1 MW in model,1.1 km,Operational
+Power station,Kakira Sugar,Kakira,51.0 MW in GIS; 52 MW in model,0.0 km,Operational
+Power station,Kaliro Sugar,Kaliro,11.9 MW in GIS; 12 MW in model,1.3 km,Operational
+Power station,Mubuku I,Mubuku I and III,5.0 MW in GIS; 15 MW in model,9.8 km,Operational
+Power station,Waaki,Waki,4.8 MW in GIS; 4.8 MW in model,0.7 km,Under Construction
+Power station,Muvumbe,Muvumbe,6.5 MW in GIS; 6.5 MW in model,0.0 km,Under Construction
+Power station,Isimba,Isimba,183.0 MW in GIS; 183.2 MW in model,21.0 km,Under Construction
+Power station,Rwimi,Rwimi,5.4 MW in GIS; 5.6 MW in model,7.6 km,Under Construction
+Power station,Nyamwamba,Nyamwamba,9.2 MW in GIS; 9.2 MW in model,2.9 km,Under Construction
+Power station,Karuma,Karuma,600.0 MW in GIS; 600 MW in model,2.7 km,Under Construction
+Power station,Siti I,Siti I and II,6.1 MW in GIS; 22.6 MW in model,9.5 km,Under Construction
+Transmission line,Karuma – Kafu – Kawanda,L1,"model: 400 kV ×2, in service",GIS route 249.4 km; model uses 248 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 400 kV
+Transmission line,Karuma – Lira,L2,"model: 400 kV ×2, in service",GIS route 75.6 km; model uses 75.6 km,route drawn from the 2016 GIS; 2024 MEMD map: shown as 400 kV under construction
+Transmission line,Karuma – Olwiyo,L3,"model: 400 kV ×2, in service",partial GIS route; model uses 78.0 km,route drawn from the 2016 GIS; 2024 MEMD map: shown as 400 kV under construction
+Transmission line,Kawanda – Masaka,L5,"model: 220 kV ×1, in service",GIS route 137.4 km; model uses 137.4 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 220 kV; GIS lists 2 circuits; model uses 1 (check with UETCL)
+Transmission line,Mbarara – Mirama,L6,"model: 220 kV ×1, in service",partial GIS route; model uses 68.3 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 220 kV
+Transmission line,Mirama – Rwanda (to the border),L7,"model: 220 kV ×1, in service",partial GIS route; model uses 94 km,route drawn from the 2016 GIS
+Transmission line,Nkenda – Hoima (Nkenda – Fort Portal part),L8,"model: 220 kV ×1, in service",GIS route 56.3 km; model uses 56.3 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 220 kV
+Transmission line,Nkenda – Hoima (Fort Portal – Hoima part),L9,"model: 220 kV ×1, in service",GIS route 168.5 km; model uses 168.5 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 220 kV
+Transmission line,Isimba – Bujagali,L11,"model: 132 kV ×2, in service",GIS route 40.1 km; model uses 40.1 km,route drawn from the 2016 GIS
+Transmission line,Namanve South – Luzira,L16,"model: 132 kV ×1, in service",GIS route 7.9 km; model uses 7.9 km,route drawn from the 2016 GIS
+Transmission line,Mutundwe – Entebbe,L23,"model: 132 kV ×2, in service",GIS route 33.6 km; model uses 33.6 km,route drawn from the 2016 GIS
+Transmission line,,L29,"model: 132 kV ×1, in service",model uses 87.6 km,2024 MEMD map: in service at 132 kV
+Transmission line,,L30,"model: 132 kV ×1, in service",model uses 33.6 km,2024 MEMD map: in service at 132 kV
+Transmission line,Mirama – Kabale,L31,"model: 132 kV ×1, in service",partial GIS route; model uses 40.9 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 132 kV
+Transmission line,Mbarara – Nkenda,L32,"model: 132 kV ×1, in service",partial GIS route; model uses 120.5 km,route drawn from the 2016 GIS
+Transmission line,Opuyo – Moroto,L40,"model: 132 kV ×1, in service",GIS route 157.9 km; model uses 157.9 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 132 kV
+Transmission line,Lira – Gulu (Lira – Kole part),L41,"model: 132 kV ×2, in service",GIS route 11.5 km; model uses 11.5 km,route drawn from the 2016 GIS
+Transmission line,Lira – Gulu (Kole – Gulu part),L42,"model: 132 kV ×2, in service",GIS route 85.1 km; model uses 67 km,route drawn from the 2016 GIS
+Transmission line,Olwiyo – Gulu,L43,"model: 132 kV ×2, in service",partial GIS route; model uses 42.8 km,route drawn from the 2016 GIS
+Transmission line,Olwiyo – Nebbi,L44,"model: 132 kV ×2, in service",partial GIS route; model uses 112.3 km,route drawn from the 2016 GIS
+Transmission line,Nebbi – Arua,L45,"model: 132 kV ×2, in service",GIS route 69.4 km; model uses 69.4 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 132 kV
+Transmission line,Agago – Gulu,L46,"model: 132 kV ×1, in service",GIS route 52.6 km; model uses 52.6 km,route drawn from the 2016 GIS; 2024 MEMD map: in service at 132 kV
+Transmission line,Bujagali – Tororo (2),U1,"model: 220 kV ×1, under construction",GIS route 118.1 km; model uses 118.1 km,route drawn from the 2016 GIS; 2024 MEMD map: under construction at 220 kV
+Transmission line,Tororo – Lessos (2),U2,"model: 220 kV ×1, under construction",GIS route 129.7 km; model uses 129.7 km,route drawn from the 2016 GIS; 2024 MEMD map: under construction at 220 kV
+Transmission line,Masaka – Mbarara,U3,"model: 400 kV ×1, under construction",GIS route 130.4 km; model uses 135 km,route drawn from the 2016 GIS
+Transmission line,Wobulenzi – Masaka,P1,"model: 400 kV ×2, planned",GIS route 147.1 km; model uses 165 km,route drawn from the 2016 GIS
+Transmission line,Olwiyo – Nimule (Olwiyo – Bibia part),P4,"model: 400 kV ×2, planned",partial GIS route; model uses 151.5 km,route drawn from the 2016 GIS; 2024 MEMD map: planned at 400 kV
+Transmission line,Olwiyo – Nimule (Bibia – Nimule part),P5,"model: 400 kV ×2, planned",partial GIS route; model uses 4.4 km,route drawn from the 2016 GIS
+Transmission line,Nkenda – Mpondwe – Beni,P6,"model: 220 kV ×1, planned",GIS route 132.9 km; model uses 132.9 km,route drawn from the 2016 GIS
+Transmission line,Agago - Kitgum,,"132 kV ×1, planned in 2016",50.3 km,not in the model; shown in the Projects layer
+Transmission line,Ayago - Olwiyo,,"400 kV ×2, planned in 2016",19.4 km,not in the model; shown in the Projects layer
+Transmission line,Hoima - Kafu,,"220 kV ×2, planned in 2016",92.1 km,not in the model; shown in the Projects layer
+Transmission line,Iganga Industrial,,"132 kV ×2, planned in 2016",10.2 km,not in the model; shown in the Projects layer
+Transmission line,Kabulasoke - Hoima,,"132 kV ×2, planned in 2016",203.8 km,not in the model; shown in the Projects layer
+Transmission line,Mirama - Kikagati,,"132 kV ×2, planned in 2016",26.9 km,not in the model; shown in the Projects layer
+Transmission line,Masaka West - Bukoba,,"220 kV ×2, planned in 2016",110.4 km,not in the model; shown in the Projects layer
+Transmission line,Bulambuli - Mbale,,"132 kV ×2, planned in 2016",34.1 km,not in the model; shown in the Projects layer
+Transmission line,Namanve - Namanve South,,"132 kV ×2, planned in 2016",5.1 km,not in the model; shown in the Projects layer
+Transmission line,Nshongezi - Kikagati,,"132 kV ×2, planned in 2016",9.4 km,not in the model; shown in the Projects layer
+Transmission line,Agago - Adjumani,,"132 kV ×2, planned in 2016",84.5 km,not in the model; shown in the Projects layer
+Transmission line,Adjumani - Arua,,"132 kV ×2, planned in 2016",105.6 km,not in the model; shown in the Projects layer
+Transmission line,Buloba - Nkenda,,"220 kV ×2, planned in 2016",270.5 km,not in the model; shown in the Projects layer
+Transmission line,Mukono Industrial,,"220 kV ×2, planned in 2016",6.8 km,not in the model; shown in the Projects layer
+Transmission line,Arua - Aru,,"132 kV ×2, planned in 2016",17.0 km,not in the model; shown in the Projects layer
+Transmission line,Ggaba - Buloba,,"220 kV ×2, planned in 2016",27.2 km,not in the model; shown in the Projects layer
+Transmission line,Ishaka - Kabale,,"132 kV ×2, planned in 2016",85.4 km,not in the model; shown in the Projects layer
+Transmission line,Karuma - Tororo,,"400 kV ×2, planned in 2016",336.3 km,not in the model; shown in the Projects layer
+Transmission line,Kawanda - Kasana,,"132 kV ×2, planned in 2016",53.0 km,not in the model; shown in the Projects layer
+Transmission line,Kiba - Olwiyo,,"400 kV ×2, planned in 2016",19.9 km,not in the model; shown in the Projects layer
+Transmission line,Luzira - Ggaba,,"132 kV ×2, planned in 2016",4.7 km,not in the model; shown in the Projects layer
+Transmission line,Mbarara - Nshangu,,"400 kV ×2, planned in 2016",72.4 km,not in the model; shown in the Projects layer
+Transmission line,Bulambuli - Moroto,,"132 kV ×2, planned in 2016",134.9 km,not in the model; shown in the Projects layer
+Transmission line,Moroto - Kitgum,,"132 kV ×2, planned in 2016",220.8 km,not in the model; shown in the Projects layer
+Transmission line,Oriang - Karuma,,"400 kV ×2, planned in 2016",27.7 km,not in the model; shown in the Projects layer
+Transmission line,Tororo - Wobulenzi,,"400 kV ×2, planned in 2016",180.3 km,not in the model; shown in the Projects layer
+Transmission line,Wobulenzi -Kawanda,,"220 kV ×2, planned in 2016",38.1 km,not in the model; shown in the Projects layer
+Transmission line,Achwa - Agago,,"132 kV ×2, planned in 2016",28.6 km,not in the model; shown in the Projects layer
+Transmission line,Tororo - Lessos (3),,"400 kV ×2, planned in 2016",129.7 km,not in the model; shown in the Projects layer
+Transmission line,Nebbi - Nyagak,,"132 kV ×2, planned in 2016",15.3 km,not in the model; shown in the Projects layer
+Transmission line,Opuyo - Lira,,132 kV ×1,115.5 km,decommissioned (2016 GIS)
+Transmission line,Tororo - Opuyo,,132 kV ×1,147.9 km,decommissioned (2016 GIS)
+Data gap,"Transmission lines, operational",,layer not among the files supplied,,needed to add Kahungye and Nkonge and to check every in-service line
+Data gap,Line ratings and impedances,,Line_Ratin and conductor fields are empty in the 2016 files,,ratings still estimated; request from UETCL

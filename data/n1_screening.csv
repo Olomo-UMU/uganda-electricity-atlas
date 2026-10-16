@@ -1,47 +1,47 @@
 line_out_id,line_out,load_lost_mw,worst_loading_pct,worst_line_id,worst_line
-L27,Masaka West – Mbarara North,201.6,86.8,L17,Kawanda – Kampala North
-L36,Tororo – Lessos (Kenya),100,88.4,L27,Masaka West – Mbarara North
-L6,Mbarara South – Mirama,62.6,86.2,L17,Kawanda – Kampala North
-L8,Nkenda (Kasese) – Fort Portal,41.6,85.8,L17,Kawanda – Kampala North
-L7,Mirama – Shango (Rwanda),40,86.0,L17,Kawanda – Kampala North
-L23,Mutundwe – Entebbe,35.7,88.4,L27,Masaka West – Mbarara North
-L22,Kawanda – Namungoona,35.7,88.4,L27,Masaka West – Mbarara North
-L44,Olwiyo – Nebbi,26.2,88.4,L27,Masaka West – Mbarara North
-L9,Fort Portal – Hoima,23.8,89.7,L27,Masaka West – Mbarara North
-L16,Namanve South – Luzira,23.8,88.4,L27,Masaka West – Mbarara North
-L29,Masaka West – Mutukula,23.6,88.4,L27,Masaka West – Mbarara North
-L24,Kawanda – Kapeeka,21.4,88.4,L27,Masaka West – Mbarara North
-L30,Mutukula – Kyaka (Tanzania),20,88.4,L27,Masaka West – Mbarara North
-L45,Nebbi – Arua,16.7,88.4,L27,Masaka West – Mbarara North
-L31,Mirama – Kabale,15.5,85.8,L17,Kawanda – Kampala North
-L40,Opuyo (Soroti) – Moroto,7.1,88.4,L27,Masaka West – Mbarara North
-L46,Gulu – Agago,5.9,88.4,L27,Masaka West – Mbarara North
-L1,Karuma – Kawanda,0,344.0,L39,Opuyo (Soroti) – Lira
-L4,Bujagali – Kawanda,0,276.9,L12,Owen Falls (Nalubaale/Kiira) – Lugazi
-L34,Owen Falls (Nalubaale/Kiira) – Iganga,0,160.2,L39,Opuyo (Soroti) – Lira
-L19,Kawanda – Mutundwe,0,150.9,L17,Kawanda – Kampala North
-L17,Kawanda – Kampala North,0,146.7,L19,Kawanda – Mutundwe
-L5,Kawanda – Masaka West,0,139.2,L25,Mutundwe – Kabulasoke
-L35,Iganga – Tororo,0,138.3,L39,Opuyo (Soroti) – Lira
-L18,Kampala North – Lugogo,0,125.2,L19,Kawanda – Mutundwe
-L12,Owen Falls (Nalubaale/Kiira) – Lugazi,0,110.2,L17,Kawanda – Kampala North
-L13,Lugazi – Mukono,0,107.5,L17,Kawanda – Kampala North
-L15,Namanve South – Lugogo,0,102.1,L12,Owen Falls (Nalubaale/Kiira) – Lugazi
-L14,Mukono – Namanve South,0,99.4,L17,Kawanda – Kampala North
-L10,Bujagali – Owen Falls (Nalubaale/Kiira),0,98.8,L17,Kawanda – Kampala North
-L20,Mutundwe – Queensway,0,92.4,L17,Kawanda – Kampala North
-L21,Queensway – Lugogo,0,91.9,L19,Kawanda – Mutundwe
-L11,Isimba – Bujagali,0,88.4,L27,Masaka West – Mbarara North
-L41,Lira – Kole,0,88.4,L27,Masaka West – Mbarara North
-L3,Karuma – Olwiyo,0,88.4,L27,Masaka West – Mbarara North
-L43,Gulu – Olwiyo,0,88.4,L27,Masaka West – Mbarara North
-L42,Kole – Gulu,0,88.4,L27,Masaka West – Mbarara North
-L25,Mutundwe – Kabulasoke,0,88.4,L27,Masaka West – Mbarara North
-L2,Karuma – Lira,0,88.4,L27,Masaka West – Mbarara North
-L37,Tororo – Mbale,0,88.4,L27,Masaka West – Mbarara North
-L38,Mbale – Opuyo (Soroti),0,88.4,L27,Masaka West – Mbarara North
-L39,Opuyo (Soroti) – Lira,0,88.4,L27,Masaka West – Mbarara North
-L28,Mbarara North – Mbarara South,0,88.4,L27,Masaka West – Mbarara North
-L33,Mbarara South – Nkenda (Kasese),0,88.4,L27,Masaka West – Mbarara North
-L26,Kabulasoke – Masaka West,0,88.4,L27,Masaka West – Mbarara North
-L32,Mbarara North – Nkenda (Kasese),0,88.4,L27,Masaka West – Mbarara North
+L27,Masaka West – Mbarara North,196.4,93.1,L17,Kawanda – Kampala North
+L36,Tororo – Lessos (Kenya),100,92.6,L17,Kawanda – Kampala North
+L6,Mbarara South – Mirama,64.7,92.5,L17,Kawanda – Kampala North
+L8,Nkenda (Kasese) – Fort Portal,42.1,91.9,L17,Kawanda – Kampala North
+L23,Mutundwe – Entebbe,41.2,88.4,L17,Kawanda – Kampala North
+L7,Mirama – Shango (Rwanda),40,92.2,L17,Kawanda – Kampala North
+L22,Kawanda – Namungoona,38.4,93.5,L17,Kawanda – Kampala North
+L24,Kawanda – Kapeeka,28.8,93.1,L17,Kawanda – Kampala North
+L16,Namanve South – Luzira,25.6,87.8,L17,Kawanda – Kampala North
+L9,Fort Portal – Hoima,24.9,91.8,L17,Kawanda – Kampala North
+L29,Masaka West – Mutukula,24.3,92.1,L17,Kawanda – Kampala North
+L30,Mutukula – Kyaka (Tanzania),20,92.0,L17,Kawanda – Kampala North
+L44,Olwiyo – Nebbi,19.8,92.5,L17,Kawanda – Kampala North
+L31,Mirama – Kabale,16.2,91.9,L17,Kawanda – Kampala North
+L45,Nebbi – Arua,12.4,92.2,L17,Kawanda – Kampala North
+L40,Opuyo (Soroti) – Moroto,6.1,92.0,L17,Kawanda – Kampala North
+L46,Gulu – Agago,5.2,90.7,L17,Kawanda – Kampala North
+L1,Karuma – Kawanda,0,357.5,L39,Opuyo (Soroti) – Lira
+L4,Bujagali – Kawanda,0,293.3,L12,Owen Falls (Nalubaale/Kiira) – Lugazi
+L19,Kawanda – Mutundwe,0,161.5,L17,Kawanda – Kampala North
+L17,Kawanda – Kampala North,0,157.3,L19,Kawanda – Mutundwe
+L34,Owen Falls (Nalubaale/Kiira) – Iganga,0,143.8,L39,Opuyo (Soroti) – Lira
+L5,Kawanda – Masaka West,0,134.6,L25,Mutundwe – Kabulasoke
+L18,Kampala North – Lugogo,0,134.2,L19,Kawanda – Mutundwe
+L35,Iganga – Tororo,0,125.7,L39,Opuyo (Soroti) – Lira
+L12,Owen Falls (Nalubaale/Kiira) – Lugazi,0,117.9,L17,Kawanda – Kampala North
+L13,Lugazi – Mukono,0,115.1,L17,Kawanda – Kampala North
+L15,Namanve South – Lugogo,0,109.4,L12,Owen Falls (Nalubaale/Kiira) – Lugazi
+L14,Mukono – Namanve South,0,106.4,L17,Kawanda – Kampala North
+L10,Bujagali – Owen Falls (Nalubaale/Kiira),0,101.6,L17,Kawanda – Kampala North
+L20,Mutundwe – Queensway,0,99.7,L17,Kawanda – Kampala North
+L21,Queensway – Lugogo,0,98.1,L19,Kawanda – Mutundwe
+L39,Opuyo (Soroti) – Lira,0,94.0,L17,Kawanda – Kampala North
+L38,Mbale – Opuyo (Soroti),0,92.9,L17,Kawanda – Kampala North
+L2,Karuma – Lira,0,92.3,L17,Kawanda – Kampala North
+L37,Tororo – Mbale,0,92.0,L17,Kawanda – Kampala North
+L3,Karuma – Olwiyo,0,91.8,L17,Kawanda – Kampala North
+L42,Kole – Gulu,0,91.8,L17,Kawanda – Kampala North
+L41,Lira – Kole,0,91.8,L17,Kawanda – Kampala North
+L28,Mbarara North – Mbarara South,0,91.8,L17,Kawanda – Kampala North
+L32,Mbarara North – Nkenda (Kasese),0,91.8,L17,Kawanda – Kampala North
+L33,Mbarara South – Nkenda (Kasese),0,91.8,L17,Kawanda – Kampala North
+L43,Gulu – Olwiyo,0,91.8,L17,Kawanda – Kampala North
+L11,Isimba – Bujagali,0,87.6,L17,Kawanda – Kampala North
+L26,Kabulasoke – Masaka West,0,87.5,L17,Kawanda – Kampala North
+L25,Mutundwe – Kabulasoke,0,86.1,L17,Kawanda – Kampala North

@@ -154,7 +154,7 @@ dry,20:00,Waki,1.8
 dry,20:00,Busitema solar,0.0
 dry,20:00,Mahoma,1.1
 dry,20:00,"Owen Falls (slack, Nalubaale + Kiira total)",243.0
-dry,20:00,TOTAL generation,1346.0
+dry,20:00,TOTAL generation,1346
 rainy,03:00,Karuma,267.7
 rainy,03:00,Bujagali,175
 rainy,03:00,Kiira,31.6
@@ -310,4 +310,4 @@ rainy,20:00,Waki,3.4
 rainy,20:00,Busitema solar,0.0
 rainy,20:00,Mahoma,2.1
 rainy,20:00,"Owen Falls (slack, Nalubaale + Kiira total)",153.8
-rainy,20:00,TOTAL generation,1346.0
+rainy,20:00,TOTAL generation,1346

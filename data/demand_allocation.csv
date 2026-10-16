@@ -1,0 +1,36 @@
+id,substation,previous_weight_pct,households_with_electricity_pct,new_weight_pct
+KAW,Kawanda,9.18,11.3,9.88
+MUT,Mutundwe,9.18,11.3,9.88
+LUG,Lugogo,7.14,8.79,7.69
+QWY,Queensway,6.12,7.53,6.59
+KAN,Kampala North,6.12,7.53,6.59
+NMS,Namanve South,6.12,7.53,6.59
+NAL,Owen Falls (Nalubaale/Kiira),5.1,2.27,4.17
+ENT,Entebbe,3.06,4.48,3.53
+NMG,Namungoona,3.06,3.77,3.29
+MUK,Mukono,3.06,3.77,3.29
+MAS,Masaka West,3.27,2.51,3.02
+MBN,Mbarara North,2.86,3.13,2.95
+TOR,Tororo,3.57,1.04,2.73
+IGA,Iganga,3.06,1.71,2.61
+KPK,Kapeeka,1.84,3.75,2.47
+MBL,Mbale,2.55,2.02,2.38
+LUZ,Luzira,2.04,2.51,2.2
+NKE,Nkenda (Kasese),2.55,1.34,2.15
+HOI,Hoima,2.04,2.33,2.14
+LIR,Lira,2.24,1.22,1.91
+GUL,Gulu,2.24,0.8,1.77
+OPU,Opuyo (Soroti),2.04,0.79,1.63
+LGZ,Lugazi,1.53,1.62,1.56
+FTP,Fort Portal,1.53,1.36,1.47
+KAB,Kabale,1.33,1.53,1.39
+ARU,Arua,1.43,0.32,1.06
+KBS,Kabulasoke,0.82,1.05,0.89
+MBS,Mbarara South,1.22,0.15,0.87
+MIR,Mirama,0.61,0.97,0.73
+NEB,Nebbi,0.82,0.27,0.64
+MOR,Moroto,0.61,0.34,0.52
+AGA,Agago,0.51,0.34,0.45
+MTK,Mutukula,0.31,0.5,0.37
+KOL,Kole,0.51,0.0,0.34
+OLW,Olwiyo,0.31,0.16,0.26

@@ -1,0 +1,113 @@
+district,sub_region,households_2014,homes_with_electricity_pct,homes_with_electricity,supplied_from
+Abim,Karamoja,18297,1.5,275,MOR
+Adjumani,West Nile,41626,0.6,245,OLW
+Agago,Acholi,43274,1.0,429,AGA
+Alebtong,Lango,45555,0.0,0,LIR
+Amolatar,Lango,27885,0.0,0,LIR
+Amudat,Karamoja,15850,0.0,0,MOR
+Amuria,Teso,48402,0.0,0,OPU
+Amuru,Acholi,37899,0.0,18,OLW
+Apac,Lango,71813,0.6,408,LIR
+Arua,West Nile,154937,1.1,1767,ARU
+Budaka,Teso,37247,1.7,629,MBL
+Bududa,Elgon,37028,0.6,211,MBL
+Bugiri,East Central,76858,1.1,809,IGA
+Buhweju,South Western,25707,0.0,0,MBN
+Buikwe,Central 2,99401,8.8,8785,LGZ
+Bukedea,Teso,33058,0.7,245,MBL
+Bukomansimbi,Central 1,34520,2.0,677,MAS
+Bukwo,Elgon,16599,0.0,0,MBL
+Bulambuli,Elgon,33992,0.6,206,MBL
+Buliisa,Western,21517,0.0,0,HOI
+Bundibugyo,Western,44769,1.6,696,FTP
+Bushenyi,South Western,71368,4.6,3274,MBN
+Busia,East Central,65487,2.4,1590,TOR
+Butaleja,Elgon,44311,0.9,381,TOR
+Butambala,Central 1,21611,4.1,891,KBS
+Buvuma,Central 2,25303,0.0,0,LGZ
+Buyende,East Central,46312,0.0,0,OPU
+Dokolo,Lango,34781,0.1,43,LIR
+Gomba,Central 1,35104,1.6,551,KBS
+Gulu,Acholi,87687,4.9,4270,GUL
+Hoima,Western,125907,4.3,5376,HOI
+Ibanda,South Western,54604,1.9,1059,NKE
+Iganga,East Central,111025,4.1,4534,IGA
+Isingiro,South Western,95031,0.9,838,MBS
+Jinja,East Central,105146,11.1,11706,NAL
+Kaabong,Karamoja,29725,0.0,0,MOR
+Kabale,South Western,141187,4.3,6080,KAB
+Kabarole,Western,111509,5.0,5581,FTP
+Kaberamaido,Teso,38521,0.0,0,OPU
+Kalangala,Central 1,20143,2.7,548,ENT
+Kaliro,East Central,43222,1.0,439,IGA
+Kalungu,Central 1,41606,3.6,1509,KBS
+Kampala,Central 1,418787,42.3,177085,metro
+Kamuli,East Central,93789,3.1,2951,IGA
+Kamwenge,Western,87997,0.4,311,NKE
+Kanungu,South Western,62180,1.6,1021,KAB
+Kapchorwa,Elgon,21652,2.0,425,MBL
+Kasese,Western,157926,3.3,5281,NKE
+Katakwi,Teso,30721,0.0,0,OPU
+Kayunga,Central 2,77405,4.1,3192,KPK
+Kibaale,Western,171630,1.3,2305,HOI
+Kiboga,Central 2,34108,3.3,1135,KPK
+Kibuku,Teso,35867,0.5,189,MBL
+Kiruhura,South Western,64286,0.6,390,MBN
+Kiryandongo,Western,52710,0.8,400,OLW
+Kisoro,South Western,63035,2.0,1235,KAB
+Kitgum,Acholi,44173,2.6,1153,AGA
+Koboko,West Nile,30762,0.0,0,ARU
+Kole,Lango,49092,0.2,101,LIR
+Kotido,Karamoja,26847,0.0,0,MOR
+Kumi,Teso,43964,1.4,634,OPU
+Kween,Elgon,18238,0.0,0,MBL
+Kyankwanzi,Central 2,47965,1.0,470,HOI
+Kyegegwa,Western,59332,0.0,0,FTP
+Kyenjojo,Western,92011,0.9,871,FTP
+Lamwo,Acholi,27497,0.1,17,AGA
+Lira,Lango,106423,5.7,6062,LIR
+Luuka,East Central,44994,0.7,324,IGA
+Luwero,Central 2,106235,7.0,7483,KPK
+Lwengo,Central 1,58178,3.4,1965,MAS
+Lyantonde,Central 1,20855,3.2,665,MAS
+Manafwa,Elgon,72740,0.3,200,MBL
+Maracha,West Nile,36466,0.0,0,ARU
+Masaka,Central 1,75306,13.2,9920,MAS
+Masindi,Western,76238,5.9,4502,HOI
+Mayuge,East Central,83344,0.8,660,NAL
+Mbale,Elgon,104966,7.4,7749,MBL
+Mbarara,South Western,124075,9.7,11998,MBN
+Mitooma,South Western,44400,0.6,276,MIR
+Mityana,Central 2,80522,6.4,5157,KPK
+Moroto,Karamoja,29130,5.3,1556,MOR
+Moyo,West Nile,25894,0.9,227,OLW
+Mpigi,Central 1,60256,5.6,3347,ENT
+Mubende,Central 2,151985,1.8,2766,KBS
+Mukono,Central 2,151442,13.0,19622,metro
+Nakapiripirit,Karamoja,26414,0.0,0,MOR
+Nakaseke,Central 2,43579,6.4,2781,KPK
+Nakasongola,Central 2,40657,1.5,614,KPK
+Namayingo,East Central,39848,0.0,0,IGA
+Namutumba,East Central,41460,0.6,233,IGA
+Napak,Karamoja,27471,0.0,0,MOR
+Nebbi,West Nile,75422,2.0,1484,NEB
+Ngora,Teso,23540,1.2,285,OPU
+Ntoroko,Western,14439,1.6,229,FTP
+Ntungamo,South Western,137069,1.9,2571,MIR
+Nwoya,Acholi,25114,0.0,0,OLW
+Otuke,Lango,26667,0.0,0,LIR
+Oyam,Lango,77435,0.1,59,GUL
+Pader,Acholi,34905,0.6,227,AGA
+Pallisa,Teso,66802,0.9,589,MBL
+Rakai,Central 1,112340,2.4,2695,MTK
+Rubirizi,South Western,32945,1.9,633,NKE
+Rukungiri,South Western,80622,3.0,2431,MIR
+Serere,Teso,47471,1.1,520,OPU
+Sheema,South Western,51871,2.7,1377,MBN
+Sironko,Elgon,57653,0.9,543,MBL
+Soroti,Teso,62573,4.5,2835,OPU
+Ssembabule,Central 1,55538,0.7,403,MAS
+Tororo,Elgon,108044,3.4,3660,TOR
+Wakiso,Central 1,504620,34.0,171792,metro
+Yumbe,West Nile,63722,0.0,0,ARU
+Zombo,West Nile,50969,0.0,0,NEB

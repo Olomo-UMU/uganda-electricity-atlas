@@ -1,50 +1,50 @@
 season,hour,line_id,from,to,voltage_kv,flow_mw,flowing_to,loading_pct,status
-dry,03:00,L1,Karuma,Kawanda,400,268.6,Kawanda,14.9,in service
-dry,03:00,L2,Karuma,Lira,400,53.7,Lira,3.0,in service
-dry,03:00,L3,Karuma,Olwiyo,400,7.6,Olwiyo,0.4,in service
-dry,03:00,L4,Bujagali,Kawanda,220,180.1,Kawanda,27.3,in service
-dry,03:00,L5,Kawanda,Masaka West,220,87.7,Masaka West,26.6,in service
-dry,03:00,L6,Mbarara South,Mirama,220,48.1,Mirama,14.6,in service
+dry,03:00,L1,Karuma,Kawanda,400,285.4,Kawanda,15.9,in service
+dry,03:00,L2,Karuma,Lira,400,43.5,Lira,2.4,in service
+dry,03:00,L3,Karuma,Olwiyo,400,1.1,Olwiyo,0.1,in service
+dry,03:00,L4,Bujagali,Kawanda,220,190.3,Kawanda,28.8,in service
+dry,03:00,L5,Kawanda,Masaka West,220,84.9,Masaka West,25.7,in service
+dry,03:00,L6,Mbarara South,Mirama,220,49.3,Mirama,15.0,in service
 dry,03:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-dry,03:00,L8,Nkenda (Kasese),Fort Portal,220,8.9,Nkenda (Kasese),2.7,in service
-dry,03:00,L9,Fort Portal,Hoima,220,11.7,Fort Portal,3.6,in service
-dry,03:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,104.8,Owen Falls (Nalubaale/Kiira),37.4,in service
+dry,03:00,L8,Nkenda (Kasese),Fort Portal,220,8.7,Nkenda (Kasese),2.6,in service
+dry,03:00,L9,Fort Portal,Hoima,220,11.0,Fort Portal,3.3,in service
+dry,03:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,94.6,Owen Falls (Nalubaale/Kiira),33.8,in service
 dry,03:00,L11,Isimba,Bujagali,132,109.9,Bujagali,39.3,in service
-dry,03:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,54.8,Lugazi,39.1,in service
-dry,03:00,L13,Lugazi,Mukono,132,50.2,Mukono,35.9,in service
-dry,03:00,L14,Mukono,Namanve South,132,29.5,Namanve South,21.1,in service
-dry,03:00,L15,Namanve South,Lugogo,132,25.7,Namanve South,9.2,in service
-dry,03:00,L16,Namanve South,Luzira,132,13.8,Luzira,9.9,in service
-dry,03:00,L17,Kawanda,Kampala North,132,142.9,Kampala North,51.0,in service
-dry,03:00,L18,Kampala North,Lugogo,132,101.5,Lugogo,36.3,in service
-dry,03:00,L19,Kawanda,Mutundwe,132,123.0,Mutundwe,43.9,in service
-dry,03:00,L20,Mutundwe,Queensway,132,13.9,Queensway,5.0,in service
-dry,03:00,L21,Queensway,Lugogo,132,27.5,Queensway,9.8,in service
-dry,03:00,L22,Kawanda,Namungoona,132,20.7,Namungoona,14.8,in service
-dry,03:00,L23,Mutundwe,Entebbe,132,20.7,Entebbe,7.4,in service
-dry,03:00,L24,Kawanda,Kapeeka,132,12.4,Kapeeka,8.8,in service
-dry,03:00,L25,Mutundwe,Kabulasoke,132,26.3,Kabulasoke,18.8,in service
-dry,03:00,L26,Kabulasoke,Masaka West,132,20.8,Masaka West,14.9,in service
-dry,03:00,L27,Masaka West,Mbarara North,132,64.3,Mbarara North,46.0,in service
-dry,03:00,L28,Mbarara North,Mbarara South,132,46.4,Mbarara South,33.2,in service
-dry,03:00,L29,Masaka West,Mutukula,132,22.1,Mutukula,15.8,in service
+dry,03:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,58.6,Lugazi,41.8,in service
+dry,03:00,L13,Lugazi,Mukono,132,53.8,Mukono,38.4,in service
+dry,03:00,L14,Mukono,Namanve South,132,31.6,Namanve South,22.5,in service
+dry,03:00,L15,Namanve South,Lugogo,132,27.9,Namanve South,10.0,in service
+dry,03:00,L16,Namanve South,Luzira,132,14.9,Luzira,10.6,in service
+dry,03:00,L17,Kawanda,Kampala North,132,153.0,Kampala North,54.6,in service
+dry,03:00,L18,Kampala North,Lugogo,132,108.4,Lugogo,38.7,in service
+dry,03:00,L19,Kawanda,Mutundwe,132,132.0,Mutundwe,47.1,in service
+dry,03:00,L20,Mutundwe,Queensway,132,16.0,Queensway,5.7,in service
+dry,03:00,L21,Queensway,Lugogo,132,28.6,Queensway,10.2,in service
+dry,03:00,L22,Kawanda,Namungoona,132,22.2,Namungoona,15.9,in service
+dry,03:00,L23,Mutundwe,Entebbe,132,23.9,Entebbe,8.5,in service
+dry,03:00,L24,Kawanda,Kapeeka,132,16.7,Kapeeka,11.9,in service
+dry,03:00,L25,Mutundwe,Kabulasoke,132,25.3,Kabulasoke,18.1,in service
+dry,03:00,L26,Kabulasoke,Masaka West,132,19.3,Masaka West,13.8,in service
+dry,03:00,L27,Masaka West,Mbarara North,132,61.3,Mbarara North,43.8,in service
+dry,03:00,L28,Mbarara North,Mbarara South,132,44.2,Mbarara South,31.6,in service
+dry,03:00,L29,Masaka West,Mutukula,132,22.5,Mutukula,16.1,in service
 dry,03:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-dry,03:00,L31,Mirama,Kabale,132,6.5,Kabale,4.6,in service
-dry,03:00,L32,Mbarara North,Nkenda (Kasese),132,1.4,Mbarara North,1.0,in service
-dry,03:00,L33,Mbarara South,Nkenda (Kasese),132,3.9,Mbarara South,2.8,in service
-dry,03:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,124.0,Iganga,44.3,in service
-dry,03:00,L35,Iganga,Tororo,132,108.3,Tororo,38.7,in service
+dry,03:00,L31,Mirama,Kabale,132,6.9,Kabale,4.9,in service
+dry,03:00,L32,Mbarara North,Nkenda (Kasese),132,2.8,Mbarara North,2.0,in service
+dry,03:00,L33,Mbarara South,Nkenda (Kasese),132,4.9,Mbarara South,3.5,in service
+dry,03:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,116.3,Iganga,41.6,in service
+dry,03:00,L35,Iganga,Tororo,132,103.7,Tororo,37.0,in service
 dry,03:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-dry,03:00,L37,Tororo,Mbale,132,15.8,Tororo,11.3,in service
-dry,03:00,L38,Mbale,Opuyo (Soroti),132,24.5,Mbale,17.5,in service
-dry,03:00,L39,Opuyo (Soroti),Lira,132,42.4,Opuyo (Soroti),30.3,in service
-dry,03:00,L40,Opuyo (Soroti),Moroto,132,4.1,Moroto,3.0,in service
-dry,03:00,L41,Lira,Kole,132,3.8,Lira,1.4,in service
-dry,03:00,L42,Kole,Gulu,132,7.3,Kole,2.6,in service
-dry,03:00,L43,Gulu,Olwiyo,132,5.7,Olwiyo,2.1,in service
-dry,03:00,L44,Olwiyo,Nebbi,132,11.3,Nebbi,4.0,in service
-dry,03:00,L45,Nebbi,Arua,132,5.8,Arua,2.1,in service
-dry,03:00,L46,Gulu,Agago,132,28.2,Gulu,20.1,in service
+dry,03:00,L37,Tororo,Mbale,132,14.7,Tororo,10.5,in service
+dry,03:00,L38,Mbale,Opuyo (Soroti),132,22.2,Mbale,15.8,in service
+dry,03:00,L39,Opuyo (Soroti),Lira,132,36.7,Opuyo (Soroti),26.2,in service
+dry,03:00,L40,Opuyo (Soroti),Moroto,132,3.5,Moroto,2.5,in service
+dry,03:00,L41,Lira,Kole,132,6.1,Lira,2.2,in service
+dry,03:00,L42,Kole,Gulu,132,8.4,Kole,3.0,in service
+dry,03:00,L43,Gulu,Olwiyo,132,8.2,Olwiyo,2.9,in service
+dry,03:00,L44,Olwiyo,Nebbi,132,7.6,Nebbi,2.7,in service
+dry,03:00,L45,Nebbi,Arua,132,3.3,Arua,1.2,in service
+dry,03:00,L46,Gulu,Agago,132,28.6,Gulu,20.4,in service
 dry,03:00,U1,Bujagali,Tororo,220,,,,under construction
 dry,03:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 dry,03:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -54,52 +54,52 @@ dry,03:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 dry,03:00,P4,Olwiyo,Bibia,400,,,,planned
 dry,03:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 dry,03:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-dry,08:00,L1,Karuma,Kawanda,400,389.6,Kawanda,21.6,in service
-dry,08:00,L2,Karuma,Lira,400,70.3,Lira,3.9,in service
-dry,08:00,L3,Karuma,Olwiyo,400,13.2,Olwiyo,0.7,in service
-dry,08:00,L4,Bujagali,Kawanda,220,222.9,Kawanda,33.8,in service
-dry,08:00,L5,Kawanda,Masaka West,220,117.6,Masaka West,35.6,in service
-dry,08:00,L6,Mbarara South,Mirama,220,53.1,Mirama,16.1,in service
+dry,08:00,L1,Karuma,Kawanda,400,412.0,Kawanda,22.9,in service
+dry,08:00,L2,Karuma,Lira,400,57.2,Lira,3.2,in service
+dry,08:00,L3,Karuma,Olwiyo,400,4.0,Olwiyo,0.2,in service
+dry,08:00,L4,Bujagali,Kawanda,220,237.5,Kawanda,36.0,in service
+dry,08:00,L5,Kawanda,Masaka West,220,113.7,Masaka West,34.5,in service
+dry,08:00,L6,Mbarara South,Mirama,220,54.8,Mirama,16.6,in service
 dry,08:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-dry,08:00,L8,Nkenda (Kasese),Fort Portal,220,0.2,Fort Portal,0.1,in service
-dry,08:00,L9,Fort Portal,Hoima,220,6.5,Fort Portal,2.0,in service
-dry,08:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,168.3,Owen Falls (Nalubaale/Kiira),60.1,in service
+dry,08:00,L8,Nkenda (Kasese),Fort Portal,220,0.6,Fort Portal,0.2,in service
+dry,08:00,L9,Fort Portal,Hoima,220,5.6,Fort Portal,1.7,in service
+dry,08:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,153.7,Owen Falls (Nalubaale/Kiira),54.9,in service
 dry,08:00,L11,Isimba,Bujagali,132,161.2,Bujagali,57.6,in service
-dry,08:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,70.3,Lugazi,50.2,in service
-dry,08:00,L13,Lugazi,Mukono,132,61.8,Mukono,44.2,in service
-dry,08:00,L14,Mukono,Namanve South,132,33.3,Namanve South,23.8,in service
-dry,08:00,L15,Namanve South,Lugogo,132,42.9,Namanve South,15.3,in service
-dry,08:00,L16,Namanve South,Luzira,132,19.0,Luzira,13.6,in service
-dry,08:00,L17,Kawanda,Kampala North,132,200.3,Kampala North,71.5,in service
-dry,08:00,L18,Kampala North,Lugogo,132,143.2,Lugogo,51.1,in service
-dry,08:00,L19,Kawanda,Mutundwe,132,170.0,Mutundwe,60.7,in service
-dry,08:00,L20,Mutundwe,Queensway,132,23.4,Queensway,8.4,in service
-dry,08:00,L21,Queensway,Lugogo,132,33.7,Queensway,12.0,in service
-dry,08:00,L22,Kawanda,Namungoona,132,28.6,Namungoona,20.4,in service
-dry,08:00,L23,Mutundwe,Entebbe,132,28.6,Entebbe,10.2,in service
-dry,08:00,L24,Kawanda,Kapeeka,132,10.6,Kapeeka,7.5,in service
-dry,08:00,L25,Mutundwe,Kabulasoke,132,32.3,Kabulasoke,23.1,in service
-dry,08:00,L26,Kabulasoke,Masaka West,132,31.2,Masaka West,22.3,in service
-dry,08:00,L27,Masaka West,Mbarara North,132,95.5,Mbarara North,68.2,in service
-dry,08:00,L28,Mbarara North,Mbarara South,132,61.9,Mbarara South,44.2,in service
-dry,08:00,L29,Masaka West,Mutukula,132,22.9,Mutukula,16.3,in service
+dry,08:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,75.6,Lugazi,54.0,in service
+dry,08:00,L13,Lugazi,Mukono,132,66.9,Mukono,47.8,in service
+dry,08:00,L14,Mukono,Namanve South,132,36.2,Namanve South,25.8,in service
+dry,08:00,L15,Namanve South,Lugogo,132,45.8,Namanve South,16.4,in service
+dry,08:00,L16,Namanve South,Luzira,132,20.5,Luzira,14.7,in service
+dry,08:00,L17,Kawanda,Kampala North,132,214.2,Kampala North,76.5,in service
+dry,08:00,L18,Kampala North,Lugogo,132,152.7,Lugogo,54.6,in service
+dry,08:00,L19,Kawanda,Mutundwe,132,182.3,Mutundwe,65.1,in service
+dry,08:00,L20,Mutundwe,Queensway,132,26.3,Queensway,9.4,in service
+dry,08:00,L21,Queensway,Lugogo,132,35.2,Queensway,12.6,in service
+dry,08:00,L22,Kawanda,Namungoona,132,30.7,Namungoona,21.9,in service
+dry,08:00,L23,Mutundwe,Entebbe,132,32.9,Entebbe,11.8,in service
+dry,08:00,L24,Kawanda,Kapeeka,132,16.5,Kapeeka,11.8,in service
+dry,08:00,L25,Mutundwe,Kabulasoke,132,31.0,Kabulasoke,22.1,in service
+dry,08:00,L26,Kabulasoke,Masaka West,132,29.2,Masaka West,20.9,in service
+dry,08:00,L27,Masaka West,Mbarara North,132,91.4,Mbarara North,65.3,in service
+dry,08:00,L28,Mbarara North,Mbarara South,132,58.7,Mbarara South,42.0,in service
+dry,08:00,L29,Masaka West,Mutukula,132,23.5,Mutukula,16.8,in service
 dry,08:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-dry,08:00,L31,Mirama,Kabale,132,9.9,Kabale,7.1,in service
-dry,08:00,L32,Mbarara North,Nkenda (Kasese),132,7.0,Nkenda (Kasese),5.0,in service
-dry,08:00,L33,Mbarara South,Nkenda (Kasese),132,3.4,Nkenda (Kasese),2.5,in service
-dry,08:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,132.0,Iganga,47.1,in service
-dry,08:00,L35,Iganga,Tororo,132,111.7,Tororo,39.9,in service
-dry,08:00,L36,Tororo,Lessos (Kenya),132,100,Lessos (Kenya),35.7,in service
-dry,08:00,L37,Tororo,Mbale,132,13.7,Tororo,9.8,in service
-dry,08:00,L38,Mbale,Opuyo (Soroti),132,28.9,Mbale,20.7,in service
-dry,08:00,L39,Opuyo (Soroti),Lira,132,50.4,Opuyo (Soroti),36.0,in service
-dry,08:00,L40,Opuyo (Soroti),Moroto,132,5.7,Moroto,4.1,in service
-dry,08:00,L41,Lira,Kole,132,1.0,Lira,0.4,in service
-dry,08:00,L42,Kole,Gulu,132,5.8,Kole,2.1,in service
-dry,08:00,L43,Gulu,Olwiyo,132,0.2,Olwiyo,0.1,in service
-dry,08:00,L44,Olwiyo,Nebbi,132,10.5,Nebbi,3.8,in service
-dry,08:00,L45,Nebbi,Arua,132,9.5,Arua,3.4,in service
-dry,08:00,L46,Gulu,Agago,132,26.9,Gulu,19.2,in service
+dry,08:00,L31,Mirama,Kabale,132,10.5,Kabale,7.5,in service
+dry,08:00,L32,Mbarara North,Nkenda (Kasese),132,5.1,Nkenda (Kasese),3.6,in service
+dry,08:00,L33,Mbarara South,Nkenda (Kasese),132,1.9,Nkenda (Kasese),1.4,in service
+dry,08:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,120.8,Iganga,43.1,in service
+dry,08:00,L35,Iganga,Tororo,132,104.7,Tororo,37.4,in service
+dry,08:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
+dry,08:00,L37,Tororo,Mbale,132,12.9,Tororo,9.2,in service
+dry,08:00,L38,Mbale,Opuyo (Soroti),132,26.4,Mbale,18.9,in service
+dry,08:00,L39,Opuyo (Soroti),Lira,132,43.2,Opuyo (Soroti),30.9,in service
+dry,08:00,L40,Opuyo (Soroti),Moroto,132,4.9,Moroto,3.5,in service
+dry,08:00,L41,Lira,Kole,132,3.9,Lira,1.4,in service
+dry,08:00,L42,Kole,Gulu,132,7.0,Kole,2.5,in service
+dry,08:00,L43,Gulu,Olwiyo,132,3.9,Olwiyo,1.4,in service
+dry,08:00,L44,Olwiyo,Nebbi,132,5.4,Nebbi,1.9,in service
+dry,08:00,L45,Nebbi,Arua,132,6.0,Arua,2.2,in service
+dry,08:00,L46,Gulu,Agago,132,27.4,Gulu,19.6,in service
 dry,08:00,U1,Bujagali,Tororo,220,,,,under construction
 dry,08:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 dry,08:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -109,52 +109,52 @@ dry,08:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 dry,08:00,P4,Olwiyo,Bibia,400,,,,planned
 dry,08:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 dry,08:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-dry,13:00,L1,Karuma,Kawanda,400,400.9,Kawanda,22.3,in service
-dry,13:00,L2,Karuma,Lira,400,69.7,Lira,3.9,in service
-dry,13:00,L3,Karuma,Olwiyo,400,9.3,Olwiyo,0.5,in service
-dry,13:00,L4,Bujagali,Kawanda,220,230.6,Kawanda,34.9,in service
-dry,13:00,L5,Kawanda,Masaka West,220,120.8,Masaka West,36.6,in service
-dry,13:00,L6,Mbarara South,Mirama,220,54.0,Mirama,16.4,in service
+dry,13:00,L1,Karuma,Kawanda,400,424.2,Kawanda,23.6,in service
+dry,13:00,L2,Karuma,Lira,400,56.2,Lira,3.1,in service
+dry,13:00,L3,Karuma,Olwiyo,400,0.4,Karuma,0.0,in service
+dry,13:00,L4,Bujagali,Kawanda,220,246.0,Kawanda,37.3,in service
+dry,13:00,L5,Kawanda,Masaka West,220,116.8,Masaka West,35.4,in service
+dry,13:00,L6,Mbarara South,Mirama,220,55.8,Mirama,16.9,in service
 dry,13:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-dry,13:00,L8,Nkenda (Kasese),Fort Portal,220,1.9,Fort Portal,0.6,in service
-dry,13:00,L9,Fort Portal,Hoima,220,5.5,Fort Portal,1.7,in service
-dry,13:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,160.7,Owen Falls (Nalubaale/Kiira),57.4,in service
+dry,13:00,L8,Nkenda (Kasese),Fort Portal,220,2.3,Fort Portal,0.7,in service
+dry,13:00,L9,Fort Portal,Hoima,220,4.6,Fort Portal,1.4,in service
+dry,13:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,145.2,Owen Falls (Nalubaale/Kiira),51.9,in service
 dry,13:00,L11,Isimba,Bujagali,132,161.2,Bujagali,57.6,in service
-dry,13:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,74.1,Lugazi,53.0,in service
-dry,13:00,L13,Lugazi,Mukono,132,65.0,Mukono,46.4,in service
-dry,13:00,L14,Mukono,Namanve South,132,35.0,Namanve South,25.0,in service
-dry,13:00,L15,Namanve South,Lugogo,132,45.0,Namanve South,16.1,in service
-dry,13:00,L16,Namanve South,Luzira,132,20.0,Luzira,14.3,in service
-dry,13:00,L17,Kawanda,Kampala North,132,209.0,Kampala North,74.6,in service
-dry,13:00,L18,Kampala North,Lugogo,132,149.0,Lugogo,53.2,in service
-dry,13:00,L19,Kawanda,Mutundwe,132,176.5,Mutundwe,63.0,in service
-dry,13:00,L20,Mutundwe,Queensway,132,25.9,Queensway,9.3,in service
-dry,13:00,L21,Queensway,Lugogo,132,34.0,Queensway,12.2,in service
-dry,13:00,L22,Kawanda,Namungoona,132,30.0,Namungoona,21.4,in service
-dry,13:00,L23,Mutundwe,Entebbe,132,30.0,Entebbe,10.7,in service
-dry,13:00,L24,Kawanda,Kapeeka,132,5.3,Kapeeka,3.8,in service
-dry,13:00,L25,Mutundwe,Kabulasoke,132,30.6,Kabulasoke,21.9,in service
-dry,13:00,L26,Kabulasoke,Masaka West,132,35.4,Masaka West,25.3,in service
-dry,13:00,L27,Masaka West,Mbarara North,132,101.2,Mbarara North,72.3,in service
-dry,13:00,L28,Mbarara North,Mbarara South,132,64.7,Mbarara South,46.2,in service
-dry,13:00,L29,Masaka West,Mutukula,132,23.0,Mutukula,16.4,in service
+dry,13:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,79.8,Lugazi,57.0,in service
+dry,13:00,L13,Lugazi,Mukono,132,70.3,Mukono,50.2,in service
+dry,13:00,L14,Mukono,Namanve South,132,38.1,Namanve South,27.2,in service
+dry,13:00,L15,Namanve South,Lugogo,132,48.0,Namanve South,17.1,in service
+dry,13:00,L16,Namanve South,Luzira,132,21.5,Luzira,15.4,in service
+dry,13:00,L17,Kawanda,Kampala North,132,223.6,Kampala North,79.9,in service
+dry,13:00,L18,Kampala North,Lugogo,132,159.0,Lugogo,56.8,in service
+dry,13:00,L19,Kawanda,Mutundwe,132,189.4,Mutundwe,67.6,in service
+dry,13:00,L20,Mutundwe,Queensway,132,28.8,Queensway,10.3,in service
+dry,13:00,L21,Queensway,Lugogo,132,35.8,Queensway,12.8,in service
+dry,13:00,L22,Kawanda,Namungoona,132,32.2,Namungoona,23.0,in service
+dry,13:00,L23,Mutundwe,Entebbe,132,34.6,Entebbe,12.3,in service
+dry,13:00,L24,Kawanda,Kapeeka,132,11.5,Kapeeka,8.2,in service
+dry,13:00,L25,Mutundwe,Kabulasoke,132,29.3,Kabulasoke,20.9,in service
+dry,13:00,L26,Kabulasoke,Masaka West,132,33.2,Masaka West,23.7,in service
+dry,13:00,L27,Masaka West,Mbarara North,132,96.8,Mbarara North,69.2,in service
+dry,13:00,L28,Mbarara North,Mbarara South,132,61.4,Mbarara South,43.8,in service
+dry,13:00,L29,Masaka West,Mutukula,132,23.6,Mutukula,16.9,in service
 dry,13:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-dry,13:00,L31,Mirama,Kabale,132,10.5,Kabale,7.5,in service
-dry,13:00,L32,Mbarara North,Nkenda (Kasese),132,8.5,Nkenda (Kasese),6.1,in service
-dry,13:00,L33,Mbarara South,Nkenda (Kasese),132,4.8,Nkenda (Kasese),3.4,in service
-dry,13:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,126.1,Iganga,45.0,in service
-dry,13:00,L35,Iganga,Tororo,132,107.4,Tororo,38.4,in service
+dry,13:00,L31,Mirama,Kabale,132,11.1,Kabale,8.0,in service
+dry,13:00,L32,Mbarara North,Nkenda (Kasese),132,6.6,Nkenda (Kasese),4.7,in service
+dry,13:00,L33,Mbarara South,Nkenda (Kasese),132,3.2,Nkenda (Kasese),2.3,in service
+dry,13:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,114.1,Iganga,40.8,in service
+dry,13:00,L35,Iganga,Tororo,132,99.9,Tororo,35.7,in service
 dry,13:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-dry,13:00,L37,Tororo,Mbale,132,12.3,Tororo,8.8,in service
-dry,13:00,L38,Mbale,Opuyo (Soroti),132,28.7,Mbale,20.5,in service
-dry,13:00,L39,Opuyo (Soroti),Lira,132,48.3,Opuyo (Soroti),34.5,in service
-dry,13:00,L40,Opuyo (Soroti),Moroto,132,6.0,Moroto,4.3,in service
-dry,13:00,L41,Lira,Kole,132,0.6,Lira,0.2,in service
-dry,13:00,L42,Kole,Gulu,132,5.6,Kole,2.0,in service
-dry,13:00,L43,Gulu,Olwiyo,132,0.9,Gulu,0.3,in service
-dry,13:00,L44,Olwiyo,Nebbi,132,5.4,Nebbi,1.9,in service
-dry,13:00,L45,Nebbi,Arua,132,10.1,Arua,3.6,in service
-dry,13:00,L46,Gulu,Agago,132,26.6,Gulu,19.0,in service
+dry,13:00,L37,Tororo,Mbale,132,11.6,Tororo,8.3,in service
+dry,13:00,L38,Mbale,Opuyo (Soroti),132,26.3,Mbale,18.8,in service
+dry,13:00,L39,Opuyo (Soroti),Lira,132,41.0,Opuyo (Soroti),29.3,in service
+dry,13:00,L40,Opuyo (Soroti),Moroto,132,5.1,Moroto,3.6,in service
+dry,13:00,L41,Lira,Kole,132,3.5,Lira,1.3,in service
+dry,13:00,L42,Kole,Gulu,132,6.9,Kole,2.5,in service
+dry,13:00,L43,Gulu,Olwiyo,132,3.0,Olwiyo,1.1,in service
+dry,13:00,L44,Olwiyo,Nebbi,132,0.1,Nebbi,0.0,in service
+dry,13:00,L45,Nebbi,Arua,132,6.5,Arua,2.3,in service
+dry,13:00,L46,Gulu,Agago,132,27.2,Gulu,19.4,in service
 dry,13:00,U1,Bujagali,Tororo,220,,,,under construction
 dry,13:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 dry,13:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -164,52 +164,52 @@ dry,13:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 dry,13:00,P4,Olwiyo,Bibia,400,,,,planned
 dry,13:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 dry,13:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-dry,20:00,L1,Karuma,Kawanda,400,424.2,Kawanda,23.6,in service
-dry,20:00,L2,Karuma,Lira,400,85.6,Lira,4.8,in service
-dry,20:00,L3,Karuma,Olwiyo,400,30.2,Olwiyo,1.7,in service
-dry,20:00,L4,Bujagali,Kawanda,220,337.9,Kawanda,51.2,in service
-dry,20:00,L5,Kawanda,Masaka West,220,149.9,Masaka West,45.4,in service
-dry,20:00,L6,Mbarara South,Mirama,220,57.6,Mirama,17.5,in service
+dry,20:00,L1,Karuma,Kawanda,400,452.0,Kawanda,25.1,in service
+dry,20:00,L2,Karuma,Lira,400,69.6,Lira,3.9,in service
+dry,20:00,L3,Karuma,Olwiyo,400,18.4,Olwiyo,1.0,in service
+dry,20:00,L4,Bujagali,Kawanda,220,356.0,Kawanda,53.9,in service
+dry,20:00,L5,Kawanda,Masaka West,220,145.1,Masaka West,44.0,in service
+dry,20:00,L6,Mbarara South,Mirama,220,59.7,Mirama,18.1,in service
 dry,20:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-dry,20:00,L8,Nkenda (Kasese),Fort Portal,220,8.6,Fort Portal,2.6,in service
-dry,20:00,L9,Fort Portal,Hoima,220,1.7,Fort Portal,0.5,in service
-dry,20:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,70.6,Owen Falls (Nalubaale/Kiira),25.2,in service
+dry,20:00,L8,Nkenda (Kasese),Fort Portal,220,9.0,Fort Portal,2.7,in service
+dry,20:00,L9,Fort Portal,Hoima,220,0.6,Fort Portal,0.2,in service
+dry,20:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,52.6,Owen Falls (Nalubaale/Kiira),18.8,in service
 dry,20:00,L11,Isimba,Bujagali,132,168.5,Bujagali,60.2,in service
-dry,20:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,108.7,Lugazi,77.6,in service
-dry,20:00,L13,Lugazi,Mukono,132,96.6,Mukono,69.0,in service
-dry,20:00,L14,Mukono,Namanve South,132,60.9,Namanve South,43.5,in service
-dry,20:00,L15,Namanve South,Lugogo,132,34.2,Namanve South,12.2,in service
-dry,20:00,L16,Namanve South,Luzira,132,23.8,Luzira,17.0,in service
-dry,20:00,L17,Kawanda,Kampala North,132,239.9,Kampala North,85.7,in service
-dry,20:00,L18,Kampala North,Lugogo,132,168.5,Lugogo,60.2,in service
-dry,20:00,L19,Kawanda,Mutundwe,132,208.2,Mutundwe,74.4,in service
-dry,20:00,L20,Mutundwe,Queensway,132,20.4,Queensway,7.3,in service
-dry,20:00,L21,Queensway,Lugogo,132,51.0,Queensway,18.2,in service
-dry,20:00,L22,Kawanda,Namungoona,132,35.7,Namungoona,25.5,in service
-dry,20:00,L23,Mutundwe,Entebbe,132,35.7,Entebbe,12.7,in service
-dry,20:00,L24,Kawanda,Kapeeka,132,21.4,Kapeeka,15.3,in service
-dry,20:00,L25,Mutundwe,Kabulasoke,132,45.0,Kabulasoke,32.2,in service
-dry,20:00,L26,Kabulasoke,Masaka West,132,35.6,Masaka West,25.4,in service
-dry,20:00,L27,Masaka West,Mbarara North,132,123.8,Mbarara North,88.4,in service
-dry,20:00,L28,Mbarara North,Mbarara South,132,75.9,Mbarara South,54.2,in service
-dry,20:00,L29,Masaka West,Mutukula,132,23.6,Mutukula,16.8,in service
+dry,20:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,115.6,Lugazi,82.6,in service
+dry,20:00,L13,Lugazi,Mukono,132,103.3,Mukono,73.8,in service
+dry,20:00,L14,Mukono,Namanve South,132,64.9,Namanve South,46.4,in service
+dry,20:00,L15,Namanve South,Lugogo,132,37.6,Namanve South,13.4,in service
+dry,20:00,L16,Namanve South,Luzira,132,25.6,Luzira,18.3,in service
+dry,20:00,L17,Kawanda,Kampala North,132,257.0,Kampala North,91.8,in service
+dry,20:00,L18,Kampala North,Lugogo,132,180.2,Lugogo,64.4,in service
+dry,20:00,L19,Kawanda,Mutundwe,132,223.6,Mutundwe,79.9,in service
+dry,20:00,L20,Mutundwe,Queensway,132,23.9,Queensway,8.5,in service
+dry,20:00,L21,Queensway,Lugogo,132,53.0,Queensway,18.9,in service
+dry,20:00,L22,Kawanda,Namungoona,132,38.4,Namungoona,27.4,in service
+dry,20:00,L23,Mutundwe,Entebbe,132,41.2,Entebbe,14.7,in service
+dry,20:00,L24,Kawanda,Kapeeka,132,28.7,Kapeeka,20.5,in service
+dry,20:00,L25,Mutundwe,Kabulasoke,132,43.4,Kabulasoke,31.0,in service
+dry,20:00,L26,Kabulasoke,Masaka West,132,33.1,Masaka West,23.6,in service
+dry,20:00,L27,Masaka West,Mbarara North,132,118.6,Mbarara North,84.7,in service
+dry,20:00,L28,Mbarara North,Mbarara South,132,71.9,Mbarara South,51.4,in service
+dry,20:00,L29,Masaka West,Mutukula,132,24.3,Mutukula,17.4,in service
 dry,20:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-dry,20:00,L31,Mirama,Kabale,132,13.0,Kabale,9.3,in service
-dry,20:00,L32,Mbarara North,Nkenda (Kasese),132,14.6,Nkenda (Kasese),10.4,in service
-dry,20:00,L33,Mbarara South,Nkenda (Kasese),132,10.1,Nkenda (Kasese),7.2,in service
-dry,20:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,167.0,Iganga,59.6,in service
-dry,20:00,L35,Iganga,Tororo,132,136.3,Tororo,48.7,in service
+dry,20:00,L31,Mirama,Kabale,132,13.7,Kabale,9.8,in service
+dry,20:00,L32,Mbarara North,Nkenda (Kasese),132,12.3,Nkenda (Kasese),8.8,in service
+dry,20:00,L33,Mbarara South,Nkenda (Kasese),132,8.1,Nkenda (Kasese),5.8,in service
+dry,20:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,152.8,Iganga,54.6,in service
+dry,20:00,L35,Iganga,Tororo,132,127.4,Tororo,45.5,in service
 dry,20:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-dry,20:00,L37,Tororo,Mbale,132,5.3,Tororo,3.8,in service
-dry,20:00,L38,Mbale,Opuyo (Soroti),132,26.4,Mbale,18.9,in service
-dry,20:00,L39,Opuyo (Soroti),Lira,132,57.3,Opuyo (Soroti),41.0,in service
-dry,20:00,L40,Opuyo (Soroti),Moroto,132,7.1,Moroto,5.1,in service
-dry,20:00,L41,Lira,Kole,132,2.1,Kole,0.8,in service
-dry,20:00,L42,Kole,Gulu,132,3.8,Kole,1.4,in service
-dry,20:00,L43,Gulu,Olwiyo,132,4.3,Gulu,1.5,in service
-dry,20:00,L44,Olwiyo,Nebbi,132,22.3,Nebbi,8.0,in service
-dry,20:00,L45,Nebbi,Arua,132,12.8,Arua,4.6,in service
-dry,20:00,L46,Gulu,Agago,132,25.7,Gulu,18.3,in service
+dry,20:00,L37,Tororo,Mbale,132,4.3,Tororo,3.1,in service
+dry,20:00,L38,Mbale,Opuyo (Soroti),132,23.5,Mbale,16.8,in service
+dry,20:00,L39,Opuyo (Soroti),Lira,132,48.5,Opuyo (Soroti),34.7,in service
+dry,20:00,L40,Opuyo (Soroti),Moroto,132,6.1,Moroto,4.3,in service
+dry,20:00,L41,Lira,Kole,132,1.2,Lira,0.4,in service
+dry,20:00,L42,Kole,Gulu,132,5.2,Kole,1.8,in service
+dry,20:00,L43,Gulu,Olwiyo,132,0.6,Olwiyo,0.2,in service
+dry,20:00,L44,Olwiyo,Nebbi,132,15.9,Nebbi,5.7,in service
+dry,20:00,L45,Nebbi,Arua,132,8.5,Arua,3.0,in service
+dry,20:00,L46,Gulu,Agago,132,26.4,Gulu,18.8,in service
 dry,20:00,U1,Bujagali,Tororo,220,,,,under construction
 dry,20:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 dry,20:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -219,52 +219,52 @@ dry,20:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 dry,20:00,P4,Olwiyo,Bibia,400,,,,planned
 dry,20:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 dry,20:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-rainy,03:00,L1,Karuma,Kawanda,400,238.8,Kawanda,13.3,in service
-rainy,03:00,L2,Karuma,Lira,400,42.2,Lira,2.3,in service
-rainy,03:00,L3,Karuma,Olwiyo,400,13.3,Karuma,0.7,in service
-rainy,03:00,L4,Bujagali,Kawanda,220,163.0,Kawanda,24.7,in service
-rainy,03:00,L5,Kawanda,Masaka West,220,49.0,Masaka West,14.8,in service
-rainy,03:00,L6,Mbarara South,Mirama,220,43.9,Mirama,13.3,in service
+rainy,03:00,L1,Karuma,Kawanda,400,255.6,Kawanda,14.2,in service
+rainy,03:00,L2,Karuma,Lira,400,31.2,Lira,1.7,in service
+rainy,03:00,L3,Karuma,Olwiyo,400,19.0,Karuma,1.1,in service
+rainy,03:00,L4,Bujagali,Kawanda,220,173.1,Kawanda,26.2,in service
+rainy,03:00,L5,Kawanda,Masaka West,220,46.2,Masaka West,14.0,in service
+rainy,03:00,L6,Mbarara South,Mirama,220,45.1,Mirama,13.7,in service
 rainy,03:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-rainy,03:00,L8,Nkenda (Kasese),Fort Portal,220,22.9,Nkenda (Kasese),6.9,in service
-rainy,03:00,L9,Fort Portal,Hoima,220,19.3,Fort Portal,5.8,in service
-rainy,03:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,122.0,Owen Falls (Nalubaale/Kiira),43.6,in service
+rainy,03:00,L8,Nkenda (Kasese),Fort Portal,220,22.6,Nkenda (Kasese),6.9,in service
+rainy,03:00,L9,Fort Portal,Hoima,220,18.6,Fort Portal,5.6,in service
+rainy,03:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,111.8,Owen Falls (Nalubaale/Kiira),39.9,in service
 rainy,03:00,L11,Isimba,Bujagali,132,109.9,Bujagali,39.3,in service
-rainy,03:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,49.9,Lugazi,35.7,in service
-rainy,03:00,L13,Lugazi,Mukono,132,45.4,Mukono,32.4,in service
-rainy,03:00,L14,Mukono,Namanve South,132,24.7,Namanve South,17.6,in service
-rainy,03:00,L15,Namanve South,Lugogo,132,30.5,Namanve South,10.9,in service
-rainy,03:00,L16,Namanve South,Luzira,132,13.8,Luzira,9.9,in service
-rainy,03:00,L17,Kawanda,Kampala North,132,140.7,Kampala North,50.2,in service
-rainy,03:00,L18,Kampala North,Lugogo,132,99.3,Lugogo,35.5,in service
-rainy,03:00,L19,Kawanda,Mutundwe,132,116.9,Mutundwe,41.8,in service
-rainy,03:00,L20,Mutundwe,Queensway,132,20.9,Queensway,7.5,in service
-rainy,03:00,L21,Queensway,Lugogo,132,20.5,Queensway,7.3,in service
-rainy,03:00,L22,Kawanda,Namungoona,132,20.7,Namungoona,14.8,in service
-rainy,03:00,L23,Mutundwe,Entebbe,132,20.7,Entebbe,7.4,in service
-rainy,03:00,L24,Kawanda,Kapeeka,132,12.4,Kapeeka,8.8,in service
-rainy,03:00,L25,Mutundwe,Kabulasoke,132,13.2,Kabulasoke,9.4,in service
-rainy,03:00,L26,Kabulasoke,Masaka West,132,7.7,Masaka West,5.5,in service
-rainy,03:00,L27,Masaka West,Mbarara North,132,12.5,Mbarara North,8.9,in service
-rainy,03:00,L28,Mbarara North,Mbarara South,132,16.9,Mbarara South,12.1,in service
-rainy,03:00,L29,Masaka West,Mutukula,132,22.1,Mutukula,15.8,in service
+rainy,03:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,53.7,Lugazi,38.3,in service
+rainy,03:00,L13,Lugazi,Mukono,132,48.9,Mukono,35.0,in service
+rainy,03:00,L14,Mukono,Namanve South,132,26.7,Namanve South,19.1,in service
+rainy,03:00,L15,Namanve South,Lugogo,132,32.7,Namanve South,11.7,in service
+rainy,03:00,L16,Namanve South,Luzira,132,14.9,Luzira,10.6,in service
+rainy,03:00,L17,Kawanda,Kampala North,132,151.1,Kampala North,54.0,in service
+rainy,03:00,L18,Kampala North,Lugogo,132,106.5,Lugogo,38.0,in service
+rainy,03:00,L19,Kawanda,Mutundwe,132,125.7,Mutundwe,44.9,in service
+rainy,03:00,L20,Mutundwe,Queensway,132,22.8,Queensway,8.1,in service
+rainy,03:00,L21,Queensway,Lugogo,132,21.8,Queensway,7.8,in service
+rainy,03:00,L22,Kawanda,Namungoona,132,22.2,Namungoona,15.9,in service
+rainy,03:00,L23,Mutundwe,Entebbe,132,23.9,Entebbe,8.5,in service
+rainy,03:00,L24,Kawanda,Kapeeka,132,16.7,Kapeeka,11.9,in service
+rainy,03:00,L25,Mutundwe,Kabulasoke,132,12.2,Kabulasoke,8.7,in service
+rainy,03:00,L26,Kabulasoke,Masaka West,132,6.2,Masaka West,4.5,in service
+rainy,03:00,L27,Masaka West,Mbarara North,132,9.5,Mbarara North,6.8,in service
+rainy,03:00,L28,Mbarara North,Mbarara South,132,14.9,Mbarara South,10.7,in service
+rainy,03:00,L29,Masaka West,Mutukula,132,22.5,Mutukula,16.1,in service
 rainy,03:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-rainy,03:00,L31,Mirama,Kabale,132,4.4,Kabale,3.1,in service
-rainy,03:00,L32,Mbarara North,Nkenda (Kasese),132,23.7,Mbarara North,16.9,in service
-rainy,03:00,L33,Mbarara South,Nkenda (Kasese),132,24.0,Mbarara South,17.1,in service
-rainy,03:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,119.1,Iganga,42.5,in service
-rainy,03:00,L35,Iganga,Tororo,132,103.4,Tororo,36.9,in service
+rainy,03:00,L31,Mirama,Kabale,132,4.8,Kabale,3.4,in service
+rainy,03:00,L32,Mbarara North,Nkenda (Kasese),132,25.4,Mbarara North,18.1,in service
+rainy,03:00,L33,Mbarara South,Nkenda (Kasese),132,24.8,Mbarara South,17.7,in service
+rainy,03:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,111.5,Iganga,39.8,in service
+rainy,03:00,L35,Iganga,Tororo,132,98.9,Tororo,35.3,in service
 rainy,03:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-rainy,03:00,L37,Tororo,Mbale,132,20.7,Tororo,14.8,in service
-rainy,03:00,L38,Mbale,Opuyo (Soroti),132,22.1,Mbale,15.8,in service
-rainy,03:00,L39,Opuyo (Soroti),Lira,132,40.0,Opuyo (Soroti),28.6,in service
-rainy,03:00,L40,Opuyo (Soroti),Moroto,132,4.1,Moroto,3.0,in service
-rainy,03:00,L41,Lira,Kole,132,13.0,Lira,4.6,in service
-rainy,03:00,L42,Kole,Gulu,132,16.4,Kole,5.9,in service
-rainy,03:00,L43,Gulu,Olwiyo,132,23.4,Olwiyo,8.4,in service
-rainy,03:00,L44,Olwiyo,Nebbi,132,8.0,Nebbi,2.9,in service
-rainy,03:00,L45,Nebbi,Arua,132,2.5,Arua,0.9,in service
-rainy,03:00,L46,Gulu,Agago,132,55.0,Gulu,39.3,in service
+rainy,03:00,L37,Tororo,Mbale,132,19.6,Tororo,14.0,in service
+rainy,03:00,L38,Mbale,Opuyo (Soroti),132,19.7,Mbale,14.1,in service
+rainy,03:00,L39,Opuyo (Soroti),Lira,132,34.3,Opuyo (Soroti),24.5,in service
+rainy,03:00,L40,Opuyo (Soroti),Moroto,132,3.5,Moroto,2.5,in service
+rainy,03:00,L41,Lira,Kole,132,16.0,Lira,5.7,in service
+rainy,03:00,L42,Kole,Gulu,132,18.3,Kole,6.5,in service
+rainy,03:00,L43,Gulu,Olwiyo,132,25.1,Olwiyo,9.0,in service
+rainy,03:00,L44,Olwiyo,Nebbi,132,4.3,Nebbi,1.6,in service
+rainy,03:00,L45,Nebbi,Arua,132,0.1,Arua,0.0,in service
+rainy,03:00,L46,Gulu,Agago,132,55.4,Gulu,39.6,in service
 rainy,03:00,U1,Bujagali,Tororo,220,,,,under construction
 rainy,03:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 rainy,03:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -274,52 +274,52 @@ rainy,03:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 rainy,03:00,P4,Olwiyo,Bibia,400,,,,planned
 rainy,03:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 rainy,03:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-rainy,08:00,L1,Karuma,Kawanda,400,337.1,Kawanda,18.7,in service
-rainy,08:00,L2,Karuma,Lira,400,57.5,Lira,3.2,in service
-rainy,08:00,L3,Karuma,Olwiyo,400,7.1,Karuma,0.4,in service
-rainy,08:00,L4,Bujagali,Kawanda,220,224.9,Kawanda,34.1,in service
-rainy,08:00,L5,Kawanda,Masaka West,220,79.1,Masaka West,24.0,in service
-rainy,08:00,L6,Mbarara South,Mirama,220,48.9,Mirama,14.8,in service
+rainy,08:00,L1,Karuma,Kawanda,400,359.6,Kawanda,20.0,in service
+rainy,08:00,L2,Karuma,Lira,400,43.5,Lira,2.4,in service
+rainy,08:00,L3,Karuma,Olwiyo,400,15.6,Karuma,0.9,in service
+rainy,08:00,L4,Bujagali,Kawanda,220,239.5,Kawanda,36.3,in service
+rainy,08:00,L5,Kawanda,Masaka West,220,75.2,Masaka West,22.8,in service
+rainy,08:00,L6,Mbarara South,Mirama,220,50.5,Mirama,15.3,in service
 rainy,08:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-rainy,08:00,L8,Nkenda (Kasese),Fort Portal,220,13.7,Nkenda (Kasese),4.2,in service
-rainy,08:00,L9,Fort Portal,Hoima,220,14.0,Fort Portal,4.3,in service
-rainy,08:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,166.3,Owen Falls (Nalubaale/Kiira),59.4,in service
+rainy,08:00,L8,Nkenda (Kasese),Fort Portal,220,13.3,Nkenda (Kasese),4.0,in service
+rainy,08:00,L9,Fort Portal,Hoima,220,13.1,Fort Portal,4.0,in service
+rainy,08:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,151.8,Owen Falls (Nalubaale/Kiira),54.2,in service
 rainy,08:00,L11,Isimba,Bujagali,132,161.2,Bujagali,57.6,in service
-rainy,08:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,70.3,Lugazi,50.2,in service
-rainy,08:00,L13,Lugazi,Mukono,132,61.8,Mukono,44.2,in service
-rainy,08:00,L14,Mukono,Namanve South,132,33.3,Namanve South,23.8,in service
-rainy,08:00,L15,Namanve South,Lugogo,132,42.9,Namanve South,15.3,in service
-rainy,08:00,L16,Namanve South,Luzira,132,19.0,Luzira,13.6,in service
-rainy,08:00,L17,Kawanda,Kampala North,132,195.1,Kampala North,69.7,in service
-rainy,08:00,L18,Kampala North,Lugogo,132,138.0,Lugogo,49.3,in service
-rainy,08:00,L19,Kawanda,Mutundwe,132,162.4,Mutundwe,58.0,in service
-rainy,08:00,L20,Mutundwe,Queensway,132,28.6,Queensway,10.2,in service
-rainy,08:00,L21,Queensway,Lugogo,132,28.5,Queensway,10.2,in service
-rainy,08:00,L22,Kawanda,Namungoona,132,28.6,Namungoona,20.4,in service
-rainy,08:00,L23,Mutundwe,Entebbe,132,28.6,Entebbe,10.2,in service
-rainy,08:00,L24,Kawanda,Kapeeka,132,11.2,Kapeeka,8.0,in service
-rainy,08:00,L25,Mutundwe,Kabulasoke,132,19.6,Kabulasoke,14.0,in service
-rainy,08:00,L26,Kabulasoke,Masaka West,132,17.9,Masaka West,12.8,in service
-rainy,08:00,L27,Masaka West,Mbarara North,132,43.7,Mbarara North,31.2,in service
-rainy,08:00,L28,Mbarara North,Mbarara South,132,32.4,Mbarara South,23.1,in service
-rainy,08:00,L29,Masaka West,Mutukula,132,22.9,Mutukula,16.3,in service
+rainy,08:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,75.6,Lugazi,54.0,in service
+rainy,08:00,L13,Lugazi,Mukono,132,66.9,Mukono,47.8,in service
+rainy,08:00,L14,Mukono,Namanve South,132,36.2,Namanve South,25.9,in service
+rainy,08:00,L15,Namanve South,Lugogo,132,45.8,Namanve South,16.4,in service
+rainy,08:00,L16,Namanve South,Luzira,132,20.5,Luzira,14.7,in service
+rainy,08:00,L17,Kawanda,Kampala North,132,209.3,Kampala North,74.8,in service
+rainy,08:00,L18,Kampala North,Lugogo,132,147.9,Lugogo,52.8,in service
+rainy,08:00,L19,Kawanda,Mutundwe,132,174.5,Mutundwe,62.3,in service
+rainy,08:00,L20,Mutundwe,Queensway,132,31.1,Queensway,11.1,in service
+rainy,08:00,L21,Queensway,Lugogo,132,30.4,Queensway,10.8,in service
+rainy,08:00,L22,Kawanda,Namungoona,132,30.7,Namungoona,21.9,in service
+rainy,08:00,L23,Mutundwe,Entebbe,132,32.9,Entebbe,11.8,in service
+rainy,08:00,L24,Kawanda,Kapeeka,132,17.1,Kapeeka,12.2,in service
+rainy,08:00,L25,Mutundwe,Kabulasoke,132,18.3,Kabulasoke,13.1,in service
+rainy,08:00,L26,Kabulasoke,Masaka West,132,15.9,Masaka West,11.4,in service
+rainy,08:00,L27,Masaka West,Mbarara North,132,39.5,Mbarara North,28.2,in service
+rainy,08:00,L28,Mbarara North,Mbarara South,132,29.4,Mbarara South,21.0,in service
+rainy,08:00,L29,Masaka West,Mutukula,132,23.5,Mutukula,16.8,in service
 rainy,08:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-rainy,08:00,L31,Mirama,Kabale,132,7.8,Kabale,5.6,in service
-rainy,08:00,L32,Mbarara North,Nkenda (Kasese),132,15.3,Mbarara North,11.0,in service
-rainy,08:00,L33,Mbarara South,Nkenda (Kasese),132,16.7,Mbarara South,11.9,in service
-rainy,08:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,130.0,Iganga,46.4,in service
-rainy,08:00,L35,Iganga,Tororo,132,109.3,Tororo,39.0,in service
+rainy,08:00,L31,Mirama,Kabale,132,8.4,Kabale,6.0,in service
+rainy,08:00,L32,Mbarara North,Nkenda (Kasese),132,17.4,Mbarara North,12.4,in service
+rainy,08:00,L33,Mbarara South,Nkenda (Kasese),132,18.0,Mbarara South,12.8,in service
+rainy,08:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,118.8,Iganga,42.4,in service
+rainy,08:00,L35,Iganga,Tororo,132,102.4,Tororo,36.6,in service
 rainy,08:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-rainy,08:00,L37,Tororo,Mbale,132,16.9,Tororo,12.1,in service
-rainy,08:00,L38,Mbale,Opuyo (Soroti),132,24.8,Mbale,17.7,in service
-rainy,08:00,L39,Opuyo (Soroti),Lira,132,46.6,Opuyo (Soroti),33.3,in service
-rainy,08:00,L40,Opuyo (Soroti),Moroto,132,5.7,Moroto,4.1,in service
-rainy,08:00,L41,Lira,Kole,132,10.1,Lira,3.6,in service
-rainy,08:00,L42,Kole,Gulu,132,14.8,Kole,5.3,in service
-rainy,08:00,L43,Gulu,Olwiyo,132,17.9,Olwiyo,6.4,in service
-rainy,08:00,L44,Olwiyo,Nebbi,132,7.9,Nebbi,2.8,in service
-rainy,08:00,L45,Nebbi,Arua,132,6.2,Arua,2.2,in service
-rainy,08:00,L46,Gulu,Agago,132,53.7,Gulu,38.3,in service
+rainy,08:00,L37,Tororo,Mbale,132,16.0,Tororo,11.4,in service
+rainy,08:00,L38,Mbale,Opuyo (Soroti),132,22.3,Mbale,15.9,in service
+rainy,08:00,L39,Opuyo (Soroti),Lira,132,39.4,Opuyo (Soroti),28.1,in service
+rainy,08:00,L40,Opuyo (Soroti),Moroto,132,4.9,Moroto,3.5,in service
+rainy,08:00,L41,Lira,Kole,132,13.7,Lira,4.9,in service
+rainy,08:00,L42,Kole,Gulu,132,16.9,Kole,6.0,in service
+rainy,08:00,L43,Gulu,Olwiyo,132,20.9,Olwiyo,7.5,in service
+rainy,08:00,L44,Olwiyo,Nebbi,132,2.8,Nebbi,1.0,in service
+rainy,08:00,L45,Nebbi,Arua,132,2.8,Arua,1.0,in service
+rainy,08:00,L46,Gulu,Agago,132,54.2,Gulu,38.7,in service
 rainy,08:00,U1,Bujagali,Tororo,220,,,,under construction
 rainy,08:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 rainy,08:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -329,52 +329,52 @@ rainy,08:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 rainy,08:00,P4,Olwiyo,Bibia,400,,,,planned
 rainy,08:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 rainy,08:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-rainy,13:00,L1,Karuma,Kawanda,400,358.0,Kawanda,19.9,in service
-rainy,13:00,L2,Karuma,Lira,400,57.9,Lira,3.2,in service
-rainy,13:00,L3,Karuma,Olwiyo,400,10.3,Karuma,0.6,in service
-rainy,13:00,L4,Bujagali,Kawanda,220,225.9,Kawanda,34.2,in service
-rainy,13:00,L5,Kawanda,Masaka West,220,82.6,Masaka West,25.0,in service
-rainy,13:00,L6,Mbarara South,Mirama,220,49.8,Mirama,15.1,in service
+rainy,13:00,L1,Karuma,Kawanda,400,381.3,Kawanda,21.2,in service
+rainy,13:00,L2,Karuma,Lira,400,43.5,Lira,2.4,in service
+rainy,13:00,L3,Karuma,Olwiyo,400,19.3,Karuma,1.1,in service
+rainy,13:00,L4,Bujagali,Kawanda,220,241.3,Kawanda,36.6,in service
+rainy,13:00,L5,Kawanda,Masaka West,220,78.6,Masaka West,23.8,in service
+rainy,13:00,L6,Mbarara South,Mirama,220,51.5,Mirama,15.6,in service
 rainy,13:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-rainy,13:00,L8,Nkenda (Kasese),Fort Portal,220,12.0,Nkenda (Kasese),3.6,in service
-rainy,13:00,L9,Fort Portal,Hoima,220,13.1,Fort Portal,4.0,in service
-rainy,13:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,165.3,Owen Falls (Nalubaale/Kiira),59.0,in service
+rainy,13:00,L8,Nkenda (Kasese),Fort Portal,220,11.7,Nkenda (Kasese),3.5,in service
+rainy,13:00,L9,Fort Portal,Hoima,220,12.1,Fort Portal,3.7,in service
+rainy,13:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,149.9,Owen Falls (Nalubaale/Kiira),53.5,in service
 rainy,13:00,L11,Isimba,Bujagali,132,161.2,Bujagali,57.6,in service
-rainy,13:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,72.5,Lugazi,51.8,in service
-rainy,13:00,L13,Lugazi,Mukono,132,63.3,Mukono,45.2,in service
-rainy,13:00,L14,Mukono,Namanve South,132,33.3,Namanve South,23.8,in service
-rainy,13:00,L15,Namanve South,Lugogo,132,46.6,Namanve South,16.7,in service
-rainy,13:00,L16,Namanve South,Luzira,132,20.0,Luzira,14.3,in service
-rainy,13:00,L17,Kawanda,Kampala North,132,205.0,Kampala North,73.2,in service
-rainy,13:00,L18,Kampala North,Lugogo,132,145.0,Lugogo,51.8,in service
-rainy,13:00,L19,Kawanda,Mutundwe,132,169.8,Mutundwe,60.6,in service
-rainy,13:00,L20,Mutundwe,Queensway,132,31.5,Queensway,11.3,in service
-rainy,13:00,L21,Queensway,Lugogo,132,28.5,Queensway,10.2,in service
-rainy,13:00,L22,Kawanda,Namungoona,132,30.0,Namungoona,21.4,in service
-rainy,13:00,L23,Mutundwe,Entebbe,132,30.0,Entebbe,10.7,in service
-rainy,13:00,L24,Kawanda,Kapeeka,132,6.6,Kapeeka,4.7,in service
-rainy,13:00,L25,Mutundwe,Kabulasoke,132,18.3,Kabulasoke,13.1,in service
-rainy,13:00,L26,Kabulasoke,Masaka West,132,21.7,Masaka West,15.5,in service
-rainy,13:00,L27,Masaka West,Mbarara North,132,49.3,Mbarara North,35.2,in service
-rainy,13:00,L28,Mbarara North,Mbarara South,132,35.2,Mbarara South,25.1,in service
-rainy,13:00,L29,Masaka West,Mutukula,132,23.0,Mutukula,16.4,in service
+rainy,13:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,78.1,Lugazi,55.8,in service
+rainy,13:00,L13,Lugazi,Mukono,132,68.7,Mukono,49.1,in service
+rainy,13:00,L14,Mukono,Namanve South,132,36.5,Namanve South,26.0,in service
+rainy,13:00,L15,Namanve South,Lugogo,132,49.6,Namanve South,17.7,in service
+rainy,13:00,L16,Namanve South,Luzira,132,21.5,Luzira,15.4,in service
+rainy,13:00,L17,Kawanda,Kampala North,132,219.9,Kampala North,78.5,in service
+rainy,13:00,L18,Kampala North,Lugogo,132,155.4,Lugogo,55.5,in service
+rainy,13:00,L19,Kawanda,Mutundwe,132,182.4,Mutundwe,65.1,in service
+rainy,13:00,L20,Mutundwe,Queensway,132,34.1,Queensway,12.2,in service
+rainy,13:00,L21,Queensway,Lugogo,132,30.4,Queensway,10.9,in service
+rainy,13:00,L22,Kawanda,Namungoona,132,32.2,Namungoona,23.0,in service
+rainy,13:00,L23,Mutundwe,Entebbe,132,34.6,Entebbe,12.3,in service
+rainy,13:00,L24,Kawanda,Kapeeka,132,12.8,Kapeeka,9.1,in service
+rainy,13:00,L25,Mutundwe,Kabulasoke,132,16.9,Kabulasoke,12.1,in service
+rainy,13:00,L26,Kabulasoke,Masaka West,132,19.6,Masaka West,14.0,in service
+rainy,13:00,L27,Masaka West,Mbarara North,132,45.0,Mbarara North,32.1,in service
+rainy,13:00,L28,Mbarara North,Mbarara South,132,32.0,Mbarara South,22.9,in service
+rainy,13:00,L29,Masaka West,Mutukula,132,23.6,Mutukula,16.9,in service
 rainy,13:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-rainy,13:00,L31,Mirama,Kabale,132,8.4,Kabale,6.0,in service
-rainy,13:00,L32,Mbarara North,Nkenda (Kasese),132,13.8,Mbarara North,9.9,in service
-rainy,13:00,L33,Mbarara South,Nkenda (Kasese),132,15.3,Mbarara South,11.0,in service
-rainy,13:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,124.4,Iganga,44.4,in service
-rainy,13:00,L35,Iganga,Tororo,132,105.1,Tororo,37.5,in service
+rainy,13:00,L31,Mirama,Kabale,132,9.0,Kabale,6.5,in service
+rainy,13:00,L32,Mbarara North,Nkenda (Kasese),132,16.0,Mbarara North,11.4,in service
+rainy,13:00,L33,Mbarara South,Nkenda (Kasese),132,16.7,Mbarara South,12.0,in service
+rainy,13:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,112.5,Iganga,40.2,in service
+rainy,13:00,L35,Iganga,Tororo,132,97.6,Tororo,34.9,in service
 rainy,13:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-rainy,13:00,L37,Tororo,Mbale,132,16.2,Tororo,11.6,in service
-rainy,13:00,L38,Mbale,Opuyo (Soroti),132,25.3,Mbale,18.1,in service
-rainy,13:00,L39,Opuyo (Soroti),Lira,132,45.6,Opuyo (Soroti),32.5,in service
-rainy,13:00,L40,Opuyo (Soroti),Moroto,132,6.0,Moroto,4.3,in service
-rainy,13:00,L41,Lira,Kole,132,9.6,Lira,3.4,in service
-rainy,13:00,L42,Kole,Gulu,132,14.6,Kole,5.2,in service
-rainy,13:00,L43,Gulu,Olwiyo,132,16.8,Olwiyo,6.0,in service
-rainy,13:00,L44,Olwiyo,Nebbi,132,3.5,Nebbi,1.2,in service
-rainy,13:00,L45,Nebbi,Arua,132,6.9,Arua,2.5,in service
-rainy,13:00,L46,Gulu,Agago,132,53.4,Gulu,38.2,in service
+rainy,13:00,L37,Tororo,Mbale,132,15.4,Tororo,11.0,in service
+rainy,13:00,L38,Mbale,Opuyo (Soroti),132,22.8,Mbale,16.3,in service
+rainy,13:00,L39,Opuyo (Soroti),Lira,132,38.2,Opuyo (Soroti),27.3,in service
+rainy,13:00,L40,Opuyo (Soroti),Moroto,132,5.1,Moroto,3.6,in service
+rainy,13:00,L41,Lira,Kole,132,13.4,Lira,4.8,in service
+rainy,13:00,L42,Kole,Gulu,132,16.7,Kole,6.0,in service
+rainy,13:00,L43,Gulu,Olwiyo,132,20.0,Olwiyo,7.1,in service
+rainy,13:00,L44,Olwiyo,Nebbi,132,1.9,Olwiyo,0.7,in service
+rainy,13:00,L45,Nebbi,Arua,132,3.3,Arua,1.2,in service
+rainy,13:00,L46,Gulu,Agago,132,54.0,Gulu,38.6,in service
 rainy,13:00,U1,Bujagali,Tororo,220,,,,under construction
 rainy,13:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 rainy,13:00,U3,Masaka West,Mbarara South,400,,,,under construction
@@ -384,52 +384,52 @@ rainy,13:00,P3,Mutukula,towards Mwanza (Tanzania),400,,,,planned
 rainy,13:00,P4,Olwiyo,Bibia,400,,,,planned
 rainy,13:00,P5,Bibia,"Nimule, towards Juba (South Sudan)",400,,,,planned
 rainy,13:00,P6,Nkenda (Kasese),towards Beni (DR Congo),220,,,,planned
-rainy,20:00,L1,Karuma,Kawanda,400,452.2,Kawanda,25.1,in service
-rainy,20:00,L2,Karuma,Lira,400,78.3,Lira,4.4,in service
-rainy,20:00,L3,Karuma,Olwiyo,400,9.5,Olwiyo,0.5,in service
-rainy,20:00,L4,Bujagali,Kawanda,220,274.6,Kawanda,41.6,in service
-rainy,20:00,L5,Kawanda,Masaka West,220,111.3,Masaka West,33.7,in service
-rainy,20:00,L6,Mbarara South,Mirama,220,53.4,Mirama,16.2,in service
+rainy,20:00,L1,Karuma,Kawanda,400,480.1,Kawanda,26.7,in service
+rainy,20:00,L2,Karuma,Lira,400,61.4,Lira,3.4,in service
+rainy,20:00,L3,Karuma,Olwiyo,400,1.6,Karuma,0.1,in service
+rainy,20:00,L4,Bujagali,Kawanda,220,292.7,Kawanda,44.3,in service
+rainy,20:00,L5,Kawanda,Masaka West,220,106.5,Masaka West,32.3,in service
+rainy,20:00,L6,Mbarara South,Mirama,220,55.5,Mirama,16.8,in service
 rainy,20:00,L7,Mirama,Shango (Rwanda),220,40.0,Shango (Rwanda),12.1,in service
-rainy,20:00,L8,Nkenda (Kasese),Fort Portal,220,5.4,Nkenda (Kasese),1.6,in service
-rainy,20:00,L9,Fort Portal,Hoima,220,9.3,Fort Portal,2.8,in service
-rainy,20:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,133.9,Owen Falls (Nalubaale/Kiira),47.8,in service
+rainy,20:00,L8,Nkenda (Kasese),Fort Portal,220,4.9,Nkenda (Kasese),1.5,in service
+rainy,20:00,L9,Fort Portal,Hoima,220,8.1,Fort Portal,2.5,in service
+rainy,20:00,L10,Bujagali,Owen Falls (Nalubaale/Kiira),132,115.9,Owen Falls (Nalubaale/Kiira),41.4,in service
 rainy,20:00,L11,Isimba,Bujagali,132,168.5,Bujagali,60.2,in service
-rainy,20:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,92.2,Lugazi,65.8,in service
-rainy,20:00,L13,Lugazi,Mukono,132,80.1,Mukono,57.2,in service
-rainy,20:00,L14,Mukono,Namanve South,132,44.4,Namanve South,31.7,in service
-rainy,20:00,L15,Namanve South,Lugogo,132,50.7,Namanve South,18.1,in service
-rainy,20:00,L16,Namanve South,Luzira,132,23.8,Luzira,17.0,in service
-rainy,20:00,L17,Kawanda,Kampala North,132,245.1,Kampala North,87.5,in service
-rainy,20:00,L18,Kampala North,Lugogo,132,173.7,Lugogo,62.0,in service
-rainy,20:00,L19,Kawanda,Mutundwe,132,206.3,Mutundwe,73.7,in service
-rainy,20:00,L20,Mutundwe,Queensway,132,31.7,Queensway,11.3,in service
-rainy,20:00,L21,Queensway,Lugogo,132,39.6,Queensway,14.2,in service
-rainy,20:00,L22,Kawanda,Namungoona,132,35.7,Namungoona,25.5,in service
-rainy,20:00,L23,Mutundwe,Entebbe,132,35.7,Entebbe,12.7,in service
-rainy,20:00,L24,Kawanda,Kapeeka,132,21.4,Kapeeka,15.3,in service
-rainy,20:00,L25,Mutundwe,Kabulasoke,132,31.8,Kabulasoke,22.7,in service
-rainy,20:00,L26,Kabulasoke,Masaka West,132,22.3,Masaka West,15.9,in service
-rainy,20:00,L27,Masaka West,Mbarara North,132,72.0,Mbarara North,51.4,in service
-rainy,20:00,L28,Mbarara North,Mbarara South,132,46.4,Mbarara South,33.1,in service
-rainy,20:00,L29,Masaka West,Mutukula,132,23.6,Mutukula,16.8,in service
+rainy,20:00,L12,Owen Falls (Nalubaale/Kiira),Lugazi,132,99.0,Lugazi,70.7,in service
+rainy,20:00,L13,Lugazi,Mukono,132,86.7,Mukono,61.9,in service
+rainy,20:00,L14,Mukono,Namanve South,132,48.3,Namanve South,34.5,in service
+rainy,20:00,L15,Namanve South,Lugogo,132,54.2,Namanve South,19.4,in service
+rainy,20:00,L16,Namanve South,Luzira,132,25.6,Luzira,18.3,in service
+rainy,20:00,L17,Kawanda,Kampala North,132,262.5,Kampala North,93.8,in service
+rainy,20:00,L18,Kampala North,Lugogo,132,185.7,Lugogo,66.3,in service
+rainy,20:00,L19,Kawanda,Mutundwe,132,221.5,Mutundwe,79.1,in service
+rainy,20:00,L20,Mutundwe,Queensway,132,35.0,Queensway,12.5,in service
+rainy,20:00,L21,Queensway,Lugogo,132,41.8,Queensway,14.9,in service
+rainy,20:00,L22,Kawanda,Namungoona,132,38.4,Namungoona,27.4,in service
+rainy,20:00,L23,Mutundwe,Entebbe,132,41.2,Entebbe,14.7,in service
+rainy,20:00,L24,Kawanda,Kapeeka,132,28.8,Kapeeka,20.5,in service
+rainy,20:00,L25,Mutundwe,Kabulasoke,132,30.1,Kabulasoke,21.5,in service
+rainy,20:00,L26,Kabulasoke,Masaka West,132,19.8,Masaka West,14.1,in service
+rainy,20:00,L27,Masaka West,Mbarara North,132,66.8,Mbarara North,47.7,in service
+rainy,20:00,L28,Mbarara North,Mbarara South,132,42.6,Mbarara South,30.4,in service
+rainy,20:00,L29,Masaka West,Mutukula,132,24.3,Mutukula,17.4,in service
 rainy,20:00,L30,Mutukula,Kyaka (Tanzania),132,20.0,Kyaka (Tanzania),14.3,in service
-rainy,20:00,L31,Mirama,Kabale,132,10.9,Kabale,7.8,in service
-rainy,20:00,L32,Mbarara North,Nkenda (Kasese),132,7.7,Mbarara North,5.5,in service
-rainy,20:00,L33,Mbarara South,Nkenda (Kasese),132,10.0,Mbarara South,7.2,in service
-rainy,20:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,157.7,Iganga,56.3,in service
-rainy,20:00,L35,Iganga,Tororo,132,127.0,Tororo,45.3,in service
+rainy,20:00,L31,Mirama,Kabale,132,11.6,Kabale,8.3,in service
+rainy,20:00,L32,Mbarara North,Nkenda (Kasese),132,10.2,Mbarara North,7.3,in service
+rainy,20:00,L33,Mbarara South,Nkenda (Kasese),132,11.8,Mbarara South,8.4,in service
+rainy,20:00,L34,Owen Falls (Nalubaale/Kiira),Iganga,132,143.6,Iganga,51.3,in service
+rainy,20:00,L35,Iganga,Tororo,132,118.2,Tororo,42.2,in service
 rainy,20:00,L36,Tororo,Lessos (Kenya),132,100.0,Lessos (Kenya),35.7,in service
-rainy,20:00,L37,Tororo,Mbale,132,14.6,Tororo,10.5,in service
-rainy,20:00,L38,Mbale,Opuyo (Soroti),132,28.5,Mbale,20.3,in service
-rainy,20:00,L39,Opuyo (Soroti),Lira,132,59.4,Opuyo (Soroti),42.4,in service
-rainy,20:00,L40,Opuyo (Soroti),Moroto,132,7.1,Moroto,5.1,in service
-rainy,20:00,L41,Lira,Kole,132,7.3,Lira,2.6,in service
-rainy,20:00,L42,Kole,Gulu,132,13.2,Kole,4.7,in service
-rainy,20:00,L43,Gulu,Olwiyo,132,13.1,Olwiyo,4.7,in service
-rainy,20:00,L44,Olwiyo,Nebbi,132,19.0,Nebbi,6.8,in service
-rainy,20:00,L45,Nebbi,Arua,132,9.5,Arua,3.4,in service
-rainy,20:00,L46,Gulu,Agago,132,52.5,Gulu,37.5,in service
+rainy,20:00,L37,Tororo,Mbale,132,13.6,Tororo,9.7,in service
+rainy,20:00,L38,Mbale,Opuyo (Soroti),132,25.4,Mbale,18.2,in service
+rainy,20:00,L39,Opuyo (Soroti),Lira,132,50.5,Opuyo (Soroti),36.1,in service
+rainy,20:00,L40,Opuyo (Soroti),Moroto,132,6.1,Moroto,4.3,in service
+rainy,20:00,L41,Lira,Kole,132,11.3,Lira,4.0,in service
+rainy,20:00,L42,Kole,Gulu,132,15.3,Kole,5.5,in service
+rainy,20:00,L43,Gulu,Olwiyo,132,17.3,Olwiyo,6.2,in service
+rainy,20:00,L44,Olwiyo,Nebbi,132,12.7,Nebbi,4.5,in service
+rainy,20:00,L45,Nebbi,Arua,132,5.2,Arua,1.9,in service
+rainy,20:00,L46,Gulu,Agago,132,53.2,Gulu,38.0,in service
 rainy,20:00,U1,Bujagali,Tororo,220,,,,under construction
 rainy,20:00,U2,Tororo,Lessos (Kenya),220,,,,under construction
 rainy,20:00,U3,Masaka West,Mbarara South,400,,,,under construction
