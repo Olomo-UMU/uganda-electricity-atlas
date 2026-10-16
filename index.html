@@ -981,7 +981,7 @@ svg text{font-family:var(--f)}
         <li><b>Purpose:</b> the scenarios are teaching cases, not forecasts. Sites, sizes and lines are illustrative; positions of Buyende, Ayago, Oriang and Kiba are approximate, and the Karamoja nuclear site is hypothetical (it is not one of the candidate sites).</li>
         <li><b>Dispatch rules for added plants:</b> nuclear runs at 90% of capacity and can turn down to 50% when demand is low; solar follows the Starter Data Kit daytime profile; wind uses a typical capacity factor (0.38 dry, 0.28 rainy) shaped by hour; geothermal runs at 90%; a 4-hour battery charges at 13:00 and discharges at 20:00. New Nile hydro shares the Nile flow factor with Karuma and follows demand after Karuma. In surplus, nuclear turns down first, then solar and wind are curtailed.</li>
         <li><b>Drought:</b> the Nile flow factor scales Owen Falls, Bujagali, Isimba, Karuma and any new Nile hydro.</li>
-        <li><b>Largest unit check:</b> fast reserve is the spare output of Owen Falls and the Nile plants plus the thermal plants (assumed to start within minutes). If the largest unit running is bigger than the reserve, the difference is shed. Interconnector support, inertia and frequency response are not modelled.</li>
+        <li><b>Largest unit check:</b> fast reserve is the spare output of Owen Falls and the Nile plants plus the thermal plants (assumed to start within minutes). If the largest unit running is bigger than the reserve, the difference is shed. This check is the steady state after governors respond; the first seconds are shown by the frequency model below.</li>
         <li><b>Cut-off plants and loads:</b> plants and loads separated from the main grid by switched-out lines are removed before dispatch; the rest of the system covers what it can from reserve.</li>
       </ul>
       <h5>Energy Sector GIS Working Group data (added October 2026)</h5>
@@ -991,6 +991,15 @@ svg text{font-family:var(--f)}
         <li><b>Demand at each substation:</b> one third of national demand is shared by homes with electricity in each district (2014 census: households × share with electricity), because domestic and commercial customers bought about a third of electricity in 2023 (Ssentamu et al., 2025). Each district is supplied from its nearest grid substation; Kampala, Wakiso and Mukono are shared across the Kampala substations. The other two thirds, industry and other large users, keeps the earlier weighting towards industrial areas.</li>
         <li><b>Layers:</b> 33 kV lines in service (about 25,800 km) and 2016 distribution substations; on the published site also 11 kV lines (about 7,500 km) and lines under construction or proposed. Planned transmission lines not in the model, and 68 candidate power station sites, are shown for context only.</li>
         <li><b>Still missing:</b> the operational transmission lines layer, line ratings and impedances, and substation loads. Kahungye and Nkonge substations are mapped but not yet in the model, because their connecting lines are not in the files supplied.</li>
+      </ul>
+      <h5>Frequency, blackouts, new demand and large loads (added October 2026)</h5>
+      <ul>
+        <li><b>Frequency after a trip:</b> a two-area model (Uganda and Kenya) solves the swing equation for 20 seconds. Inertia constants are typical values by plant type (hydro 3 s, thermal 2 s, solar and batteries none). Governors respond as first-order lags (hydro 6 s, thermal 3 s, fast battery response 0.3 s) with 5% droop. Load falls 1.5% for each 1% fall in frequency. Load is shed in five 8% steps from 49.0 Hz to 48.2 Hz; generators trip below 47.5 Hz or above 51.5 Hz. Kenya is one area of 2,400 MW with inertia constant 4 s. The tie follows the sine law and opens if the angle passes 90° or the current is too high. All values are illustrative.</li>
+        <li><b>Cascade:</b> each step opens the line most loaded above 115% and solves again. Real cascades also depend on protection settings, voltage and timing, which the model leaves out.</li>
+        <li><b>Restoration:</b> six illustrative steps start from the Nile stations (black start) and re-energise Kampala, the east, the north and the west in turn. Order and timing in practice are set by UETCL.</li>
+        <li><b>Replays:</b> the 12 April 2026 blackout began with a fault at Lugogo substation (Wanjohi, 2026); the 5 June 2026 collapse at 21:07 was linked by sources to Owen Falls, with power back by midnight (Bwire &amp; Otage, 2026). Both are simplified to a substation trip at the evening peak.</li>
+        <li><b>New homes:</b> each district moves from its estimated access today towards 100% in proportion to the national target; 2014 household numbers are scaled by 1.38 for growth. A new grid home uses about 1 kWh a day, mostly in the evening. Electric cooking adds about 1 kWh a day per home (lunch and evening peaks); an electric motorcycle uses about 3.5 kWh a day, charged in the evening, overnight or at swap stations through the day. 70% of motorcycles are placed in the Kampala area.</li>
+        <li><b>Large loads:</b> the oil loads (EACOP pump station, refinery) and the data centres are assumed sizes, run flat day and night. Pump station power is drawn mainly from the grid (Mumbere, 2026); a large data-centre campus can need 100 MW or more (Achireko, 2026).</li>
       </ul>
       <h5>Distribution in brief</h5>
       <ul>
@@ -1003,8 +1012,13 @@ svg text{font-family:var(--f)}
     </section>
     <section class="refs">
       <h5>References (APA)</h5>
-      <p>Business Daily Africa. (2025). <i>Electricity overtakes milk, eggs as top import from Uganda</i>. <a href="https://www.businessdailyafrica.com/bd/economy/electricity-overtakes-milk-eggs-as-top-import-from-uganda-5346292" target="_blank" rel="noopener">https://www.businessdailyafrica.com/bd/economy/electricity-overtakes-milk-eggs-as-top-import-from-uganda-5346292</a></p>
+      <p>Achireko, K. (2026, July 23). <i>Are Africa’s power grids ready for the AI data centre boom?</i> World Economic Forum. <a href="https://www.weforum.org/stories/2026/07/africa-power-grids-ai-data-centre-boom/" target="_blank" rel="noopener">https://www.weforum.org/stories/2026/07/africa-power-grids-ai-data-centre-boom/</a></p>
+<p>African Development Bank Group. (2026, October 8). <i>The 11th Africa Energy Market Place: Stakeholder consultation on the National Energy Compact to deliver on Mission 300 targets</i>. AllAfrica. <a href="https://allafrica.com/stories/202610090255.html" target="_blank" rel="noopener">https://allafrica.com/stories/202610090255.html</a></p>
+<p>Angurini, T. B. (2026, February 6). <i>Govt targets 20% e-cooking adoption by 2030</i>. Daily Monitor. <a href="https://www.monitor.co.ug/uganda/business/technology/govt-targets-20-e-cooking-adoption-by-2030-5349828" target="_blank" rel="noopener">https://www.monitor.co.ug/uganda/business/technology/govt-targets-20-e-cooking-adoption-by-2030-5349828</a></p>
+<p>Barigaba, J. (2026, September 11). <i>Lamu refinery races ahead of Uganda’s as Dangote eyes September 30 groundbreaking</i>. The EastAfrican. <a href="https://theeastafrican.co.ke/tea/business-tech/lamu-refinery-races-ahead-of-uganda-s-5592000" target="_blank" rel="noopener">https://theeastafrican.co.ke/tea/business-tech/lamu-refinery-races-ahead-of-uganda-s-5592000</a></p>
+<p>Business Daily Africa. (2025). <i>Electricity overtakes milk, eggs as top import from Uganda</i>. <a href="https://www.businessdailyafrica.com/bd/economy/electricity-overtakes-milk-eggs-as-top-import-from-uganda-5346292" target="_blank" rel="noopener">https://www.businessdailyafrica.com/bd/economy/electricity-overtakes-milk-eggs-as-top-import-from-uganda-5346292</a></p>
 <p>Business Times Uganda. (2024, February 13). <i>Power trade: Inside Uganda's move to become Africa's powerhouse</i>. <a href="https://businesstimesug.com/power-trade-inside-ugandas-move-to-become-africas-power-house/" target="_blank" rel="noopener">https://businesstimesug.com/power-trade-inside-ugandas-move-to-become-africas-power-house/</a></p>
+<p>Bwire, J., & Otage, S. (2026, June 6). <i>National grid failure triggers widespread blackout across Uganda</i>. Daily Monitor. <a href="https://www.monitor.co.ug/uganda/news/national/uganda-grid-restored-at-midnight-after-massive-friday-night-blackout-5486752" target="_blank" rel="noopener">https://www.monitor.co.ug/uganda/news/national/uganda-grid-restored-at-midnight-after-massive-friday-night-blackout-5486752</a></p>
 <p>Climate Compatible Growth. (2026). <i>Whole energy system model starter data kit for Uganda</i> (Version 3.0) [Data set]. Zenodo. <a href="https://doi.org/10.5281/zenodo.18945558" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.18945558</a></p>
 <p>Daily Monitor. (2022). <i>UETCL set to connect West Nile to national grid in 2023</i>. <a href="https://www.monitor.co.ug/uganda/news/national/uetcl-set-to-connect-west-nile-to-national-grid-in-2023-3930866" target="_blank" rel="noopener">https://www.monitor.co.ug/uganda/news/national/uetcl-set-to-connect-west-nile-to-national-grid-in-2023-3930866</a></p>
 <p>Daily Monitor. (2026, April 13). <i>Electricity exports rise 34 percent to Shs267b</i>. <a href="https://www.monitor.co.ug/uganda/business/markets/electricity-exports-rise-34-percent-to-shs267b-5421452" target="_blank" rel="noopener">https://www.monitor.co.ug/uganda/business/markets/electricity-exports-rise-34-percent-to-shs267b-5421452</a></p>
@@ -1015,6 +1029,7 @@ svg text{font-family:var(--f)}
 <p>Kenya Electricity Transmission Company. (n.d.). <i>Regional interconnectors</i>. Retrieved October 14, 2026, from <a href="https://www.ketraco.co.ke/node/121" target="_blank" rel="noopener">https://www.ketraco.co.ke/node/121</a></p>
 <p>Ministry of Energy and Mineral Development GIS Lab. (2024). <i>Transmission lines in Uganda 2024</i> [Map; data source UETCL, status Q3 2024]. Energy Sector GIS Working Group. <a href="https://energydata.info/en/group/uganda-energy-sector-gis-working-group" target="_blank" rel="noopener">https://energydata.info/en/group/uganda-energy-sector-gis-working-group</a></p>
 <p>Ministry of Finance, Planning and Economic Development. (2025). <i>Electricity generation and capacity in Uganda 2025</i>. <a href="https://development.finance.go.ug/knowledge-centre-reports/electricity-generation-and-capacity-uganda-2025" target="_blank" rel="noopener">https://development.finance.go.ug/knowledge-centre-reports/electricity-generation-and-capacity-uganda-2025</a></p>
+<p>Mumbere, P. (2026, January 20). <i>Uganda: EACOP progress hits 79 percent as Uganda stays on track for first oil in July 2026</i>. Nile Post via AllAfrica. <a href="https://allafrica.com/stories/202601210605.html" target="_blank" rel="noopener">https://allafrica.com/stories/202601210605.html</a></p>
 <p>Natural Earth. (n.d.). <i>1:10m cultural and physical vectors</i> [Data set]. Retrieved October 14, 2026, from <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">https://www.naturalearthdata.com/</a></p>
 <p>Nile Basin Initiative. (2024, August 16). <i>Rwanda and Uganda commence power trade through 220 kV 172 km Shango–Mbarara power line</i>. <a href="https://nilebasin.org/content/rwanda-and-uganda-commence-power-trade-through-220kv-172-km-shango-mbarara-power" target="_blank" rel="noopener">https://nilebasin.org/content/rwanda-and-uganda-commence-power-trade-through-220kv-172-km-shango-mbarara-power</a></p>
 <p>OpenInfraMap. (n.d.). <i>Power plants in Uganda</i>. Retrieved October 14, 2026, from <a href="https://openinframap.org/stats/area/Uganda/plants" target="_blank" rel="noopener">https://openinframap.org/stats/area/Uganda/plants</a></p>
@@ -1029,6 +1044,7 @@ svg text{font-family:var(--f)}
 <p>Uganda Electricity Transmission Company Limited. (2026). <i>UETCL strategic plan 2025–30: Abridged version</i>. <a href="https://uetcl.go.ug/wp-content/uploads/2026/02/UETCL-Strategic-Plan-2025-30-Abridged-Version_.pdf" target="_blank" rel="noopener">https://uetcl.go.ug/wp-content/uploads/2026/02/UETCL-Strategic-Plan-2025-30-Abridged-Version_.pdf</a></p>
 <p>Uganda Electricity Transmission Company Limited. (n.d.). <i>Our projects</i>. Retrieved October 14, 2026, from <a href="https://uetcl.go.ug/?p=119" target="_blank" rel="noopener">https://uetcl.go.ug/?p=119</a></p>
 <p>Uganda Energy Sector GIS Working Group. (2017). <i>Uganda energy sector GIS data: transmission, distribution, generation sites and boundaries</i> [Data set]. ENERGYDATA.INFO. <a href="https://energydata.info/en/group/uganda-energy-sector-gis-working-group" target="_blank" rel="noopener">https://energydata.info/en/group/uganda-energy-sector-gis-working-group</a></p>
+<p>Wanjohi, M. (2026, May 2). <i>Museveni fires top officers following nationwide power blackout</i>. The Kenya Times. <a href="https://thekenyatimes.com/east-africa/museveni-fires-top-officers-following-nationwide-power-blackout/" target="_blank" rel="noopener">https://thekenyatimes.com/east-africa/museveni-fires-top-officers-following-nationwide-power-blackout/</a></p>
 <p>Wikipedia. (2026). <i>Energy in Uganda</i>. Retrieved October 14, 2026, from <a href="https://en.wikipedia.org/wiki/Energy_in_Uganda" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Energy_in_Uganda</a></p>
 <p>Wikipedia. (2026). <i>List of power stations in Uganda</i>. Retrieved October 14, 2026, from <a href="https://en.wikipedia.org/wiki/List_of_power_stations_in_Uganda" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/List_of_power_stations_in_Uganda</a></p>
 <p>Wikipedia. (2026). <i>Uganda Electricity Distribution Company Limited</i>. Retrieved October 14, 2026, from <a href="https://en.wikipedia.org/wiki/Uganda_Electricity_Distribution_Company_Limited" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Uganda_Electricity_Distribution_Company_Limited</a></p>
@@ -1094,7 +1110,7 @@ const OIL_FUEL_COST = SDK.oilFuel2025*3.6/SDK.effOil; // US$ per MWh, fuel only
 function solarFactor(hour, season){ if (hour <= 6 || hour >= 18) return SDK.solarNight[season]; return SDK.solarDay[season]*Math.sin(Math.PI*(hour - 6)/12)/(2/Math.PI); }
 const DAY = [0.62,0.60,0.59,0.58,0.59,0.63,0.70,0.77,0.80,0.82,0.83,0.84,0.84,0.84,0.83,0.82,0.81,0.83,0.92,0.99,1.00,0.96,0.85,0.71];
 const SHOUR = { night:3, morning:8, midday:13, peak:20 };
-const S = { season:'dry', scen:'peak', dom:1166, exp:{ KE:100, RW:40, TZ:20, CD:20 }, out:new Set(), uc:false, thermal:true, sel:null, base:'osm', caseId:'now', added:[], loads:[], lines:new Set(), nile:1, trip:null };
+const S = { season:'dry', scen:'peak', dom:1166, exp:{ KE:100, RW:40, TZ:20, CD:20 }, out:new Set(), uc:false, thermal:true, sel:null, base:'osm', fTie:true, ffr:false, acc:{ T:23, off:35, w:100 }, cook:0, boda:0, bodaMode:'evening', outSub:new Set(), casc:[], cascLog:[], restore:null, caseId:'now', added:[], loads:[], lines:new Set(), nile:1, trip:null };
 const RATING = { 400:900, 220:330, 132:140 };
 const XKM = { 400:0.32, 220:0.41, 132:0.40 };
 const PLAB = { 'Bujagali':[2,-14,'start'], 'Nalubaale':[2,12,'start'], 'Kiira':[2,24,'start'], 'Achwa 1 and 2':[0,0,'end'], 'Isimba':[0,0,'start'], 'Karuma':[0,-6,'end'] };
@@ -1147,6 +1163,17 @@ const CASES = {
     text:'200 MW of wind near Moroto and 100 MW of geothermal near Hoima. Wind varies through the day; geothermal runs steadily. Compare the hours and the two seasons.' },
   drought:{ label:'Drought year', season:'dry', nile:0.55,
     text:'Nile flows fall to 55% of normal, as when Lake Victoria dropped in 2005–06. The large hydro stations produce less, thermal plants run and carbon intensity rises. Try turning thermal off to see the load shed.' },
+  access:{ label:'Connecting every home', acc:{ T:100, off:35, w:100 }, uc:true, options:['S10'],
+    text:'Uganda launched its Mission 300 energy compact in June 2026, and universal access is a Vision 2040 goal (African Development Bank, 2026). Here every district reaches 100%: two thirds of new homes join the grid, the rest use solar home systems or mini-grids. That adds about 5 million grid homes and 500 MW at the evening peak, more than today’s plants can supply. Add generation (for example a Nile hydro plant at Karuma, or try the off-grid share and the demand of a new home), then look for the lines and substations that overload. Click a district (Districts layer) to see its new homes.' },
+  bigloads:{ label:'Oil and a data centre', uc:true, options:['S10'],
+    loads:[{ name:'Data centre at Namanve', mw:100, node:'NMS' }, { name:'EACOP pump station 1, Kabaale (assumed 20 MW)', mw:20, node:'HOI' }, { name:'Kabaale oil refinery (assumed 60 MW)', mw:60, node:'HOI' }],
+    text:'Uganda’s first oil was set for July 2026, with pumping on EACOP supplied mainly from the grid; the refinery investment decision has been put back to early 2027 (Barigaba, 2026). Africa’s data-centre demand could reach 1.5–2.2 GW by 2030, and one large campus needs 100 MW or more (Achireko, 2026). Here a 100 MW data centre sits at Namanve with the oil loads at Kabaale. Note what overloads, then remove the data centre and add it at Karuma or Kawanda instead (Add a plant or a load, ready-made loads). Data centres run day and night, so check 03:00 too.' },
+  ecook:{ label:'Electric cooking and electric motorcycles', cook:20, boda:150000, bodaMode:'evening',
+    text:'One in five grid-connected homes cooks with electricity, the government’s 2030 target (Angurini, 2026), and 150,000 motorcycles are electric. Compare evening charging with overnight charging and battery-swap stations, and look at the daily load curve below the map: when power is used matters as much as how much.' },
+  apr2026:{ label:'Replay: Lugogo substation fault, 12 April 2026', outSub:['LUG'],
+    text:'A fault at Lugogo substation started a nationwide blackout (Wanjohi, 2026). Here Lugogo is tripped at the evening peak: its demand is lost at once and its lines are open. Look at the first 20 seconds and at how flows move. The model cannot show the protection faults that turned a local fault into a national collapse; use the cascade and restoration tools to explore what followed.' },
+  jun2026:{ label:'Replay: Owen Falls fault, 5 June 2026', outSub:['NAL'],
+    text:'At 21:07 on 5 June 2026 the grid collapsed; sources pointed to a fault at Owen Falls in Jinja, and power was back by midnight (Bwire &amp; Otage, 2026). Here the Owen Falls switchyard is tripped at the evening peak, taking Nalubaale, Kiira and Kakira off the grid. Karuma becomes the balancing plant. Check the first 20 seconds, then rebuild the grid with the restoration steps.' },
   growth:{ label:'Demand in 2030 with new industry', dom:1800, uc:true, options:['S10','S4'],
     loads:[{ name:'Hoima oil refinery', mw:60, node:'HOI' }, { name:'Electric railway (SGR)', mw:80, node:'TOR' }, { name:'Tororo industrial cluster', mw:100, node:'TOR' }, { name:'Kampala industrial parks', mw:120, node:'NMS' }],
     text:'Domestic demand of 1,800 MW plus 360 MW of new industrial loads, with the lines now under construction in service. Today’s plants cannot supply it and load is shed. Add generation with the form below (for example a Nile hydro plant at Karuma), then look for overloaded lines and run the N−1 check.' }
@@ -1165,8 +1192,58 @@ function syncPlants(){
 }
 const windFactor = (hour, season) => (season === 'dry' ? 0.38 : 0.28)*({ 3:1.15, 8:0.8, 13:0.95, 20:1.1 }[hour] || 1);
 const nodeActive = id => { const n = nodeById[id]; if (!n || n.kind !== 'sn') return true; return S.added.some(a => a.node === id) || DATA.lines.some(l => l.st === 'sc' && S.lines.has(l.id) && (l.a === id || l.b === id)); };
-const lineLive = l => (l.st === 'op' || (S.uc && l.st === 'uc' && nodeById[l.b].kind !== 'pss' && nodeById[l.a].kind !== 'pss') || (l.st === 'sc' && S.lines.has(l.id))) && !S.out.has(l.id);
+/* black-start restoration: energised substations at each step (illustrative sequence, not UETCL's plan) */
+const RESTORE = [
+  { t:'0:10', ids:['NAL','BUJ'], text:'Black start: Owen Falls (Nalubaale and Kiira) starts without outside power and energises its own switchyard; Bujagali synchronises. Jinja is supplied first.' },
+  { t:'0:30', ids:['LGZ','MUK','NMS','IGA'], text:'132 kV lines carry power west to Lugazi, Mukono and Namanve, and east to Iganga. Load is picked up in blocks so the frequency stays near 50 Hz.' },
+  { t:'0:50', ids:['KAW','KAN','LUG','QWY','MUT','NMG','LUZ','ENT'], text:'The Bujagali–Kawanda 220 kV line energises Kawanda; the Kampala substations follow one by one.' },
+  { t:'1:20', ids:['ISI','TOR','MBL','OPU','LES'], text:'Isimba synchronises. The east (Tororo, Mbale, Soroti) is restored and the link to Kenya is resynchronised.' },
+  { t:'1:50', ids:['KAR','LIR','KOL','GUL','AGA','OLW','NEB','ARU','MOR','KPK'], text:'The 400 kV line energises Karuma; its units synchronise. The north and West Nile are restored.' },
+  { t:'2:40', ids:['MAS','MTK','KYA','KBS','MBN','MBS','MIR','KAB','SHA','NKE','FTP','HOI','BEN','MWZ','NIM','WOB','BIB','BUY','KRM','AYA','ORI','KIB'], text:'The west and south-west: Masaka, Mbarara, Kasese, Fort Portal and Hoima, then the links to Rwanda and Tanzania. The whole grid is back.' }
+];
+const restoreOn = () => S.restore == null ? null : new Set(RESTORE.slice(0, S.restore + 1).flatMap(s => s.ids));
+const lineLive = l => { if (!((l.st === 'op' || (S.uc && l.st === 'uc' && nodeById[l.b].kind !== 'pss' && nodeById[l.a].kind !== 'pss') || (l.st === 'sc' && S.lines.has(l.id))) && !S.out.has(l.id))) return false;
+  if (S.outSub.has(l.a) || S.outSub.has(l.b)) return false;
+  const on = restoreOn(); return !on || (on.has(l.a) && on.has(l.b)); };
+/* ---------------- new demand: more homes connected, electric cooking, electric motorcycles ---------------- */
+const BASE_ACC = 23, HH_GROWTH = 1.38;   // household grid access today (estimate: ~2.4 million homes of ~10.4 million) and household growth 2014→2025 (~3% a year)
+const PROF = {
+  home:[0.25,0.22,0.2,0.2,0.22,0.3,0.45,0.4,0.3,0.25,0.25,0.28,0.3,0.28,0.25,0.25,0.3,0.45,0.8,0.98,1.0,0.85,0.55,0.35],          // share of a new home's evening peak
+  cook:[0,0,0,0,0,0.02,0.08,0.08,0.02,0,0,0.02,0.1,0.08,0.02,0,0,0.05,0.18,0.2,0.1,0.03,0,0],                                 // kW per cooking home (about 1 kWh a day)
+  boda:{ night:[0.44,0.44,0.44,0.44,0.44,0.44,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.44,0.44],                                    // kW per motorcycle, 3.5 kWh a day
+         evening:[0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.6,0.9,0.9,0.6,0.3],
+         swap:Array(24).fill(3.5/24) } };
+const LOAD_PRESETS = [
+  { name:'Data centre at Namanve', mw:100, node:'NMS', note:'a large campus needs 100 MW or more (Achireko, 2026)' },
+  { name:'Data centre at Kawanda', mw:100, node:'KAW', note:'next to the 400/220 kV hub' },
+  { name:'Data centre at Karuma', mw:100, node:'KAR', note:'beside the largest power station, far from users and fibre' },
+  { name:'Data centre at Jinja (Owen Falls)', mw:100, node:'NAL', note:'beside the Nile stations' },
+  { name:'EACOP pump station 1, Kabaale (assumed 20 MW)', mw:20, node:'HOI', note:'supplied mainly from the grid (Mumbere, 2026); size assumed' },
+  { name:'Kabaale oil refinery (assumed 60 MW)', mw:60, node:'HOI', note:'60,000 barrels a day; investment decision put back to early 2027 (Barigaba, 2026); size assumed' },
+  { name:'Tororo heavy industry (assumed 80 MW)', mw:80, node:'TOR', note:'cement, phosphate and steel; size assumed' }
+];
+const BODA_LABEL = { evening:'at home in the evening', night:'overnight, on a cheaper tariff', swap:'at battery-swap stations through the day' };
+const METRO_IDS = ['KAW','MUT','QWY','LUG','KAN','NMG','NMS','LUZ','MUK','ENT'];
+let ACC_K = null;
+function accK(){ if (ACC_K) return ACC_K; const ds = DATA.geo.districts.filter(d => d.hh), tot = ds.reduce((a, d) => a + d.hh, 0); let lo = 0, hi = 50;
+  for (let i = 0; i < 60; i++){ const k = (lo + hi)/2, v = ds.reduce((a, d) => a + d.hh*Math.min(95, d.acc*k), 0)/tot; if (v > BASE_ACC) hi = k; else lo = k; } return ACC_K = (lo + hi)/2; }
+function districtDemand(d){ const today = Math.min(95, d.acc*accK()), hh = d.hh*HH_GROWTH, f = Math.max(0, (S.acc.T - BASE_ACC)/(100 - BASE_ACC)), tgt = today + f*(100 - today);
+  const newHomes = hh*Math.max(0, tgt - today)/100*(1 - S.acc.off/100), gridHomes = hh*today/100 + newHomes;
+  return { today, hh, newHomes, gridHomes }; }
+function spreadTo(m, sup, mw){ if (!mw) return; if (sup === 'metro'){ const t = METRO_IDS.reduce((a, id) => a + nodeById[id].share, 0); for (const id of METRO_IDS) m[id] = (m[id] || 0) + mw*nodeById[id].share/t; } else if (nodeById[sup]) m[sup] = (m[sup] || 0) + mw; }
+function newDemand(hour){   // MW by node and by kind at a given hour
+  const m = {}, kind = { homes:0, cook:0, boda:0 };
+  if (!DATA.geo.districts.length || !DATA.geo.districts[0].hh) return { m, kind };
+  let homesTot = 0; const per = [];
+  for (const d of DATA.geo.districts){ if (!d.hh) continue; const x = districtDemand(d); per.push([d, x]); homesTot += x.gridHomes; }
+  for (const [d, x] of per){
+    const h = x.newHomes*S.acc.w/1000*PROF.home[hour]/1000, c = x.gridHomes*S.cook/100*PROF.cook[hour]/1000, b = S.boda*0.3*(x.gridHomes/homesTot)*PROF.boda[S.bodaMode][hour]/1000;
+    spreadTo(m, d.sup, h + c + b); kind.homes += h; kind.cook += c; kind.boda += b; }
+  const bm = S.boda*0.7*PROF.boda[S.bodaMode][hour]/1000; spreadTo(m, 'metro', bm); kind.boda += bm;
+  return { m, kind };
+}
 function extraLoads(scen){ const m = {};
+  for (const [id, v] of Object.entries(newDemand(SHOUR[scen]).m)) m[id] = (m[id] || 0) + v;
   for (const L of S.loads) m[L.node] = (m[L.node] || 0) + L.mw;
   if (scen === 'midday') for (const p of DATA.plants) if (p.type === 'battery') m[p.node] = (m[p.node] || 0) + p.mw*(S.trip === p.name ? (p.units - 1)/p.units : 1);
   return m; }
@@ -1232,7 +1309,9 @@ function solve(){
   const live = DATA.lines.filter(lineLive);
   const ids = [...new Set(live.flatMap(l => [l.a, l.b]))];
   const adj = {}; ids.forEach(i => adj[i] = []); live.forEach(l => { adj[l.a].push(l.b); adj[l.b].push(l.a); });
-  const seen = new Set(['NAL']), st = ['NAL']; while (st.length){ const u = st.pop(); for (const v of adj[u] || []) if (!seen.has(v)){ seen.add(v); st.push(v); } }
+  const on = restoreOn(), okSlack = id => adj[id] && !S.outSub.has(id) && (!on || on.has(id));
+  const SL = ['NAL','KAR','BUJ','ISI'].find(okSlack) || null; R.slack = SL;
+  const seen = new Set(SL ? [SL] : []), st = SL ? [SL] : []; while (st.length){ const u = st.pop(); for (const v of adj[u] || []) if (!seen.has(v)){ seen.add(v); st.push(v); } }
   R.island = new Set(DATA.nodes.filter(n => !seen.has(n.id)).map(n => n.id));
   let lostLoad = 0, lostCap = 0; const islandNodes = [];
   for (const n of DATA.nodes){ if (n.kind === 'pss' || !nodeActive(n.id) || seen.has(n.id)) continue;
@@ -1244,7 +1323,10 @@ function solve(){
   for (const p of DATA.plants){ p._mw = D.mw[p.name] || 0; R.gen[p.node] += p._mw; }
   for (const id of R.island) R.load[id] = R.load[id] > 0 ? R.load[id] : 0;
   const { kar, owen, th, shed } = D;
-  if (islandNodes.length) R.warn.push(`Cut off from the main grid: ${islandNodes.join(', ')}. ${fmt(lostLoad)} MW of load loses supply${lostCap > 0.5 ? `, and plants with ${fmt(lostCap)} MW of capacity are disconnected. The rest of the system makes up what it can` : ''}.`);
+  R.lostLoad = lostLoad;
+  if (on) R.warn.push(`Restoration step ${S.restore + 1} of ${RESTORE.length}: ${fmt(totLoad - lostLoad)} MW of ${fmt(totLoad)} MW is back (${fmt((totLoad - lostLoad)/totLoad*100)}%).`);
+  else if (!SL) R.warn.push('The whole grid is dark.');
+  else if (islandNodes.length) R.warn.push(`Cut off from the main grid: ${islandNodes.join(', ')}. ${fmt(lostLoad)} MW of load loses supply${lostCap > 0.5 ? `, and plants with ${fmt(lostCap)} MW of capacity are disconnected. The rest of the system makes up what it can` : ''}.`);
   if (shed > 0.5){ R.warn.push(`Demand is ${fmt(shed)} MW more than the available generation. Load would be shed, or exports cut.`);
     const conn = DATA.nodes.filter(n => n.share > 0 && seen.has(n.id)), sh = conn.reduce((a, n) => a + n.share, 0);
     for (const n of conn) R.load[n.id] -= shed*n.share/sh; }
@@ -1253,7 +1335,7 @@ function solve(){
   if (D.curtail > 0.5) R.warn.push(`Generation exceeds demand: ${fmt(D.curtail)} MW of solar and wind is curtailed.`);
   if (D.nucCut > 0.5) R.warn.push(`Demand is too low for the nuclear plant at full output: it is turned down by ${fmt(D.nucCut)} MW.`);
   if (S.trip) R.warn.push(`One unit of ${S.trip} has tripped.`);
-  R.owen = owen; R.kar = kar; R.th = th; R.shed = shed; R.totLoad = totLoad; R.dom = dom; R.gtot = D.gtot; R.ci = D.ci; R.ciDel = D.ci/(SDK.etaT*SDK.etaD); R.bio = D.bio;
+  R.dispLoad = totLoad - lostLoad; R.owen = owen; R.kar = kar; R.th = th; R.shed = shed; R.totLoad = totLoad; R.dom = dom; R.gtot = D.gtot; R.ci = D.ci; R.ciDel = D.ci/(SDK.etaT*SDK.etaD); R.bio = D.bio;
   // net injections on connected set (NAL is slack)
   const bus = [...seen]; const idx = Object.fromEntries(bus.map((b, i) => [b, i])); const nB = bus.length;
   const P = new Float64Array(nB); let sumNonSlack = 0;
@@ -1261,7 +1343,7 @@ function solve(){
   const Bm = Array.from({ length:nB }, () => new Float64Array(nB));
   const xpu = l => XKM[l.kv]*(PUBKM[l.id] || l.km)/(l.kv*l.kv/100)/l.n;
   for (const l of live){ if (!seen.has(l.a)) continue; const i = idx[l.a], j = idx[l.b], b = 1/xpu(l); Bm[i][i] += b; Bm[j][j] += b; Bm[i][j] -= b; Bm[j][i] -= b; }
-  const s = idx.NAL, red = bus.map((_, i) => i).filter(i => i !== s), m = red.length;
+  const s = SL ? idx[SL] : 0, red = bus.map((_, i) => i).filter(i => i !== s), m = red.length;
   const A = red.map(i => Array.from(red, j => Bm[i][j]).concat([P[i]/100]));
   for (let c = 0; c < m; c++){ let p = c; for (let r = c+1; r < m; r++) if (Math.abs(A[r][c]) > Math.abs(A[p][c])) p = r; [A[c], A[p]] = [A[p], A[c]];
     const piv = A[c][c]; for (let r = 0; r < m; r++){ if (r === c) continue; const f = A[r][c]/piv; if (f) for (let k = c; k <= m; k++) A[r][k] -= f*A[c][k]; } }
@@ -1272,8 +1354,8 @@ function solve(){
     const f = (th8[idx[l.a]] - th8[idx[l.b]])/xpu(l)*100; R.flows[l.id] = f;
   }
   // slack check
-  let slackP = 0; for (const l of live){ if (!seen.has(l.a)) continue; if (l.a === 'NAL') slackP += R.flows[l.id]; if (l.b === 'NAL') slackP -= R.flows[l.id]; }
-  R.owenNet = slackP + (R.load.NAL || 0) - (R.gen.NAL || 0);
+  let slackP = 0; for (const l of live){ if (!seen.has(l.a)) continue; if (l.a === SL) slackP += R.flows[l.id]; if (l.b === SL) slackP -= R.flows[l.id]; }
+  R.owenNet = SL ? slackP + (R.load[SL] || 0) - (R.gen[SL] || 0) : 0;
   R.over = DATA.lines.filter(l => R.flows[l.id] != null && Math.abs(R.flows[l.id]) > RATING[l.kv]*l.n);
   return R;
 }
@@ -1375,7 +1457,7 @@ function render(){
     if (!showTx) break;
     if (l.st === 'sc' && !S.lines.has(l.id)) continue;
     if (l.st !== 'op' && l.st !== 'sc' && !showPlan) continue;
-    const g = lineGeom(l), d = pathD(g), out = S.out.has(l.id), f = R.flows[l.id];
+    const g = lineGeom(l), d = pathD(g), out = S.out.has(l.id) || (l.st !== 'pl' && l.st !== 'uc' && !lineLive(l)), f = R.flows[l.id];
     const w = l.kv === 400 ? 3.2 : l.kv === 220 ? 2.5 : 1.8;
     const col = out ? C.muted : colorKV(l.kv);
     const P = (attrs) => el('path', Object.assign({ d, fill:'none', 'stroke-linecap':'round', 'stroke-linejoin':'round' }, attrs), G.gLine);
@@ -1458,6 +1540,8 @@ function render(){
       else { shp = el('rect', { x:x - s, y:y - s, width:2*s, height:2*s, fill:n.kind === 'pss' ? C.sheet : C.sheet, stroke:R.island.has(n.id) && n.kind !== 'pss' ? C.bad : (kvMax ? colorKV(kvMax) : C.ink), 'stroke-width':(n.kind === 'gs' ? 2.4 : 1.6)*k, 'stroke-dasharray':n.kind === 'pss' || n.kind === 'sn' ? `${2*k} ${1.5*k}` : 'none' }, G.gNode);
         if (n.kind === 'gs') el('rect', { x:x - s*0.45, y:y - s*0.45, width:s*0.9, height:s*0.9, fill:kvMax ? colorKV(kvMax) : C.ink }, G.gNode); }
       shp.classList.add('hit');
+      if (S.outSub.has(n.id)){ const q = s*1.6; el('path', { d:`M${x - q},${y - q}L${x + q},${y + q}M${x - q},${y + q}L${x + q},${y - q}`, stroke:C.bad, 'stroke-width':2.4*k, 'stroke-linecap':'round' }, G.gNode); }
+      if (S.restore != null && R.island.has(n.id)) shp.setAttribute('opacity', 0.35);
       if (S.sel && S.sel.kind === 'node' && S.sel.id === n.id){ shp.setAttribute('stroke', C.sel); shp.setAttribute('stroke-width', 3*k); }
       shp.addEventListener('click', e => { e.stopPropagation(); select({ kind:'node', id:n.id }); });
       el('title', {}, shp).textContent = `${n.name}: ${n.note}`;
@@ -1521,6 +1605,7 @@ function scenarioBlock(){
     ${S.added.length || S.loads.length ? `<table class="list">${S.added.map((a, i) => `<tr><td>${esc(a.name)}<br><span class="note">${TYPES[a.type]}, ${fmt(a.mw)} MW at ${esc(nodeById[a.node].name)}</span></td><td class="r"><button type="button" data-rmplant="${i}" aria-label="Remove ${esc(a.name)}">Remove</button></td></tr>`).join('')}${S.loads.map((L, i) => `<tr><td>${esc(L.name)}<br><span class="note">New load, ${fmt(L.mw)} MW at ${esc(nodeById[L.node].name)}</span></td><td class="r"><button type="button" data-rmload="${i}" aria-label="Remove ${esc(L.name)}">Remove</button></td></tr>`).join('')}</table>` : ''}
     <details class="add"${S.addOpen ? ' open' : ''}><summary>Add a plant or a load</summary>
       <div class="addf">
+        <label class="full">Ready-made load<select id="addPreset"><option value="">Choose one, or fill in below</option>${LOAD_PRESETS.map((p, i) => `<option value="${i}">${esc(p.name)}</option>`).join('')}</select></label>
         <label>Type<select id="addType">${Object.entries(TYPES).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}<option value="load">New load (demand)</option></select></label>
         <label>Size (MW)<input id="addMW" type="number" min="1" max="3000" step="1" value="100"></label>
         <label class="full">Connected at<select id="addNode">${subs.map(n => `<option value="${n.id}">${esc(n.name)}</option>`).join('')}</select></label>
@@ -1534,30 +1619,174 @@ function scenarioBlock(){
     ${S.caseId !== 'now' ? '<div style="margin-top:8px"><button type="button" id="caseReset">Back to today’s grid</button></div>' : ''}
   </div>`;
 }
+/* ---------------- frequency in the first 20 seconds after a disturbance ----------------
+   Two areas (Uganda, Kenya) joined by the Tororo–Lessos interconnector. Each area: aggregate swing equation
+   2H·S/f0 · dΔf/dt = ΔPm − ΔPloss + ΔPshed − D·S·Δf/f0 − Ptie, governors as first-order lags with 4–5% droop limited to spinning headroom,
+   under-frequency load shedding in five 8% stages, generator under-frequency trips at 47.5 Hz. Teaching approximation. */
+const F0 = 50, H_TYPE = { hydro:3.0, small:2.5, thermal:1.5, bagasse:4.0, nuclear:5.0, geothermal:4.0 };
+const KD = 0.3, UFLS = [49.0, 48.8, 48.6, 48.4, 48.2], UFLS_STEP = 0.08, KENYA = { S:2400, H:4.0, D:1.5, R:0.05, head:150, T:5 };
+function freqSim(dist){   // dist = { gen: MW lost, load: MW of load lost, plant: name of plant losing a unit (optional) }
+  const D0 = dispatch(S.scen, S.season, R.dom, R.dispLoad, { cut:R.island, trip:null });
+  let Ek = 0, groups = { hyd:{ cap:0, head:0, down:0, T:6, R:0.04 }, th:{ cap:0, head:0, down:0, T:3, R:0.04 }, ffr:{ cap:0, head:0, down:0, T:0.3, R:0.01 } };
+  for (const p of DATA.plants){ const out = D0.mw[p.name] || 0, g = plantGroup(p);
+    if (out < 0.5 && !(g === 'batt' && S.ffr)) continue;
+    const u = unitSize(p), nOn = Math.min(Math.ceil(p.mw/u - 1e-9), Math.max(1, Math.ceil(out/(u*0.97)))), mva = nOn*u/0.9;
+    const H = p.type === 'hydro' ? (g === 'small' || g === 'ach' ? H_TYPE.small : H_TYPE.hydro) : H_TYPE[p.type] || 0;
+    let lostU = dist.plant === p.name ? 1 : 0;
+    Ek += H*mva*(nOn - lostU)/nOn;
+    const onCap = (nOn - lostU)*u, outLeft = Math.max(0, out - (lostU ? Math.min(u, out) : 0));
+    if (p.type === 'hydro' && g !== 'small' && g !== 'ach'){ groups.hyd.cap += onCap; groups.hyd.head += Math.max(0, onCap - outLeft); groups.hyd.down += outLeft*0.6; }
+    else if (p.type === 'thermal'){ groups.th.cap += onCap; groups.th.head += Math.max(0, onCap - outLeft); groups.th.down += outLeft*0.5; }
+    else if (g === 'batt' && S.ffr){ groups.ffr.cap += p.mw; groups.ffr.head += Math.max(0, p.mw - out); groups.ffr.down += p.mw; }
+  }
+  if (S.ffr) for (const p of DATA.plants) if (p.type === 'solar' || p.type === 'wind'){ const out = D0.mw[p.name] || 0; groups.ffr.cap += out; groups.ffr.down += out*0.5; }
+  const S1 = Math.max(100, D0.gtot), H1 = Ek/S1, M1 = 2*Ek/F0;
+  const tie = DATA.lines.filter(l => (l.id === 'L36' || l.id === 'U2') && lineLive(l)), tieOn = S.fTie && tie.length > 0;
+  const Ps = tie.reduce((a, l) => a + (l.kv*l.kv)/(XKM[l.kv]*(PUBKM[l.id] || l.km)/l.n), 0);   // maximum power across the link, V²/X (MW)
+  const P0 = tie.reduce((a, l) => a + (R.flows[l.id] || 0)*(l.b === 'LES' ? 1 : -1), 0), tieRating = tie.reduce((a, l) => a + RATING[l.kv]*l.n, 0);
+  const M2 = 2*KENYA.H*KENYA.S/F0;
+  let f1 = 0, f2 = 0, del = 0, shed = 0, stage = 0, pend = [], tieUp = tieOn, tieOverT = 0, tieTrip = null, collapse = null, Pm = { hyd:0, th:0, ffr:0 }, Pm2 = 0;
+  const dt = 0.005, T = 20, out = [], ev = [], loadUg = R.dispLoad;
+  let nadir = 0, tN = 0, maxTie = Math.abs(P0);
+  for (let i = 0, tt = 0; tt <= T + 1e-9; i++, tt = i*dt){
+    const del0 = Math.asin(Math.max(-0.99, Math.min(0.99, P0/Ps)));
+    const P12 = tieUp ? Ps*(Math.sin(del0 + del) - Math.sin(del0)) + KD*Ps*(f1 - f2) : 0;   // damping on the relative speed of the two areas
+    if (tieUp && Math.abs(del0 + del) > Math.PI/2){ tieUp = false; tieTrip = tt; ev.push([tt, 'Link to Kenya loses synchronism and trips']); }
+    else if (tieUp && Math.abs(P0 + P12) > tieRating){ tieOverT += dt; const big = Math.abs(P0 + P12) > 1.5*tieRating;
+      if ((big && tieOverT >= 0.1) || tieOverT >= 5){ tieUp = false; tieTrip = tt; ev.push([tt, big ? 'Link to Kenya trips: flow above 150% of its rating' : 'Link to Kenya trips on overload']); } } else tieOverT = 0;
+    maxTie = Math.max(maxTie, Math.abs(P0 + P12));
+    let dPm = 0; for (const k in groups){ const g = groups[k]; if (!g.cap) continue; const tgt = Math.max(-g.down, Math.min(g.head, -f1/(g.R*F0)*g.cap)); Pm[k] += (tgt - Pm[k])*dt/g.T; dPm += Pm[k]; }
+    const tgt2 = Math.max(-KENYA.head, Math.min(KENYA.head, -f2/(KENYA.R*F0)*KENYA.S)); Pm2 += (tgt2 - Pm2)*dt/KENYA.T;
+    const fabs = F0 + f1;
+    while (stage < UFLS.length && fabs < UFLS[stage] && !pend.some(p => p[1] === stage)){ pend.push([tt + 0.2, stage]); stage++; }
+    pend = pend.filter(([ta, s]) => { if (tt >= ta){ const mw = UFLS_STEP*loadUg; shed += mw; ev.push([tt, `Relays shed ${fmt(mw)} MW of load at ${UFLS[s].toFixed(1)} Hz`]); return false; } return true; });
+    const acc1 = (dPm - dist.gen + dist.load + shed - 1.5*S1*f1/F0 - P12)/M1, acc2 = (Pm2 - KENYA.D*KENYA.S*f2/F0 + P12)/M2;
+    if (i % 20 === 0) out.push([tt, F0 + f1, F0 + f2]);
+    if (f1 < nadir){ nadir = f1; tN = tt; }
+    if (F0 + f1 < 47.5 && !collapse){ collapse = tt; ev.push([tt, 'Generators trip on under-frequency: blackout']); break; }
+    if (F0 + f1 > 51.5 && !collapse){ collapse = tt; ev.push([tt, 'Generators trip on over-speed: blackout']); break; }
+    f1 += acc1*dt; f2 += acc2*dt; del += 2*Math.PI*(f1 - f2)*dt;
+    if (dist.load > dist.gen && f1 > -nadir) { if (f1 > (out.maxUp || 0)) out.maxUp = f1; }
+  }
+  const rocof = (dist.load - dist.gen)/(M1 + (tieOn ? M2 : 0));
+  return { series:out, ev, nadir:F0 + nadir, tN, rocof, shed, tieOn, tieTrip, collapse, Ek, H1, S1, end:out.length ? out[out.length - 1][1] : F0, maxTie, tieRating, up:out.reduce((a, r) => Math.max(a, r[1]), F0) };
+}
+function freqChart(host, r){
+  const s = svgChart(host, 310, 180), x0 = 34, x1 = 302, y0 = 150, y1 = 10;
+  const mn = Math.min(...r.series.map(p => Math.min(p[1], r.tieOn ? p[2] : 99))), small = !r.collapse && mn > 49.2;
+  const lo = small ? Math.min(49.6, Math.floor((mn - 0.1)*10)/10) : Math.min(47.4, Math.floor(mn*2)/2), hi = small ? Math.max(50.1, Math.ceil(r.up*10)/10 + 0.05) : Math.max(50.5, Math.ceil(r.up*2)/2), step = small ? 0.1 : 1;
+  const xs = v => x0 + v/20*(x1 - x0), ys = v => y0 - (v - lo)/(hi - lo)*(y0 - y1);
+  for (let v = Math.ceil(lo/step - 1e-9)*step; v <= hi + 1e-9; v += step){ el('line', { x1:x0, x2:x1, y1:ys(v), y2:ys(v), stroke:C.grid }, s); txt(s, x0 - 4, ys(v) + 4, small ? v.toFixed(1) : `${Math.round(v)}`, { 'text-anchor':'end', 'font-size':10 }); }
+  if (!small) for (const u of UFLS) el('line', { x1:x0, x2:x1, y1:ys(u), y2:ys(u), stroke:C.bad, 'stroke-opacity':0.35, 'stroke-dasharray':'3 3' }, s);
+  if (!small) el('line', { x1:x0, x2:x1, y1:ys(47.5), y2:ys(47.5), stroke:C.bad, 'stroke-width':1.2 }, s);
+  for (let v = 0; v <= 20; v += 5) txt(s, xs(v), y0 + 14, `${v} s`, { 'text-anchor':'middle', 'font-size':10 });
+  if (r.tieOn) el('path', { d:'M' + r.series.map(p => `${xs(p[0]).toFixed(1)},${ys(p[2]).toFixed(1)}`).join('L'), fill:'none', stroke:C.muted, 'stroke-width':1.3, 'stroke-dasharray':'4 3' }, s);
+  el('path', { d:'M' + r.series.map(p => `${xs(p[0]).toFixed(1)},${ys(p[1]).toFixed(1)}`).join('L'), fill:'none', stroke:C.ink, 'stroke-width':2 }, s);
+  for (const [tt] of r.ev) el('line', { x1:xs(tt), x2:xs(tt), y1:y0, y2:y0 - 6, stroke:C.bad, 'stroke-width':1.5 }, s);
+  if (!small){ txt(s, x1, ys(47.5) - 3, 'generators trip', { 'text-anchor':'end', 'font-size':9, fill:C.bad }); txt(s, x1, ys(49.0) - 3, 'load shedding stages', { 'text-anchor':'end', 'font-size':9, fill:C.bad }); }
+  txt(s, x0 + 2, y1 + 8, 'Hz', { 'font-size':9 });
+}
+function freqBlock(dist, title){
+  const r = freqSim(dist);
+  return { r, html:`<div class="block"><h4>${title}</h4><div id="fchart" aria-label="Frequency over the first 20 seconds"></div>
+    <p class="note" style="margin:2px 0 6px">Solid: Uganda. ${r.tieOn ? 'Dashed: Kenya, joined through Tororo–Lessos.' : 'Not joined to Kenya.'}</p>
+    <div class="kv"><span>Energy stored in spinning machines</span><span>${fmt(r.Ek/1000, 1)} GJ (H = ${fmt(r.H1, 1)} s)</span>
+      <span>Initial rate of ${r.rocof > 0 ? 'rise' : 'fall'}</span><span>${fmt(Math.abs(r.rocof), 2)} Hz/s</span>
+      ${r.rocof > 0 ? `<span>Highest frequency</span><span>${r.collapse ? 'above 51.5 Hz' : `${fmt(r.up, 2)} Hz`}</span>` : `<span>Lowest frequency</span><span>${r.collapse ? 'below 47.5 Hz' : `${fmt(r.nadir, 2)} Hz at ${fmt(r.tN, 1)} s`}</span>`}
+      <span>Load shed by relays</span><span>${fmt(r.shed)} MW</span>
+      ${r.tieOn ? `<span>Link to Kenya</span><span>${r.tieTrip != null ? `tripped at ${fmt(r.tieTrip, 1)} s` : (r.maxTie > r.tieRating ? `held, though briefly over its rating (peak ${fmt(r.maxTie)} MW, rating ${fmt(r.tieRating)} MW)` : `held (peak ${fmt(r.maxTie)} of ${fmt(r.tieRating)} MW)`)}</span>` : ''}
+      <span class="tot">Outcome</span><span class="tot">${r.collapse ? `blackout at ${fmt(r.collapse, 1)} s` : r.shed > 0 ? `frequency held by shedding load` : r.nadir < 49.5 ? 'recovered, close call' : 'recovered'}</span></div>
+    ${r.ev.length ? `<ul class="note" style="margin:6px 0 0;padding-left:16px">${r.ev.slice(0, 6).map(e => `<li>${fmt(e[0], 1)} s: ${e[1]}</li>`).join('')}</ul>` : ''}
+    <div style="display:grid;gap:4px;margin-top:8px">
+      <label class="ck"><input type="checkbox" id="fTie" ${S.fTie ? 'checked' : ''}> Kenya link shares the shock</label>
+      <label class="ck"><input type="checkbox" id="ffr" ${S.ffr ? 'checked' : ''}> Batteries, solar and wind give fast frequency response</label></div>
+    <p class="note" style="margin:6px 0 0">Spinning turbines and generators act like a flywheel: their stored energy (½Iω²) holds the frequency up for the first seconds, as a flywheel smooths an engine's speed. The more stored energy, the slower the fall. Solar and wind add none unless their inverters are set to respond.</p></div>` };
+}
+/* ---------------- cascading trips and restoration ---------------- */
+const CASC_LIMIT = 1.15;   // protection trips a line loaded above 115% of its rating
+const loadingOf = l => R.flows[l.id] == null ? 0 : Math.abs(R.flows[l.id])/(RATING[l.kv]*l.n);
+function cascadeStep(){
+  const worst = DATA.lines.filter(l => loadingOf(l) > CASC_LIMIT).sort((a, b) => loadingOf(b) - loadingOf(a))[0];
+  if (!worst) return false;
+  S.casc.push(worst.id); S.out.add(worst.id); S.cascLog.push({ id:worst.id, ld:loadingOf(worst) });
+  R = solve(); S.cascLog[S.cascLog.length - 1].after = { lost:R.lostLoad + R.shed, over:R.over.length }; return true;
+}
+function cascadeBlock(){
+  if (S.restore != null) return '';
+  const over = DATA.lines.filter(l => loadingOf(l) > CASC_LIMIT);
+  if (!over.length && !S.casc.length) return '';
+  const log = (S.cascLog || []).map((c, i) => { const l = DATA.lines.find(x => x.id === c.id); return `<li>${esc(l.note.split(',')[0])} trips at ${fmt(c.ld*100)}% of rating${c.after ? `; ${fmt(c.after.lost)} MW of demand now unsupplied` : ''}</li>`; }).join('');
+  return `<div class="block"><h4>Cascade</h4>
+    <p class="note" style="margin:0 0 6px">Protection trips a line carrying more than ${fmt(CASC_LIMIT*100)}% of its rating. Its flow moves to the lines beside it, which can overload in turn.</p>
+    ${log ? `<ol class="note" style="margin:0 0 6px;padding-left:18px">${log}</ol>` : ''}
+    ${over.length ? `<p style="margin:0 0 6px">${over.length} line${over.length > 1 ? 's are' : ' is'} above ${fmt(CASC_LIMIT*100)}% now.</p>` : `<p style="margin:0 0 6px">The cascade has stopped${R.lostLoad + R.shed > 0.5 ? `, with ${fmt(R.lostLoad + R.shed)} MW of demand unsupplied` : ''}.</p>`}
+    <div style="display:flex;gap:6px;flex-wrap:wrap">${over.length ? '<button type="button" id="cascNext">Next trip</button><button type="button" id="cascAll">Run to the end</button>' : ''}${S.casc.length ? '<button type="button" id="cascUndo">Undo the cascade</button>' : ''}</div></div>`;
+}
+function restoreBlock(){
+  if (S.restore == null) return `<div class="block"><h4>Restoring a dark grid</h4><p class="note" style="margin:0 0 6px">After a national blackout, the grid is rebuilt from power stations that can start on their own, one area at a time.</p><button type="button" id="restStart">Start from a blackout</button></div>`;
+  const st = RESTORE[S.restore];
+  return `<div class="block"><h4>Restoration, step ${S.restore + 1} of ${RESTORE.length} (about ${st.t} after the blackout)</h4>
+    <p style="margin:0 0 6px">${st.text}</p>
+    <div class="kv"><span>Demand supplied</span><span>${fmt(R.totLoad - R.lostLoad - R.shed)} of ${fmt(R.totLoad)} MW</span></div>
+    <p class="note" style="margin:6px 0">An illustrative sequence based on usual practice, not UETCL's restoration plan. Times are indicative; the June 2026 blackout took about three hours to clear.</p>
+    <div style="display:flex;gap:6px;flex-wrap:wrap">${S.restore > 0 ? '<button type="button" id="restPrev">Back a step</button>' : ''}${S.restore < RESTORE.length - 1 ? '<button type="button" id="restNext">Next step</button>' : ''}<button type="button" id="restEnd">Leave restoration</button></div></div>`;
+}
+function subFreq(){
+  if (!S.outSub.size || S.restore != null || S.trip) return '';
+  const last = [...S.outSub].pop(), keep = new Set(S.outSub); keep.delete(last);
+  const saveR = R, saveSub = S.outSub; S.outSub = keep; const R0 = solve(); S.outSub = saveSub; R = saveR;
+  const newly = [...R.island].filter(id => !R0.island.has(id));
+  const D0 = dispatch(S.scen, S.season, R0.dom, R0.dispLoad, { cut:R0.island, trip:null });
+  let gen = 0, load = 0; for (const p of DATA.plants) if (newly.includes(p.node)) gen += D0.mw[p.name] || 0;
+  for (const id of newly) load += R0.load[id] || 0;
+  const RR = R; R = R0; const fb = freqBlock({ gen, load }, `First 20 seconds after ${esc(nodeById[last].name)} trips`); R = RR; FB = fb;
+  return fb.html.replace('<div class="kv">', `<p style="margin:0 0 6px">Lost at once: ${fmt(gen)} MW of generation and ${fmt(load)} MW of demand.</p><div class="kv">`);
+}
+function demandBlock(){
+  const nd20 = newDemand(20), ndNow = newDemand(SHOUR[S.scen]); let homes = 0, grid = 0; for (const d of DATA.geo.districts) if (d.hh){ const x = districtDemand(d); homes += x.newHomes; grid += x.gridHomes; }
+  let day = 0; for (let h = 0; h < 24; h++){ const k = newDemand(h).kind; day += k.homes + k.cook + k.boda; }
+  const add20 = nd20.kind.homes + nd20.kind.cook + nd20.kind.boda;
+  return `<div class="block"><h4>New demand</h4>
+    ${ctrlRow('accT', 'Homes connected to the grid', S.acc.T, BASE_ACC, 100, 1, `% (today about ${BASE_ACC}%)`)}
+    ${ctrlRow('accOff', 'New homes served off-grid instead', S.acc.off, 0, 80, 5, '% (solar home systems, mini-grids)')}
+    ${ctrlRow('accW', 'Evening demand of a newly connected home', S.acc.w, 30, 400, 10, 'W')}
+    ${ctrlRow('cook', 'Grid-connected homes cooking with electricity', S.cook, 0, 60, 1, '% (target 18–20% by 2030)')}
+    ${ctrlRow('boda', 'Electric motorcycles', S.boda, 0, 400000, 5000, 'number')}
+    <label class="ck" style="margin-top:6px;display:flex;gap:6px;align-items:center">Charged <select id="bodaMode" style="font:inherit;font-size:14px;padding:2px 4px;border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink)">${Object.entries(BODA_LABEL).map(([k, v]) => `<option value="${k}"${k === S.bodaMode ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
+    <div class="kv" style="margin-top:8px"><span>Newly connected homes</span><span>${fmt(homes/1e6, 2)} million</span><span>Homes on the grid</span><span>${fmt(grid/1e6, 1)} million</span>
+      <span>Added demand at 20:00</span><span>${fmt(add20)} MW</span><span>&nbsp;&nbsp;new homes · cooking · motorcycles</span><span>${fmt(nd20.kind.homes)} · ${fmt(nd20.kind.cook)} · ${fmt(nd20.kind.boda)}</span>
+      <span>Added demand now (${SCEN[S.scen].label.slice(0, 5)})</span><span>${fmt(ndNow.kind.homes + ndNow.kind.cook + ndNow.kind.boda)} MW</span><span class="tot">Added energy</span><span class="tot">${fmt(day/1000, 1)} GWh a day</span></div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px"><button type="button" id="ndUniv">Connect every home</button><button type="button" id="ndReset">Clear new demand</button></div>
+    <p class="note" style="margin:6px 0 0">New homes are added district by district, from today's estimated access (2014 GIS data scaled to about ${BASE_ACC}% nationally) up to the target, and supplied from each district's substation. Cooking is about 1 kWh a day per home, mostly at meal times; each motorcycle uses about 3.5 kWh a day. Uganda's cooking tariff charges units 81–150 each month at Shs 412/kWh.</p></div>`;
+}
 function largestUnit(){
   let best = null;
   for (const p of DATA.plants){ const out = p._mw || 0; if (out < 1) continue; const u = Math.min(unitSize(p), out); if (!best || u > best.u) best = { p, u }; }
   return best;
 }
+let FB = null;
 function unitBlock(){
+  FB = null;
   if (S.trip){ const p = DATA.plants.find(x => x.name === S.trip);
     return `<div class="block"><h4>Largest unit check</h4><div class="warn">One ${fmt(unitSize(p))} MW unit of ${esc(p.name)} has tripped. The rest of the system has picked up what it could${R.shed > 0.5 ? `, and ${fmt(R.shed)} MW of load is shed` : ' without shedding load'}.</div>
-      <div style="margin-top:8px"><button type="button" id="untrip">Bring the unit back</button></div></div>`; }
+      <div style="margin-top:8px"><button type="button" id="untrip">Bring the unit back</button></div></div>` + (FB = freqBlock({ gen:Math.min(unitSize(p), (dispatch(S.scen, S.season, R.dom, R.dispLoad, { cut:R.island, trip:null }).mw[p.name] || 0)), load:0, plant:p.name }, `First 20 seconds after ${esc(p.name.replace(' (scenario)', ''))} trips`)).html; }
   const b = largestUnit(); if (!b) return '';
   const short = Math.max(0, b.u - R.reserve);
   return `<div class="block"><h4>Largest unit check</h4>
     <p style="margin:0 0 6px">Largest unit running: <b>${esc(b.p.name.replace(' (scenario)', ''))}</b></p>
     <div class="kv"><span>Its output</span><span>${fmt(b.u)} MW</span><span>Fast reserve available</span><span>${fmt(R.reserve)} MW</span>
-      <span class="tot">If it trips</span><span class="tot">${short > 0.5 ? `${fmt(short)} MW shed` : 'covered'}</span></div>
+      <span class="tot">Once governors respond</span><span class="tot">${short > 0.5 ? `${fmt(short)} MW short` : 'covered'}</span></div>
+    <p class="note" style="margin:6px 0 0">That is the balance after a minute or so. Whether the grid survives the first seconds depends on stored energy and protection: trip the unit to see.</p>
     <p class="note" style="margin:6px 0 0">Fast reserve is spare output at Owen Falls, Karuma and other Nile plants, plus thermal plants that can start within minutes. When a unit trips, the interconnectors with Kenya first share the loss, then under-frequency relays shed load if reserve is too small.</p>
     <div style="margin-top:8px"><button type="button" id="tripGo">Trip this unit</button></div></div>`;
 }
 function setCase(id){
   const c = CASES[id] || CASES.now;
   S.caseId = id; S.added = (c.plants || []).map(p => Object.assign({}, p)); S.loads = (c.loads || []).map(L => Object.assign({}, L));
-  S.lines = new Set(c.lines || []); S.nile = c.nile || 1; S.trip = null; S.out = new Set(); S.sel = null;
+  S.lines = new Set(c.lines || []); S.nile = c.nile || 1; S.trip = null; S.out = new Set(c.out || []); S.sel = null; S.outSub = new Set(c.outSub || []); S.casc = []; S.cascLog = []; S.restore = null;
   S.dom = c.dom || 1166; S.exp = Object.assign({ KE:100, RW:40, TZ:20, CD:20 }, c.exp || {}); S.uc = !!c.uc; S.thermal = true;
   S.season = c.season || 'dry'; S.scen = c.scen || 'peak';
+  S.acc = Object.assign({ T:BASE_ACC, off:35, w:100 }, c.acc || {}); S.cook = c.cook || 0; S.boda = c.boda || 0; S.bodaMode = c.bodaMode || 'evening';
   document.querySelectorAll('#scen button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.s === S.scen)));
   document.querySelectorAll('#season button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === S.season)));
   syncPlants(); drawLegend(); refresh();
@@ -1571,7 +1800,7 @@ function overview(){
     ${R.warn.map(w => `<div class="warn">${w}</div>`).join('')}
     ${R.over.length ? `<div class="warn">Overloaded: ${R.over.map(l => `${l.note.split(' ')[0]} (${fmt(Math.abs(R.flows[l.id]))} MW)`).join(', ')}</div>` : ''}</div>
   <div class="block"><h4>Generation now</h4><table class="list">${Object.entries(gr).filter(([, v]) => v > 0.5).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<tr><td>${k}</td><td class="r">${fmt(v)} MW</td></tr>`).join('')}</table></div>
-  ${unitBlock()}
+  ${unitBlock()}${subFreq()}
   <div class="block"><h4>Grid carbon intensity now</h4>
     <div class="kv"><span>Generated</span><span><b>${fmt(R.ci, 1)} g CO₂/kWh</b></span><span>Delivered to customers</span><span>${fmt(R.ciDel, 1)} g CO₂/kWh</span>
       <span>Oil-fired output</span><span>${fmt(R.th)} MW</span><span>Marginal plant</span><span>${R.th > 0.5 ? `HFO, ${fmt(EF_OIL)} g/kWh` : 'hydro, 0 g/kWh'}</span>
@@ -1588,7 +1817,9 @@ function overview(){
       <label class="ck"><input type="checkbox" id="ucOn" ${S.uc ? 'checked' : ''}> What if: lines under construction are in service</label>
     </div>
   </div>
-  <div class="block"><h4>Lines switched out</h4>${S.out.size ? `<table class="list">${[...S.out].map(id => { const l = DATA.lines.find(x => x.id === id); return `<tr><td>${l.note.split(',')[0]}</td><td class="r"><button type="button" data-restore="${id}">Restore</button></td></tr>`; }).join('')}</table>` : '<p class="note" style="margin:0">None. Click a line on the map to switch it out.</p>'}
+  ${demandBlock()}
+  ${cascadeBlock()}${restoreBlock()}
+  <div class="block"><h4>Switched out</h4>${S.out.size || S.outSub.size ? `<table class="list">${[...S.outSub].map(id => `<tr><td>${esc(nodeById[id].name)} substation</td><td class="r"><button type="button" data-subback="${id}">Restore</button></td></tr>`).join('')}${[...S.out].map(id => { const l = DATA.lines.find(x => x.id === id); return `<tr><td>${l.note.split(',')[0]}${S.casc.includes(id) ? ' <span class="note">(tripped in cascade)</span>' : ''}</td><td class="r"><button type="button" data-restore="${id}">Restore</button></td></tr>`; }).join('')}</table>` : '<p class="note" style="margin:0">None. Click a line or substation on the map to switch it out.</p>'}
     <div style="margin-top:8px"><button type="button" id="runN1">Check every single-line outage (N−1)</button></div><div id="n1res"></div></div>
   <div class="block"><h4>Share this view</h4>
     <p class="note" style="margin:0 0 8px">The link reopens this hour, season, demand, exports, lines switched out and the selected site. Useful for setting tutorial questions.</p>
@@ -1606,7 +1837,9 @@ function detail(){
       <div class="kv"><span>Load supplied (model)</span><span>${fmt(R.load[n.id] || 0)} MW</span><span>Generation connected</span><span>${fmt(R.gen[n.id] || 0)} MW</span></div>
       <h4 style="margin-top:8px">Lines</h4><table class="list">${ls.map(l => { const f = R.flows[l.id]; const other = nodeById[l.a === n.id ? l.b : l.a]; const outflow = f == null ? null : (l.a === n.id ? f : -f);
         return `<tr><td>${l.kv} kV to ${other.name}${l.st !== 'op' ? ` (${l.st === 'uc' ? 'under construction' : 'planned'})` : ''}</td><td class="r">${outflow == null ? '–' : `${outflow >= 0 ? 'out' : 'in'} ${fmt(Math.abs(outflow))} MW`}</td></tr>`; }).join('')}</table>`;
-    if (R.island.has(n.id) && n.kind !== 'pss') h += `<div class="warn">This substation is cut off from the main grid by the lines switched out.</div>`; }
+    if (R.island.has(n.id) && n.kind !== 'pss' && !S.outSub.has(n.id) && S.restore == null) h += `<div class="warn">This substation is cut off from the main grid by the lines switched out.</div>`;
+    if (n.kind !== 'ext' && n.kind !== 'pss' && S.restore == null) h += `<div style="margin-top:8px"><button type="button" id="tripSub">${S.outSub.has(n.id) ? 'Bring this substation back' : 'Trip the whole substation'}</button></div>`; }
+  if (s.kind === 'plant' && !S.trip){ const p = DATA.plants.find(x => x.name === s.id); if (p && (p._mw || 0) > 0.5) h += `<div style="margin-top:8px"><button type="button" id="tripPlant">Trip one ${fmt(Math.min(unitSize(p), p._mw))} MW unit here</button></div>`; }
   if (s.kind === 'line'){ const l = DATA.lines.find(x => x.id === s.id), f = R.flows[l.id], a = nodeById[l.a], b = nodeById[l.b];
     const rat = RATING[l.kv]*l.n, ld = f == null ? null : Math.abs(f)/rat;
     h += `<h4>${l.kv} kV transmission line</h4><h3>${a.name.replace(' (planned)','')} – ${b.name.replace(' (planned)','')}</h3><p style="margin:0 0 6px">${l.note}</p>
@@ -1634,9 +1867,15 @@ function drawSide(){
     r.addEventListener('input', () => { n.value = r.value; set(+r.value); });
     n.addEventListener('change', () => { r.value = n.value; set(+n.value); }); };
   bind('dom', 'dom'); bind('eKE', null, 'KE'); bind('eRW', null, 'RW'); bind('eTZ', null, 'TZ'); bind('eCD', null, 'CD');
+  const bindF = (id, set) => { const r = $(id + '_r'), n = $(id); if (!r) return; const go = v => { v = Math.min(+r.max, Math.max(+r.min, v)); set(v); refresh(false); };
+    r.addEventListener('input', () => { n.value = r.value; go(+r.value); }); n.addEventListener('change', () => { r.value = n.value; go(+n.value); }); };
+  bindF('accT', v => S.acc.T = v); bindF('accOff', v => S.acc.off = v); bindF('accW', v => S.acc.w = v); bindF('cook', v => S.cook = v); bindF('boda', v => S.boda = v);
+  const bm = $('bodaMode'); if (bm) bm.addEventListener('change', e => { S.bodaMode = e.target.value; refresh(); });
+  const nu = $('ndUniv'); if (nu) nu.addEventListener('click', () => { S.acc = { T:100, off:35, w:S.acc.w }; refresh(); });
+  const nr = $('ndReset'); if (nr) nr.addEventListener('click', () => { S.acc = { T:BASE_ACC, off:35, w:100 }; S.cook = 0; S.boda = 0; refresh(); });
   $('thermalOn').addEventListener('change', e => { S.thermal = e.target.checked; refresh(); });
   $('ucOn').addEventListener('change', e => { S.uc = e.target.checked; refresh(); });
-  $('side').querySelectorAll('[data-restore]').forEach(b => b.addEventListener('click', () => { S.out.delete(b.dataset.restore); refresh(); }));
+  $('side').querySelectorAll('[data-restore]').forEach(b => b.addEventListener('click', () => { S.out.delete(b.dataset.restore); S.casc = S.casc.filter(x => x !== b.dataset.restore); refresh(); }));
   const tl = $('toggleLine'); if (tl) tl.addEventListener('click', () => { const id = S.sel.id; if (S.out.has(id)) S.out.delete(id); else S.out.add(id); refresh(); });
   const cs = $('closeSel'); if (cs) cs.addEventListener('click', () => { S.sel = null; refresh(); });
   const cl = $('copyLink'); if (cl) cl.addEventListener('click', copyLink);
@@ -1646,6 +1885,7 @@ function drawSide(){
   $('side').querySelectorAll('[data-rmplant]').forEach(b => b.addEventListener('click', () => { S.added.splice(+b.dataset.rmplant, 1); custom(); syncPlants(); drawLegend(); refresh(); }));
   $('side').querySelectorAll('[data-rmload]').forEach(b => b.addEventListener('click', () => { S.loads.splice(+b.dataset.rmload, 1); custom(); refresh(); }));
   const det = $('side').querySelector('details.add'); if (det) det.addEventListener('toggle', () => { S.addOpen = det.open; });
+  const ap = $('addPreset'); if (ap) ap.addEventListener('change', () => { const p = LOAD_PRESETS[+ap.value]; if (!p) return; $('addType').value = 'load'; $('addMW').value = p.mw; $('addNode').value = p.node; $('addName').value = p.name; });
   const ag = $('addGo'); if (ag) ag.addEventListener('click', () => {
     const type = $('addType').value, mw = Math.max(1, Math.min(3000, +$('addMW').value || 0)), node = $('addNode').value, units = Math.max(1, Math.min(200, Math.round(+$('addUnits').value || 1)));
     const nm = ($('addName').value || '').trim();
@@ -1653,6 +1893,19 @@ function drawSide(){
     else { let name = nm || `${TYPES[type].split(' (')[0]} at ${nodeById[node].name}`; while (DATA.plants.some(p => p.name === name)) name += ' (2)';
       S.added.push({ name, type, mw, node, units, river:type === 'hydro' && $('addNile').checked ? 'nile' : undefined }); }
     custom(); syncPlants(); drawLegend(); refresh(); });
+  if (FB && $('fchart')) freqChart($('fchart'), FB.r);
+  const ft = $('fTie'); if (ft) ft.addEventListener('change', e => { S.fTie = e.target.checked; refresh(); });
+  const ff = $('ffr'); if (ff) ff.addEventListener('change', e => { S.ffr = e.target.checked; refresh(); });
+  const tp = $('tripPlant'); if (tp) tp.addEventListener('click', () => { S.trip = S.sel.id; refresh(); });
+  const ts = $('tripSub'); if (ts) ts.addEventListener('click', () => { const id = S.sel.id; if (S.outSub.has(id)) S.outSub.delete(id); else S.outSub.add(id); refresh(); });
+  $('side').querySelectorAll('[data-subback]').forEach(b => b.addEventListener('click', () => { S.outSub.delete(b.dataset.subback); refresh(); }));
+  const cn = $('cascNext'); if (cn) cn.addEventListener('click', () => { cascadeStep(); refresh(); });
+  const cA = $('cascAll'); if (cA) cA.addEventListener('click', () => { for (let i = 0; i < 25 && cascadeStep(); i++); refresh(); });
+  const cu = $('cascUndo'); if (cu) cu.addEventListener('click', () => { for (const id of S.casc) S.out.delete(id); S.casc = []; S.cascLog = []; refresh(); });
+  const rs = $('restStart'); if (rs) rs.addEventListener('click', () => { S.restore = 0; S.outSub = new Set(); S.out = new Set(); S.casc = []; S.cascLog = []; S.trip = null; S.sel = null; refresh(); });
+  const rn = $('restNext'); if (rn) rn.addEventListener('click', () => { S.restore = Math.min(RESTORE.length - 1, S.restore + 1); refresh(); });
+  const rp = $('restPrev'); if (rp) rp.addEventListener('click', () => { S.restore = Math.max(0, S.restore - 1); refresh(); });
+  const re = $('restEnd'); if (re) re.addEventListener('click', () => { S.restore = null; refresh(); });
   const ca = $('candAdd'); if (ca) ca.addEventListener('click', () => { const c = DATA.gis.cands.find(x => x.name === S.sel.id), ns = nearestSub(c.lat, c.lon);
     S.added.push({ name:c.name + ' (candidate)', type:c.type, mw:c.mw, node:ns.n.id, units:Math.max(1, Math.round(c.mw/50)), river:/nile/i.test(c.river) ? 'nile' : undefined, lat:c.lat, lon:c.lon });
     custom(); syncPlants(); drawLegend(); refresh(); });
@@ -1696,17 +1949,25 @@ function drawCharts(){
     g.forEach(([yr, v], i) => { const x = x0 + i*bw + bw*0.18; el('rect', { x, y:ys(v), width:bw*0.64, height:y0 - ys(v), fill:C.kv132, 'fill-opacity':yr === 2025 ? 1 : 0.7, rx:2 }, s);
       txt(s, x + bw*0.32, ys(v) - 5, fmt(v), { 'text-anchor':'middle', fill:C.ink, 'font-size':10.5 }); txt(s, x + bw*0.32, y0 + 16, yr, { 'text-anchor':'middle' }); }); }
   // daily curve
-  { const s = svgChart($('chDay'), 440, 230), x0 = 44, x1 = 430, y0 = 196, y1 = 20, xs = hr => x0 + hr/23*(x1 - x0), mx = S.dom*1.05, ys = v => y0 - v/mx*(y0 - y1);
-    for (let v = 0; v <= mx; v += 300){ el('line', { x1:x0, x2:x1, y1:ys(v), y2:ys(v), stroke:C.grid }, s); txt(s, x0 - 6, ys(v) + 4, fmt(v), { 'text-anchor':'end' }); }
+  { const add = Array.from({ length:24 }, (_, h) => newDemand(h).kind), base = DAY.map(f => f*S.dom), flat = S.loads.reduce((a, L) => a + L.mw, 0);
+    const tops = base.map((b, h) => [b + flat, b + flat + add[h].homes, b + flat + add[h].homes + add[h].cook, b + flat + add[h].homes + add[h].cook + add[h].boda]);
+    const s = svgChart($('chDay'), 440, 230), x0 = 44, x1 = 430, y0 = 196, y1 = 20, xs = hr => x0 + hr/23*(x1 - x0), mx = Math.max(S.dom*1.05, ...tops.map(t => t[3]*1.05)), ys = v => y0 - v/mx*(y0 - y1);
+    const band = (lo, hi, col) => el('path', { d:'M' + tops.map((t, h) => `${xs(h)},${ys(hi(t, h))}`).join('L') + 'L' + tops.map((t, h) => `${xs(h)},${ys(lo(t, h))}`).reverse().join('L') + 'Z', fill:col, 'fill-opacity':0.55, stroke:'none' }, s);
+    const any = tops.some((t, h) => t[3] - base[h] > 0.5);
+    for (let v = 0; v <= mx; v += mx > 2400 ? 600 : 300){ el('line', { x1:x0, x2:x1, y1:ys(v), y2:ys(v), stroke:C.grid }, s); txt(s, x0 - 6, ys(v) + 4, fmt(v), { 'text-anchor':'end' }); }
     for (let hr = 0; hr < 24; hr += 3) txt(s, xs(hr), y0 + 16, `${String(hr).padStart(2, '0')}:00`, { 'text-anchor':'middle' });
     el('path', { d:`M${xs(0)},${y0}` + DAY.map((f, hr) => `L${xs(hr)},${ys(f*S.dom)}`).join('') + `L${xs(23)},${y0}Z`, fill:C.load, 'fill-opacity':0.18 }, s);
     el('path', { d:'M' + DAY.map((f, hr) => `${xs(hr)},${ys(f*S.dom)}`).join('L'), fill:'none', stroke:C.load, 'stroke-width':2.2 }, s);
-    for (const [k, hr] of Object.entries(SHOUR)){ const on = k === S.scen, g = el('g', { class:'hit' }, s); const v = SCEN[k].d*S.dom;
+    if (any){ band((t, h) => base[h], t => t[0], C.thermal); band(t => t[0], t => t[1], C.kv33); band(t => t[1], t => t[2], C.bad); band(t => t[2], t => t[3], C.wind);
+      el('path', { d:'M' + tops.map((t, h) => `${xs(h)},${ys(t[3])}`).join('L'), fill:'none', stroke:C.ink, 'stroke-width':1.5 }, s);
+      const lg = [['industry and other new loads', C.thermal], ['new homes', C.kv33], ['electric cooking', C.bad], ['motorcycles', C.wind]].filter((x, i) => tops.some((t, h) => (i === 0 ? t[0] - base[h] : t[i] - t[i - 1]) > 0.5));
+      lg.forEach(([n, c], i) => { el('rect', { x:x0 + 6 + i*96, y:y1 - 14, width:9, height:9, fill:c, 'fill-opacity':0.7 }, s); txt(s, x0 + 18 + i*96, y1 - 6, n, { 'font-size':10 }); }); }
+    for (const [k, hr] of Object.entries(SHOUR)){ const on = k === S.scen, g = el('g', { class:'hit' }, s); const v = tops[hr][3];
       el('line', { x1:xs(hr), x2:xs(hr), y1:ys(v), y2:y0, stroke:on ? C.ink : C.muted, 'stroke-dasharray':'3 3' }, g);
       el('circle', { cx:xs(hr), cy:ys(v), r:on ? 6 : 4.5, fill:on ? C.ink : C.sheet, stroke:C.ink, 'stroke-width':1.5 }, g);
       el('rect', { x:xs(hr) - 14, y:y1 - 10, width:28, height:y0 - y1 + 10, fill:'transparent' }, g);
       g.addEventListener('click', () => setScen(k)); el('title', {}, g).textContent = SCEN[k].label; }
-    txt(s, xs(SHOUR[S.scen]) + 8, ys(SCEN[S.scen].d*S.dom) - 8, `${fmt(SCEN[S.scen].d*S.dom)} MW`, { fill:C.ink, 'font-weight':700 }); }
+    { const hr = SHOUR[S.scen], right = xs(hr) > x1 - 70; txt(s, xs(hr) + (right ? -10 : 8), ys(tops[hr][3]) - 8, `${fmt(tops[hr][3])} MW`, { fill:C.ink, 'font-weight':700, 'text-anchor':right ? 'end' : 'start' }); } }
   // voltage ladder
   { const s = svgChart($('chLad'), 440, 300);
     const steps = [['Generation','11–15 kV at the generator',C.hydro,'step-up transformers at each station'],['400 kV','Karuma to Kawanda, Lira, Olwiyo; 606 km',C.kv400,'400/220 kV 1,302 MVA; 400/132 kV 630 MVA'],['220 kV','Bujagali–Kawanda, west and Rwanda link; 1,002 km',C.kv220,'220/132 kV 2,120 MVA'],['132 kV','backbone to every region; 3,320 km',C.kv132,'132/33 kV 2,556 MVA; 132/11 kV 220 MVA'],['33 kV','UEDCL medium voltage feeders',C.kv33,'33/11 kV secondary substations (towns); 33/0.415 kV pole transformers (rural, 25–200 kVA)'],['11 kV','urban networks, mainly Kampala',C.kv33,'11/0.415 kV transformers (200–1,000 kVA)'],['415/240 V','customers: 3-phase and single-phase, 50 Hz',C.muted,'']];
@@ -1847,7 +2108,7 @@ function gisDetail(s){
   if (s.kind === 'dsub'){ const d = DATA.gis.dsubs.find(x => x.name === s.id); if (!d) return '';
     return `<h4>Distribution substation (2016)</h4><h3>${esc(d.name)}</h3><div class="kv"><span>Voltage</span><span>${esc(d.v)} kV</span>${d.by ? `<span>Built or run by</span><span>${esc(d.by)}</span>` : ''}</div><p class="note" style="margin:6px 0 0">Steps 33 kV down to 11 kV for a town's network.</p>`; }
   if (s.kind === 'district'){ const d = DATA.geo.districts.find(x => x.n === s.id); if (!d) return ''; const sup = d.sup === 'metro' ? 'Kampala metropolitan substations' : (nodeById[d.sup] || {}).name || '–';
-    return `<h4>District (2014 census)</h4><h3>${esc(d.n)}</h3><div class="kv"><span>Sub-region</span><span>${esc(d.reg)}</span><span>Population</span><span>${fmt(d.pop)}</span><span>Households</span><span>${fmt(d.hh)}</span><span>Homes with electricity</span><span>${fmt(d.acc, 1)}%</span><span>Supplied in the model from</span><span>${esc(sup)}</span></div>
+    return `<h4>District (2014 census)</h4><h3>${esc(d.n)}</h3><div class="kv"><span>Sub-region</span><span>${esc(d.reg)}</span><span>Population</span><span>${fmt(d.pop)}</span><span>Households</span><span>${fmt(d.hh)}</span><span>Homes on the grid, 2014 (GIS field)</span><span>${fmt(d.acc, 1)}%</span><span>Estimated today</span><span>${fmt(districtDemand(d).today)}%</span><span>Newly connected homes in this scenario</span><span>${fmt(districtDemand(d).newHomes)}</span><span>Supplied in the model from</span><span>${esc(sup)}</span></div>
       <p class="note" style="margin:6px 0 0">Homes with electricity in each district set one third of the demand at its substation; the other two thirds is industry and other large users.</p>`; }
   return '';
 }
@@ -1934,6 +2195,11 @@ function stateToHash(){
     if (S.nile !== 1) p.set('nile', S.nile);
   }
   if (S.trip) p.set('trip', S.trip);
+  if (S.outSub.size) p.set('subout', [...S.outSub].join('.'));
+  if (S.acc.T !== BASE_ACC || S.acc.off !== 35 || S.acc.w !== 100) p.set('acc', [S.acc.T, S.acc.off, S.acc.w].join('.'));
+  if (S.cook) p.set('cook', S.cook);
+  if (S.boda) p.set('boda', S.boda + '.' + S.bodaMode);
+  if (S.restore != null) p.set('restore', S.restore);
   return '#' + p.toString();
 }
 function applyHash(h){
@@ -1958,6 +2224,10 @@ function applyHash(h){
   }
   syncPlants();
   if (p.get('trip') && DATA.plants.some(x => x.name === p.get('trip'))) S.trip = p.get('trip');
+  S.outSub = new Set((p.get('subout') || '').split('.').filter(id => nodeById[id])); S.casc = []; S.cascLog = [];
+  const ac = (p.get('acc') || '').split('.').map(Number); S.acc = ac.length === 3 && ac.every(isFinite) ? { T:clampTo(ac[0], [BASE_ACC, 100]), off:clampTo(ac[1], [0, 80]), w:clampTo(ac[2], [30, 400]) } : { T:BASE_ACC, off:35, w:100 };
+  S.cook = clampTo(+p.get('cook') || 0, [0, 60]); const bd = (p.get('boda') || '').split('.'); S.boda = clampTo(+bd[0] || 0, [0, 400000]); S.bodaMode = BODA_LABEL[bd[1]] ? bd[1] : 'evening';
+  const rst = parseInt(p.get('restore')); S.restore = isFinite(rst) ? Math.max(0, Math.min(RESTORE.length - 1, rst)) : null;
   S.out = new Set([...S.out].concat((p.get('out') || '').split('.').filter(id => DATA.lines.some(l => l.id === id && l.st === 'sc' && S.lines.has(id)))));
   S.sel = null; const sel = p.get('sel');
   if (sel){ const i = sel.indexOf(':'), kind = sel.slice(0, i), id = sel.slice(i + 1); if (validSel(kind, id)) S.sel = { kind, id }; }
