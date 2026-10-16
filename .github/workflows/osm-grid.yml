@@ -1,0 +1,26 @@
+# Refreshes the OpenStreetMap grid layer of the Uganda Electricity Atlas.
+# Runs on the 3rd of each month, and whenever started by hand (Actions > Refresh OpenStreetMap grid > Run workflow).
+name: Refresh OpenStreetMap grid
+on:
+  schedule:
+    - cron: '20 4 3 * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch OpenStreetMap grid and match it to the model
+        run: python3 tools/osm_grid.py --out data/osm-grid.json
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/osm-grid.json
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "Refresh OpenStreetMap grid data" && git push; fi
