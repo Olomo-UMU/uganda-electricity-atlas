@@ -735,6 +735,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 /* map sheet */
 .mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 @media (max-width:1100px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+@media (min-width:1101px){.side{height:0;min-height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}}
 .mapbox{position:relative;min-width:0;overflow:hidden;background:var(--nbr);display:flex;flex-direction:column;border-right:1px solid var(--rule)}
 .stage{position:relative;height:700px}
 @media (max-width:700px){.stage{height:520px}}
