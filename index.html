@@ -752,9 +752,19 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 .legend .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .legend .note{flex-basis:100%;margin:0}
 .scale{position:absolute;z-index:1000;left:12px;top:12px;font-size:12px;color:var(--muted);background:color-mix(in srgb,var(--paper) 88%,transparent);padding:3px 7px;border-radius:2px}
-.side{display:grid;align-content:start;min-width:0;background:var(--paper)}
-.side .block{padding:14px 16px;border-bottom:1px solid var(--grid);min-width:0}
-.side .block:last-child{border-bottom:0}
+.side{display:grid;align-content:start;gap:10px;min-width:0;background:var(--tint);padding:12px;box-sizing:border-box}
+.side .block{padding:12px 14px;min-width:0;background:var(--paper);border:1px solid var(--rule);border-top:3px solid var(--tile,var(--rule));border-radius:6px}
+.side .block.plain{background:none;border:0;padding:2px 4px}
+.side .t-scen{--tile:var(--kv132)} .side .t-now{--tile:var(--ink)} .side .t-co2{--tile:var(--thermal)}
+.side .t-trade{--tile:var(--kv220)} .side .t-load{--tile:var(--load)} .side .t-fault{--tile:var(--bad)} .side .t-sel{--tile:var(--sel)}
+.side .sect{margin:8px 2px -2px;font-size:13px;font-weight:500;color:var(--muted)}
+.cgroups{display:grid;gap:8px;margin:4px 0 10px}
+.cgroup{border:1px solid var(--rule);border-radius:5px;padding:8px 10px 10px;background:var(--tint)}
+.cgroup h5{margin:0 0 6px;font-size:13px;font-weight:500;color:var(--ink)}
+.cgroup .opts{display:flex;flex-wrap:wrap;gap:6px}
+.cgroup button{font-size:13px;font-weight:400;padding:4px 9px;background:var(--paper);border:1px solid var(--rule);border-radius:4px;color:var(--ink);text-align:left;line-height:1.3}
+.cgroup button[aria-pressed="true"]{background:var(--kv132);border-color:var(--kv132);color:#fff}
+.cnow{font-size:14px;margin:0 0 4px}
 .side h4{margin:0 0 8px;font-size:15px;font-weight:500;color:var(--ink)}
 .side h3{margin:0 0 6px;font-size:20px;font-weight:500;line-height:1.25}
 .kv{display:grid;grid-template-columns:1fr auto;gap:3px 0;font-size:14px}
@@ -1213,6 +1223,13 @@ const PROF = {
   boda:{ night:[0.44,0.44,0.44,0.44,0.44,0.44,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.44,0.44],                                    // kW per motorcycle, 3.5 kWh a day
          evening:[0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.6,0.9,0.9,0.6,0.3],
          swap:Array(24).fill(3.5/24) } };
+const CASE_GROUPS = [
+  { name:'Start here', ids:['now'] },
+  { name:'New generation', ids:['buyende','karamoja','cascade','solar','windgeo'] },
+  { name:'New loads and demand growth', ids:['access','ecook','bigloads','growth'] },
+  { name:'Drought', ids:['drought'] },
+  { name:'Faults and blackouts', ids:['apr2026','jun2026'] }
+];
 const LOAD_PRESETS = [
   { name:'Data centre at Namanve', mw:100, node:'NMS', note:'a large campus needs 100 MW or more (Achireko, 2026)' },
   { name:'Data centre at Kawanda', mw:100, node:'KAW', note:'next to the 400/220 kV hub' },
@@ -1597,8 +1614,11 @@ function scenarioBlock(){
   const c = CASES[S.caseId] || CASES.now;
   const offered = [...new Set([...(c.lines || []), ...(c.options || [])])];
   const subs = DATA.nodes.filter(n => n.kind !== 'ext' && n.kind !== 'pss').sort((a, b) => a.name.localeCompare(b.name));
-  return `<div class="block scen"><h4>Scenario</h4>
-    <select id="caseSel" aria-label="Scenario">${Object.entries(CASES).map(([k, v]) => `<option value="${k}"${k === S.caseId ? ' selected' : ''}>${v.label}</option>`).join('')}${S.caseId === 'custom' ? '<option value="custom" selected>Your own changes</option>' : ''}</select>
+  const grouped = new Set(CASE_GROUPS.flatMap(g => g.ids)), rest = Object.keys(CASES).filter(k => !grouped.has(k));
+  const groups = rest.length ? [...CASE_GROUPS, { name:'Other', ids:rest }] : CASE_GROUPS;
+  return `<div class="block scen t-scen"><h4>Scenarios</h4>
+    <div class="cgroups" id="caseSel" role="group" aria-label="Scenarios">${groups.map(g => `<div class="cgroup"><h5>${g.name}</h5><div class="opts">${g.ids.filter(k => CASES[k]).map(k => `<button type="button" data-case="${k}" aria-pressed="${k === S.caseId}">${CASES[k].label}</button>`).join('')}</div></div>`).join('')}</div>
+    <p class="cnow"><b>${S.caseId === 'custom' ? 'Your own changes' : (CASES[S.caseId] || CASES.now).label}</b></p>
     <p class="note">${S.caseId === 'custom' ? 'You have changed the scenario. Choose one from the list to start again.' : c.text}</p>
     ${S.nile < 1 ? `<p class="note">Nile flow: ${fmt(S.nile*100)}% of normal.</p>` : ''}
     ${offered.length ? `<div style="display:grid;gap:4px;margin:6px 0">${offered.map(id => { const l = DATA.lines.find(x => x.id === id); return `<label class="ck"><input type="checkbox" data-scline="${id}"${S.lines.has(id) ? ' checked' : ''}> ${esc(l.note.replace(' (scenario line)', ''))}</label>`; }).join('')}</div>` : ''}
@@ -1688,7 +1708,7 @@ function freqChart(host, r){
 }
 function freqBlock(dist, title){
   const r = freqSim(dist);
-  return { r, html:`<div class="block"><h4>${title}</h4><div id="fchart" aria-label="Frequency over the first 20 seconds"></div>
+  return { r, html:`<div class="block t-fault"><h4>${title}</h4><div id="fchart" aria-label="Frequency over the first 20 seconds"></div>
     <p class="note" style="margin:2px 0 6px">Solid: Uganda. ${r.tieOn ? 'Dashed: Kenya, joined through Tororo–Lessos.' : 'Not joined to Kenya.'}</p>
     <div class="kv"><span>Energy stored in spinning machines</span><span>${fmt(r.Ek/1000, 1)} GJ (H = ${fmt(r.H1, 1)} s)</span>
       <span>Initial rate of ${r.rocof > 0 ? 'rise' : 'fall'}</span><span>${fmt(Math.abs(r.rocof), 2)} Hz/s</span>
@@ -1716,16 +1736,16 @@ function cascadeBlock(){
   const over = DATA.lines.filter(l => loadingOf(l) > CASC_LIMIT);
   if (!over.length && !S.casc.length) return '';
   const log = (S.cascLog || []).map((c, i) => { const l = DATA.lines.find(x => x.id === c.id); return `<li>${esc(l.note.split(',')[0])} trips at ${fmt(c.ld*100)}% of rating${c.after ? `; ${fmt(c.after.lost)} MW of demand now unsupplied` : ''}</li>`; }).join('');
-  return `<div class="block"><h4>Cascade</h4>
+  return `<div class="block t-fault"><h4>Cascade</h4>
     <p class="note" style="margin:0 0 6px">Protection trips a line carrying more than ${fmt(CASC_LIMIT*100)}% of its rating. Its flow moves to the lines beside it, which can overload in turn.</p>
     ${log ? `<ol class="note" style="margin:0 0 6px;padding-left:18px">${log}</ol>` : ''}
     ${over.length ? `<p style="margin:0 0 6px">${over.length} line${over.length > 1 ? 's are' : ' is'} above ${fmt(CASC_LIMIT*100)}% now.</p>` : `<p style="margin:0 0 6px">The cascade has stopped${R.lostLoad + R.shed > 0.5 ? `, with ${fmt(R.lostLoad + R.shed)} MW of demand unsupplied` : ''}.</p>`}
     <div style="display:flex;gap:6px;flex-wrap:wrap">${over.length ? '<button type="button" id="cascNext">Next trip</button><button type="button" id="cascAll">Run to the end</button>' : ''}${S.casc.length ? '<button type="button" id="cascUndo">Undo the cascade</button>' : ''}</div></div>`;
 }
 function restoreBlock(){
-  if (S.restore == null) return `<div class="block"><h4>Restoring a dark grid</h4><p class="note" style="margin:0 0 6px">After a national blackout, the grid is rebuilt from power stations that can start on their own, one area at a time.</p><button type="button" id="restStart">Start from a blackout</button></div>`;
+  if (S.restore == null) return `<div class="block t-fault"><h4>Restoring a dark grid</h4><p class="note" style="margin:0 0 6px">After a national blackout, the grid is rebuilt from power stations that can start on their own, one area at a time.</p><button type="button" id="restStart">Start from a blackout</button></div>`;
   const st = RESTORE[S.restore];
-  return `<div class="block"><h4>Restoration, step ${S.restore + 1} of ${RESTORE.length} (about ${st.t} after the blackout)</h4>
+  return `<div class="block t-fault"><h4>Restoration, step ${S.restore + 1} of ${RESTORE.length} (about ${st.t} after the blackout)</h4>
     <p style="margin:0 0 6px">${st.text}</p>
     <div class="kv"><span>Demand supplied</span><span>${fmt(R.totLoad - R.lostLoad - R.shed)} of ${fmt(R.totLoad)} MW</span></div>
     <p class="note" style="margin:6px 0">An illustrative sequence based on usual practice, not UETCL's restoration plan. Times are indicative; the June 2026 blackout took about three hours to clear.</p>
@@ -1746,13 +1766,13 @@ function demandBlock(){
   const nd20 = newDemand(20), ndNow = newDemand(SHOUR[S.scen]); let homes = 0, grid = 0; for (const d of DATA.geo.districts) if (d.hh){ const x = districtDemand(d); homes += x.newHomes; grid += x.gridHomes; }
   let day = 0; for (let h = 0; h < 24; h++){ const k = newDemand(h).kind; day += k.homes + k.cook + k.boda; }
   const add20 = nd20.kind.homes + nd20.kind.cook + nd20.kind.boda;
-  return `<div class="block"><h4>New demand</h4>
+  return `<div class="block t-load"><h4>New homes, cooking and motorcycles</h4>
     ${ctrlRow('accT', 'Homes connected to the grid', S.acc.T, BASE_ACC, 100, 1, `% (today about ${BASE_ACC}%)`)}
     ${ctrlRow('accOff', 'New homes served off-grid instead', S.acc.off, 0, 80, 5, '% (solar home systems, mini-grids)')}
     ${ctrlRow('accW', 'Evening demand of a newly connected home', S.acc.w, 30, 400, 10, 'W')}
     ${ctrlRow('cook', 'Grid-connected homes cooking with electricity', S.cook, 0, 60, 1, '% (target 18–20% by 2030)')}
     ${ctrlRow('boda', 'Electric motorcycles', S.boda, 0, 400000, 5000, 'number')}
-    <label class="ck" style="margin-top:6px;display:flex;gap:6px;align-items:center">Charged <select id="bodaMode" style="font:inherit;font-size:14px;padding:2px 4px;border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink)">${Object.entries(BODA_LABEL).map(([k, v]) => `<option value="${k}"${k === S.bodaMode ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
+    <label class="ck" style="margin-top:6px;display:flex;gap:6px;align-items:center;min-width:0">Charged <select id="bodaMode" style="flex:1 1 auto;min-width:0;max-width:100%;font:inherit;font-size:14px;padding:2px 4px;border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink)">${Object.entries(BODA_LABEL).map(([k, v]) => `<option value="${k}"${k === S.bodaMode ? ' selected' : ''}>${v}</option>`).join('')}</select></label>
     <div class="kv" style="margin-top:8px"><span>Newly connected homes</span><span>${fmt(homes/1e6, 2)} million</span><span>Homes on the grid</span><span>${fmt(grid/1e6, 1)} million</span>
       <span>Added demand at 20:00</span><span>${fmt(add20)} MW</span><span>&nbsp;&nbsp;new homes · cooking · motorcycles</span><span>${fmt(nd20.kind.homes)} · ${fmt(nd20.kind.cook)} · ${fmt(nd20.kind.boda)}</span>
       <span>Added demand now (${SCEN[S.scen].label.slice(0, 5)})</span><span>${fmt(ndNow.kind.homes + ndNow.kind.cook + ndNow.kind.boda)} MW</span><span class="tot">Added energy</span><span class="tot">${fmt(day/1000, 1)} GWh a day</span></div>
@@ -1768,11 +1788,11 @@ let FB = null;
 function unitBlock(){
   FB = null;
   if (S.trip){ const p = DATA.plants.find(x => x.name === S.trip);
-    return `<div class="block"><h4>Largest unit check</h4><div class="warn">One ${fmt(unitSize(p))} MW unit of ${esc(p.name)} has tripped. The rest of the system has picked up what it could${R.shed > 0.5 ? `, and ${fmt(R.shed)} MW of load is shed` : ' without shedding load'}.</div>
+    return `<div class="block t-fault"><h4>Largest unit check</h4><div class="warn">One ${fmt(unitSize(p))} MW unit of ${esc(p.name)} has tripped. The rest of the system has picked up what it could${R.shed > 0.5 ? `, and ${fmt(R.shed)} MW of load is shed` : ' without shedding load'}.</div>
       <div style="margin-top:8px"><button type="button" id="untrip">Bring the unit back</button></div></div>` + (FB = freqBlock({ gen:Math.min(unitSize(p), (dispatch(S.scen, S.season, R.dom, R.dispLoad, { cut:R.island, trip:null }).mw[p.name] || 0)), load:0, plant:p.name }, `First 20 seconds after ${esc(p.name.replace(' (scenario)', ''))} trips`)).html; }
   const b = largestUnit(); if (!b) return '';
   const short = Math.max(0, b.u - R.reserve);
-  return `<div class="block"><h4>Largest unit check</h4>
+  return `<div class="block t-fault"><h4>Largest unit check</h4>
     <p style="margin:0 0 6px">Largest unit running: <b>${esc(b.p.name.replace(' (scenario)', ''))}</b></p>
     <div class="kv"><span>Its output</span><span>${fmt(b.u)} MW</span><span>Fast reserve available</span><span>${fmt(R.reserve)} MW</span>
       <span class="tot">Once governors respond</span><span class="tot">${short > 0.5 ? `${fmt(short)} MW short` : 'covered'}</span></div>
@@ -1795,41 +1815,47 @@ function custom(){ if (S.caseId !== 'custom') S.caseId = 'custom'; }
 function overview(){
   const gr = dispatchRows(), tg = Object.values(gr).reduce((a, b) => a + b, 0);
   const exp = S.exp.KE + S.exp.RW + S.exp.TZ + S.exp.CD;
-  let h = scenarioBlock() + `<div class="block"><h4>Now: ${SCEN[S.scen].label}, ${SEASON_LABEL[S.season]}</h4>
+  let h = scenarioBlock() + `<p class="sect">The grid now</p><div class="block t-now"><h4>Now: ${SCEN[S.scen].label}, ${SEASON_LABEL[S.season]}</h4>
     <div class="kv"><span>Domestic demand</span><span>${fmt(R.dom - R.shed)} MW</span><span>Exports</span><span>${fmt(exp)} MW</span><span class="tot">Generation needed</span><span class="tot">${fmt(tg)} MW</span></div>
     ${R.warn.map(w => `<div class="warn">${w}</div>`).join('')}
     ${R.over.length ? `<div class="warn">Overloaded: ${R.over.map(l => `${l.note.split(' ')[0]} (${fmt(Math.abs(R.flows[l.id]))} MW)`).join(', ')}</div>` : ''}</div>
-  <div class="block"><h4>Generation now</h4><table class="list">${Object.entries(gr).filter(([, v]) => v > 0.5).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<tr><td>${k}</td><td class="r">${fmt(v)} MW</td></tr>`).join('')}</table></div>
-  ${unitBlock()}${subFreq()}
-  <div class="block"><h4>Grid carbon intensity now</h4>
+  <div class="block t-now"><h4>Generation now</h4><table class="list">${Object.entries(gr).filter(([, v]) => v > 0.5).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<tr><td>${k}</td><td class="r">${fmt(v)} MW</td></tr>`).join('')}</table></div>
+  <div class="block t-co2"><h4>Grid carbon intensity now</h4>
     <div class="kv"><span>Generated</span><span><b>${fmt(R.ci, 1)} g CO₂/kWh</b></span><span>Delivered to customers</span><span>${fmt(R.ciDel, 1)} g CO₂/kWh</span>
       <span>Oil-fired output</span><span>${fmt(R.th)} MW</span><span>Marginal plant</span><span>${R.th > 0.5 ? `HFO, ${fmt(EF_OIL)} g/kWh` : 'hydro, 0 g/kWh'}</span>
       <span>Biogenic CO₂ from bagasse</span><span>${fmt(R.bio*EF_BIO/1000, 0)} t/h (not counted)</span></div>
     <p class="note" style="margin:6px 0 0">Fossil CO₂ from combustion only. Oil plants emit ${fmt(EF_OIL)} g/kWh (fuel oil 77.4 kg CO₂/GJ at 40% efficiency) and cost about US$${fmt(OIL_FUEL_COST)}/MWh in fuel. Annual estimate for 2025: about 15 g/kWh (range 0–50).</p></div>
-  <div class="block"><h4>Demand and exports</h4>
+  <p class="sect">Demand and trade</p>
+  <div class="block t-load"><h4>Demand</h4>
     ${ctrlRow('dom', 'Domestic peak demand', S.dom, 600, 3000, 10, 'MW (2025: 1,166)')}
-    ${ctrlRow('eKE', 'Export to Kenya', S.exp.KE, 0, 300, 5, 'MW, via Tororo')}
-    ${ctrlRow('eRW', 'Export to Rwanda', S.exp.RW, 0, 150, 5, 'MW, via Mirama')}
-    ${ctrlRow('eTZ', 'Export to Tanzania', S.exp.TZ, 0, 80, 5, 'MW, via Mutukula')}
-    ${ctrlRow('eCD', 'Export to DR Congo', S.exp.CD, 0, 50, 5, 'MW, 33 kV from Kasese')}
     <div style="display:grid;gap:4px;margin-top:8px">
       <label class="ck"><input type="checkbox" id="thermalOn" ${S.thermal ? 'checked' : ''}> Allow thermal plants when hydro is short</label>
       <label class="ck"><input type="checkbox" id="ucOn" ${S.uc ? 'checked' : ''}> What if: lines under construction are in service</label>
     </div>
   </div>
   ${demandBlock()}
-  ${cascadeBlock()}${restoreBlock()}
-  <div class="block"><h4>Switched out</h4>${S.out.size || S.outSub.size ? `<table class="list">${[...S.outSub].map(id => `<tr><td>${esc(nodeById[id].name)} substation</td><td class="r"><button type="button" data-subback="${id}">Restore</button></td></tr>`).join('')}${[...S.out].map(id => { const l = DATA.lines.find(x => x.id === id); return `<tr><td>${l.note.split(',')[0]}${S.casc.includes(id) ? ' <span class="note">(tripped in cascade)</span>' : ''}</td><td class="r"><button type="button" data-restore="${id}">Restore</button></td></tr>`; }).join('')}</table>` : '<p class="note" style="margin:0">None. Click a line or substation on the map to switch it out.</p>'}
+  <div class="block t-trade"><h4>Exports to neighbours</h4>
+    ${ctrlRow('eKE', 'Export to Kenya', S.exp.KE, 0, 300, 5, 'MW, via Tororo')}
+    ${ctrlRow('eRW', 'Export to Rwanda', S.exp.RW, 0, 150, 5, 'MW, via Mirama')}
+    ${ctrlRow('eTZ', 'Export to Tanzania', S.exp.TZ, 0, 80, 5, 'MW, via Mutukula')}
+    ${ctrlRow('eCD', 'Export to DR Congo', S.exp.CD, 0, 50, 5, 'MW, 33 kV from Kasese')}
+    <p class="note" style="margin:6px 0 0">Uganda is a net exporter; set a value to zero to stop that link's trade.</p>
+  </div>
+  <p class="sect">Faults and security</p>
+  ${unitBlock()}${subFreq()}
+  <div class="block t-fault"><h4>Switched out</h4>${S.out.size || S.outSub.size ? `<table class="list">${[...S.outSub].map(id => `<tr><td>${esc(nodeById[id].name)} substation</td><td class="r"><button type="button" data-subback="${id}">Restore</button></td></tr>`).join('')}${[...S.out].map(id => { const l = DATA.lines.find(x => x.id === id); return `<tr><td>${l.note.split(',')[0]}${S.casc.includes(id) ? ' <span class="note">(tripped in cascade)</span>' : ''}</td><td class="r"><button type="button" data-restore="${id}">Restore</button></td></tr>`; }).join('')}</table>` : '<p class="note" style="margin:0">None. Click a line or substation on the map to switch it out.</p>'}
     <div style="margin-top:8px"><button type="button" id="runN1">Check every single-line outage (N−1)</button></div><div id="n1res"></div></div>
-  <div class="block"><h4>Share this view</h4>
+  ${cascadeBlock()}${restoreBlock()}
+  <p class="sect">Share</p>
+  <div class="block t-scen"><h4>Share this view</h4>
     <p class="note" style="margin:0 0 8px">The link reopens this hour, season, demand, exports, lines switched out and the selected site. Useful for setting tutorial questions.</p>
     <div class="share"><button type="button" id="copyLink">Copy link</button><span class="note" id="copyMsg" role="status"></span></div></div>
-  <div class="block note">Click a power station, substation, line, distribution area or load centre for details, or use the table below the map.</div>`;
+  <div class="block plain note">Click a power station, substation, line, distribution area or load centre for details, or use the table below the map.</div>`;
   return h;
 }
 function detail(){
   const s = S.sel; if (!s) return '';
-  let h = '<div class="block">';
+  let h = '<div class="block t-sel">';
   if (s.kind === 'plant'){ const p = DATA.plants.find(x => x.name === s.id), n = nodeById[p.node];
     h += `<h4>Power station</h4><h3>${p.name}</h3><div class="kv"><span>Type</span><span>${p.type === 'bagasse' ? 'bagasse cogeneration' : p.type === 'thermal' ? 'thermal (heavy fuel oil)' : p.type}</span><span>Capacity</span><span>${fmt(p.mw, p.mw % 1 ? 1 : 0)} MW</span><span>Output now (model)</span><span>${fmt(p._mw || 0)} MW</span><span>In service</span><span>${p.year}</span><span>Connected at</span><span>${n.name}</span></div><p class="note" style="margin:6px 0 0">${p.note}</p>`; }
   if (s.kind === 'node'){ const n = nodeById[s.id]; const ls = DATA.lines.filter(l => (l.a === n.id || l.b === n.id));
@@ -1879,7 +1905,7 @@ function drawSide(){
   const tl = $('toggleLine'); if (tl) tl.addEventListener('click', () => { const id = S.sel.id; if (S.out.has(id)) S.out.delete(id); else S.out.add(id); refresh(); });
   const cs = $('closeSel'); if (cs) cs.addEventListener('click', () => { S.sel = null; refresh(); });
   const cl = $('copyLink'); if (cl) cl.addEventListener('click', copyLink);
-  const cs2 = $('caseSel'); if (cs2) cs2.addEventListener('change', e => { if (e.target.value !== 'custom') setCase(e.target.value); });
+  $('side').querySelectorAll('[data-case]').forEach(b => b.addEventListener('click', () => setCase(b.dataset.case)));
   const cr = $('caseReset'); if (cr) cr.addEventListener('click', () => setCase('now'));
   $('side').querySelectorAll('[data-scline]').forEach(b => b.addEventListener('change', () => { if (b.checked) S.lines.add(b.dataset.scline); else S.lines.delete(b.dataset.scline); refresh(); }));
   $('side').querySelectorAll('[data-rmplant]').forEach(b => b.addEventListener('click', () => { S.added.splice(+b.dataset.rmplant, 1); custom(); syncPlants(); drawLegend(); refresh(); }));
