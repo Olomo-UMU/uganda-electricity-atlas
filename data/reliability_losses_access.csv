@@ -1,0 +1,49 @@
+series,year,value,unit,source
+distribution_losses,2005,38,% of energy bought,Umeme (2024): 38% at the start of the concession
+distribution_losses,2009,35,% of energy bought,Actis (n.d.)
+distribution_losses,2015,19.5,% of energy bought,Actis (n.d.)
+distribution_losses,2018,16.6,% of energy bought,Daily Monitor (2019): 16.6% before the new targets
+distribution_losses,2019,16.4,% of energy bought,Oketch (2022b)
+distribution_losses,2020,17.5,% of energy bought,Oketch (2022b)
+distribution_losses,2021,17.9,% of energy bought,Oketch (2022a)
+distribution_losses,2022,16.8,% of energy bought,Umeme (2024)
+distribution_losses,2023,16.2,% of energy bought,Umeme (2024)
+distribution_losses_uedcl,2026,18.5,% of energy bought,"Kabayo (2026), UEDCL figure reported to Parliament"
+era_loss_target,2019,13.79,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+era_loss_target,2020,13.01,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+era_loss_target,2021,12.46,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+era_loss_target,2022,11.76,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+era_loss_target,2023,11.47,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+era_loss_target,2024,11.22,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+era_loss_target,2025,11.13,% of energy bought,"Daily Monitor (2019), ERA targets for Umeme"
+access_electricity_people,2000,7.4,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2001,8.6,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2002,7.8,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2003,10.5,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2004,11.6,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2005,8.9,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2006,9.0,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2007,14.8,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2008,15.9,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2009,10.0,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2010,12.1,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2011,14.6,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2012,20.5,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2013,13.9,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2014,20.4,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2015,18.5,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2016,26.7,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2017,32.4,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2018,41.9,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2019,41.3,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2020,42.1,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2021,45.2,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2022,47.1,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2023,51.5,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+access_electricity_people,2024,55.3,"% of people (any source, incl. solar home systems)","World Bank World Development Indicators, via Statistics of the World (n.d.)"
+households_on_grid,2020/21,25.3,% of households,"Uganda Bureau of Statistics (2026), 2021/22 and 2024/25 surveys"
+households_on_grid,2023/24,29.5,% of households,"Uganda Bureau of Statistics (2026), 2021/22 and 2024/25 surveys"
+clean_cooking_people,2022,1.6,% of people,"World Bank, via Clean Cooking Alliance (n.d.)"
+clean_cooking_people,2023,1.8,% of people,"World Bank, via Clean Cooking Alliance (n.d.)"
+clean_cooking_households,2022,1.0,% of households,Uganda Bureau of Statistics (2026)
+clean_cooking_households,2025,2.1,% of households,Uganda Bureau of Statistics (2026)

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use the Uganda Electricity Atlas or its data, please cite it as below."
+type: dataset
+title: "Uganda Electricity Atlas"
+abstract: "An interactive teaching map and open data set of Uganda's electricity system: power stations, the 400/220/132 kV grid, substations, 33 kV distribution, a DC load-flow model, frequency response after a trip, blackout replays, scenarios for new generation and demand, losses, reliability and access. Built for electrical and mechanical engineering students in renewable energy and power systems units."
+authors:
+  - family-names: "Olomo"
+    given-names: "E."
+    affiliation: "Uganda Martyrs University"
+version: "2026.10"
+date-released: "2026-10-21"
+license: CC-BY-4.0
+keywords:
+  - Uganda
+  - electricity
+  - power systems
+  - renewable energy
+  - load flow
+  - engineering education

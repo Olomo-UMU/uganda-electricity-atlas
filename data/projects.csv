@@ -1,0 +1,110 @@
+project,type,technology_or_voltage,capacity_mw,length_km,status,source,notes
+Bujagali – Tororo,Transmission line,220 kV,,118,Under construction,UETCL and news reports (in the model),"Bujagali–Tororo 220 kV, part of the second Uganda–Kenya interconnector"
+Tororo – Lessos (Kenya),Transmission line,220 kV,,130,Under construction,UETCL and news reports (in the model),"Tororo–Lessos 220 kV, second Uganda–Kenya interconnector (KETRACO and UETCL)"
+Masaka West – Mbarara South,Transmission line,400 kV,,135,Under construction,UETCL and news reports (in the model),"Masaka–Mbarara 400 kV, 135 km"
+Wobulenzi – Masaka West,Transmission line,400 kV,,165,Planned,UETCL and news reports (in the model),"Wobulenzi–Masaka 400 kV, 165 km (Uganda–Tanzania interconnector, procurement 2026)"
+Masaka West – Mutukula,Transmission line,400 kV,,92,Planned,UETCL and news reports (in the model),"Masaka–Mutukula 400 kV, 92 km (Uganda–Tanzania interconnector)"
+Mutukula – towards Mwanza (Tanzania),Transmission line,400 kV,,175,Planned,UETCL and news reports (in the model),Mutukula–Mwanza 400 kV (Tanzanian section)
+Olwiyo – Bibia,Transmission line,400 kV,,151.5,Planned,UETCL and news reports (in the model),"Olwiyo–Bibia 400 kV (Uganda–South Sudan interconnector, 151.5 km in Uganda)"
+"Bibia – Nimule, towards Juba (South Sudan)",Transmission line,400 kV,,4,Planned,UETCL and news reports (in the model),"Bibia–Nimule–Gumbo 400 kV, designed for up to 1,000 MW"
+Nkenda (Kasese) – towards Beni (DR Congo),Transmission line,220 kV,,133,Planned,UETCL and news reports (in the model),Nkenda–Mpondwe–Beni interconnection to DR Congo (feasibility)
+Agago - Kitgum,Transmission line,132 kV,,50,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Ayago - Olwiyo,Transmission line,400 kV,,19,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Hoima - Kafu,Transmission line,220 kV,,92,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Iganga Industrial,Transmission line,132 kV,,10,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Kabulasoke - Hoima,Transmission line,132 kV,,204,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Mirama - Kikagati,Transmission line,132 kV,,27,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Masaka West - Bukoba,Transmission line,220 kV,,110,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2017
+Bulambuli - Mbale,Transmission line,132 kV,,34,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Namanve - Namanve South,Transmission line,132 kV,,5,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Nshongezi - Kikagati,Transmission line,132 kV,,9,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Agago - Adjumani,Transmission line,132 kV,,84,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Adjumani - Arua,Transmission line,132 kV,,106,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Buloba - Nkenda,Transmission line,220 kV,,270,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Mukono Industrial,Transmission line,220 kV,,7,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Arua - Aru,Transmission line,132 kV,,17,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Ggaba - Buloba,Transmission line,220 kV,,27,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Ishaka - Kabale,Transmission line,132 kV,,85,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Karuma - Tororo,Transmission line,400 kV,,336,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Kawanda - Kasana,Transmission line,132 kV,,53,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Kiba - Olwiyo,Transmission line,400 kV,,20,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Luzira - Ggaba,Transmission line,132 kV,,5,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Mbarara - Nshangu,Transmission line,400 kV,,72,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Bulambuli - Moroto,Transmission line,132 kV,,135,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Moroto - Kitgum,Transmission line,132 kV,,221,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Oriang - Karuma,Transmission line,400 kV,,28,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Tororo - Wobulenzi,Transmission line,400 kV,,180,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Wobulenzi -Kawanda,Transmission line,220 kV,,38,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Achwa - Agago,Transmission line,132 kV,,29,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Tororo - Lessos (3),Transmission line,400 kV,,130,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2030
+Nebbi - Nyagak,Transmission line,132 kV,,15,Planned in 2016,Energy Sector GIS Working Group (2016),Planned start 2018
+Opuyo - Lira,Transmission line,132 kV,,116,Decommissioned,Energy Sector GIS Working Group (2016),Planned start 1963
+Tororo - Opuyo,Transmission line,132 kV,,148,Decommissioned,Energy Sector GIS Working Group (2016),Planned start 1963
+Biomass Gasification Gulu,Power station,Biofuel,1.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"PH Industrial Farms Ltd, Amuru"
+Bukwa,Power station,Hydro,9.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"C&G Andijes Uganda Ltd, Bukwo"
+Siti II,Power station,Hydro,15.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Elgon Hydro Siti (Pvt) Limited, Bukwo"
+Muyembe-Sirimityo,Power station,Hydro,6.9,,Planned in 2016,Energy Sector GIS Working Group (2016),"Mt. Elgon Hydropower Company Ltd., Bulambuli"
+Ndugutu,Power station,Hydro,4.5,,Planned in 2016,Energy Sector GIS Working Group (2016),"Butama Hydro Electricity Company Ltd., Bundibugyo"
+Nzizi Natural Gas,Power station,Natural Gas,100.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Tullow Oil Uganda Limited, Jacobsen Elektro, Hoima"
+Albatros HFO,Power station,Crude Oil,52.5,,Planned in 2016,Energy Sector GIS Working Group (2016),"Albatros Energy (U) Ltd, Hoima"
+Nkusi,Power station,Hydro,12.9,,Built since 2016,Energy Sector GIS Working Group (2016),"Schima Group Ltd, Hoima"
+Cresta,Power station,Hydro,2.9,,Planned in 2016,Energy Sector GIS Working Group (2016),"Cresta Hydropower Limited, Ibanda"
+Kikagati,Power station,Hydro,16.0,,Built since 2016,Energy Sector GIS Working Group (2016),"Berkley Energy, Isingiro"
+Nsongezi,Power station,Hydro,25.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Maji Power Limited, Isingiro"
+Kakaka,Power station,Hydro,5.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Greenewus Energy Africa Ltd, Kabarole"
+Nyabuhuka,Power station,Hydro,3.2,,Planned in 2016,Energy Sector GIS Working Group (2016),"Network Civil Engineering Contractors Ltd, Kabarole"
+Mahoma,Power station,Hydro,3.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Mahoma Uganda Limited (Akbar Brothers (Pvt)), Kabarole"
+Nengo Bridge,Power station,Hydro,6.7,,Planned in 2016,Energy Sector GIS Working Group (2016),"Jacobsen Elektro Uganda Limited, Kanungu"
+Nyamagasani I,Power station,Hydro,15.0,,Built since 2016,Energy Sector GIS Working Group (2016),"TYAX Holdings Incorporated, Kasese"
+Nyamagasani II,Power station,Hydro,5.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Nyamagasani 2 HPP Ltd, Kasese"
+Lubilia,Power station,Hydro,5.4,,Planned in 2016,Energy Sector GIS Working Group (2016),"Lubilia Kawembe Hydro Limited, Kasese"
+Muzizi,Power station,Hydro,44.7,,Built since 2016,Energy Sector GIS Working Group (2016),"Government of Uganda (UEGCL), Kibaale"
+Bukinda,Power station,Hydro,6.5,,Planned in 2016,Energy Sector GIS Working Group (2016),"Timex Garmets (Pvt) Ltd, Kibaale"
+Oriang,Power station,Hydro,398.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Mota-Engil Engenharia e Constru莽茫o Africa, Kiryandongo"
+Nyamabuye,Power station,Hydro,2.2,,Planned in 2016,Energy Sector GIS Working Group (2016),"Elemental Energy Limited, Kisoro"
+Ayago,Power station,Hydro,840.0,,Planned in 2016,Energy Sector GIS Working Group (2016),"Government of Uganda, Nwoya"
+Achwa II,Power station,Hydro,41.0,,Built since 2016,Energy Sector GIS Working Group (2016),"Maji Power Limited, Pader"
+Achwa I,Power station,Hydro,42.0,,Built since 2016,Energy Sector GIS Working Group (2016),"Maji Power Limited, Pader"
+Kyambura,Power station,Hydro,8.3,,Planned in 2016,Energy Sector GIS Working Group (2016),"Ziba Ltd, Rubirizi"
+Soroti Solar,Power station,Solar,10.0,,Built since 2016,Energy Sector GIS Working Group (2016),"Access Power MEA (Access) & TSK Electronica, Soroti"
+Tororo Solar,Power station,Solar,10.0,,Built since 2016,Energy Sector GIS Working Group (2016),"Simba Telecoms Limited & Building Energy SpA, Tororo"
+Nyagak III,Power station,Hydro,4.4,,Planned in 2016,Energy Sector GIS Working Group (2016),"PPP, Lead Implementing Agencies: Uganda Electricity Generation Company Limited (UEGCL), Hydromax, Zombo"
+Hoimo,Power station,Hydro,2.3,,Planned in 2016,Energy Sector GIS Working Group (2016),"Uganda Energy Credit Capitalization Company Ltd, Hoima"
+Nchwera,Power station,Hydro,3.2,,Planned in 2016,Energy Sector GIS Working Group (2016),"Uganda Energy Credit Capitalization Company Ltd, Mitooma"
+Okok,Power station,Hydro,1.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Amuria
+Agoi II,Power station,Hydro,2.19,,Potential site (2016),Energy Sector GIS Working Group (2016),Arua
+Agoi I,Power station,Hydro,4.38,,Potential site (2016),Energy Sector GIS Working Group (2016),Arua
+Ala II,Power station,Hydro,1.09,,Potential site (2016),Energy Sector GIS Working Group (2016),Arua
+Ala IV,Power station,Hydro,2.19,,Potential site (2016),Energy Sector GIS Working Group (2016),Arua
+Ora II,Power station,Hydro,1.77,,Potential site (2016),Energy Sector GIS Working Group (2016),Arua
+Mvepi,Power station,Hydro,1.2,,Potential site (2016),Energy Sector GIS Working Group (2016),"Hydrocon Uganda Limited, Arua"
+Okulacere,Power station,Hydro,6.3,,Potential site (2016),Energy Sector GIS Working Group (2016),Arua
+Simu,Power station,Hydro,2.6,,Potential site (2016),Energy Sector GIS Working Group (2016),Bulambuli
+Sonso,Power station,Hydro,1.4,,Potential site (2016),Energy Sector GIS Working Group (2016),Buliisa
+Buranga,Power station,Geothermal,5.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Bundibugyo
+Kibiro,Power station,Geothermal,5.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Hoima
+Kalangala,Power station,Hydro,330.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Jinja
+Rwebijooka,Power station,Hydro,1.0,,Potential site (2016),Energy Sector GIS Working Group (2016),"Uganda Energy for Rural Development, Kabarole"
+Mitano,Power station,Hydro,2.9,,Potential site (2016),Energy Sector GIS Working Group (2016),Kanungu
+Chebonet,Power station,Hydro,3.7,,Potential site (2016),Energy Sector GIS Working Group (2016),"IPIS Hydro Ltd, Kapchorwa"
+Katwe,Power station,Geothermal,150.0,,Potential site (2016),Energy Sector GIS Working Group (2016),"Katwe Geothermal Limited (Branch of AAE Systems Inc.), Kasese"
+Kanyampara,Power station,Hydro,7.2,,Potential site (2016),Energy Sector GIS Working Group (2016),"Hayleys Kanyampara (U) Ltd, Kasese"
+Kiba,Power station,Hydro,300.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Kiryandongo
+Ngenge,Power station,Hydro,19.85,,Potential site (2016),Energy Sector GIS Working Group (2016),"Ruhore Company Limited, Kween"
+Sogohi,Power station,Hydro,1.7,,Potential site (2016),Energy Sector GIS Working Group (2016),"Banda (U) Limited, Kyenjojo"
+Ririma Upper,Power station,Hydro,2.5,,Potential site (2016),Energy Sector GIS Working Group (2016),"Mt. Elgon Hydropower Company Ltd., Manafwa"
+Izizi,Power station,Hydro,1.6,,Potential site (2016),Energy Sector GIS Working Group (2016),Masindi
+Waisoke,Power station,Hydro,1.7,,Potential site (2016),Energy Sector GIS Working Group (2016),Masindi
+Uhuru,Power station,Hydro,350.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Masindi
+Ruizi,Power station,Hydro,1.0,,Potential site (2016),Energy Sector GIS Working Group (2016),"Ntama Bamwine Hydropower Company, Mbarara"
+Amua,Power station,Hydro,3.33,,Potential site (2016),Energy Sector GIS Working Group (2016),Moyo
+Leya,Power station,Hydro,3.33,,Potential site (2016),Energy Sector GIS Working Group (2016),Moyo
+Latoro,Power station,Hydro,4.2,,Potential site (2016),Energy Sector GIS Working Group (2016),Nwoya
+Agago II,Power station,Hydro,4.8,,Potential site (2016),Energy Sector GIS Working Group (2016),Pader
+Achwa III,Power station,Hydro,9.0,,Potential site (2016),Energy Sector GIS Working Group (2016),"Maji Power Limited, Pader"
+Achwa IV,Power station,Hydro,10.0,,Potential site (2016),Energy Sector GIS Working Group (2016),"Maji Power Limited, Pader"
+Agago I,Power station,Hydro,4.9,,Potential site (2016),Energy Sector GIS Working Group (2016),Pader
+Rushaya,Power station,Hydro,3.0,,Potential site (2016),Energy Sector GIS Working Group (2016),"Prosper Wood Works Ltd, Rukungiri"
+Namugoga Solar,Power station,Solar,50.0,,Built since 2016,Energy Sector GIS Working Group (2016),"Solar Energy for Africa聽&聽Naanovo Energy Inc., Wakiso"
+Agbinika,Power station,Hydro,20.0,,Potential site (2016),Energy Sector GIS Working Group (2016),Yumbe
+Ora III,Power station,Hydro,1.83,,Potential site (2016),Energy Sector GIS Working Group (2016),Zombo
