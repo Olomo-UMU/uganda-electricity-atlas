@@ -757,6 +757,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 .side .block.plain{background:none;border:0;padding:2px 4px}
 .side .t-scen{--tile:var(--kv132)} .side .t-now{--tile:var(--ink)} .side .t-co2{--tile:var(--thermal)}
 .side .t-trade{--tile:var(--kv220)} .side .t-load{--tile:var(--load)} .side .t-fault{--tile:var(--bad)} .side .t-sel{--tile:var(--sel)}
+.side .alerts{background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn-ink) 35%,transparent);border-left:4px solid var(--kv33);border-radius:6px;padding:10px 12px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.side .alerts h4{margin:0 0 6px;color:var(--warn-ink);font-size:14px}
+.side .alerts .warn{margin:0;padding:0;border:0;background:none;font-size:14px}
+.side .alerts .warn + .warn{margin-top:6px;padding-top:6px;border-top:1px solid color-mix(in srgb,var(--warn-ink) 20%,transparent)}
+@media (min-width:1101px){.side .alerts{position:sticky;top:-12px;z-index:3}}
 .side .sect{margin:8px 2px -2px;font-size:13px;font-weight:500;color:var(--muted)}
 .cgroups{display:grid;gap:8px;margin:4px 0 10px}
 .cgroup{border:1px solid var(--rule);border-radius:5px;padding:8px 10px 10px;background:var(--tint)}
@@ -1817,8 +1822,7 @@ function overview(){
   const exp = S.exp.KE + S.exp.RW + S.exp.TZ + S.exp.CD;
   let h = scenarioBlock() + `<p class="sect">The grid now</p><div class="block t-now"><h4>Now: ${SCEN[S.scen].label}, ${SEASON_LABEL[S.season]}</h4>
     <div class="kv"><span>Domestic demand</span><span>${fmt(R.dom - R.shed)} MW</span><span>Exports</span><span>${fmt(exp)} MW</span><span class="tot">Generation needed</span><span class="tot">${fmt(tg)} MW</span></div>
-    ${R.warn.map(w => `<div class="warn">${w}</div>`).join('')}
-    ${R.over.length ? `<div class="warn">Overloaded: ${R.over.map(l => `${l.note.split(' ')[0]} (${fmt(Math.abs(R.flows[l.id]))} MW)`).join(', ')}</div>` : ''}</div>
+</div>
   <div class="block t-now"><h4>Generation now</h4><table class="list">${Object.entries(gr).filter(([, v]) => v > 0.5).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<tr><td>${k}</td><td class="r">${fmt(v)} MW</td></tr>`).join('')}</table></div>
   <div class="block t-co2"><h4>Grid carbon intensity now</h4>
     <div class="kv"><span>Generated</span><span><b>${fmt(R.ci, 1)} g CO₂/kWh</b></span><span>Delivered to customers</span><span>${fmt(R.ciDel, 1)} g CO₂/kWh</span>
@@ -1852,6 +1856,12 @@ function overview(){
     <div class="share"><button type="button" id="copyLink">Copy link</button><span class="note" id="copyMsg" role="status"></span></div></div>
   <div class="block plain note">Click a power station, substation, line, distribution area or load centre for details, or use the table below the map.</div>`;
   return h;
+}
+function alertsBlock(){
+  const msgs = [...R.warn];
+  if (R.over.length) msgs.push(`Overloaded: ${R.over.map(l => `${l.note.split(' ')[0]} (${fmt(Math.abs(R.flows[l.id]))} MW)`).join(', ')}`);
+  if (!msgs.length) return '';
+  return `<div class="alerts" role="status" aria-live="polite"><h4>${msgs.length === 1 ? 'Check this' : `Check these (${msgs.length})`}</h4>${msgs.map(w => `<div class="warn">${w}</div>`).join('')}</div>`;
 }
 function detail(){
   const s = S.sel; if (!s) return '';
@@ -1887,7 +1897,7 @@ function detail(){
   return h;
 }
 function drawSide(){
-  $('side').innerHTML = (S.sel ? detail() : '') + overview();
+  $('side').innerHTML = alertsBlock() + (S.sel ? detail() : '') + overview();
   const bind = (id, key, sub) => { const r = $(id + '_r'), n = $(id); if (!r) return;
     const set = v => { v = Math.min(+r.max, Math.max(+r.min, v)); if (sub) S.exp[sub] = v; else S[key] = v; refresh(false); };
     r.addEventListener('input', () => { n.value = r.value; set(+r.value); });
