@@ -714,9 +714,31 @@ a{color:var(--kv132)}
 .masthead{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px 48px;align-items:end;padding-block:12px 20px}
 @media (max-width:900px){.masthead{grid-template-columns:minmax(0,1fr)}}
 h1{font-weight:700;font-size:38px;line-height:1.08;letter-spacing:-0.015em;margin:0 0 10px;text-wrap:balance}
-.masthead p{margin:0;max-width:68ch;color:var(--ink);font-size:16px}
+.masthead p{margin:0;color:var(--ink);font-size:16px;text-wrap:pretty}
 .colophon{font-size:13px;color:var(--muted);border-left:3px solid var(--kv400);padding-left:12px;line-height:1.5}
 .colophon b{color:var(--ink);font-weight:500}
+/* two pages: the map fills the screen; tables, charts and sources open on a second page */
+.sitebar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;width:100%;box-sizing:border-box}
+body.more .pager{visibility:hidden}
+#more [id]{scroll-margin-top:72px}
+.pager button,.backbar button{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pager button:hover,.backbar button:hover{opacity:.88}
+.backbar{display:none;position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--rule);padding:10px 0;margin-bottom:8px;align-items:center;gap:16px;flex-wrap:wrap}
+.backbar b{font-size:18px;font-weight:500}
+body.more .backbar{display:flex}
+body.more .sitebar a{visibility:visible}
+body.more .masthead,body.more .controls,body.more .mapgrid{display:none}
+body:not(.more) #more{display:none}
+@media (min-width:1101px) and (min-height:620px){
+  body:not(.more){min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+  body:not(.more) h1{font-size:32px;margin-bottom:6px}
+  body:not(.more) .wrap,body:not(.more) .sitebar{max-width:none}
+  body:not(.more) .wrap{flex:1 1 auto;min-height:0;width:100%;box-sizing:border-box;display:flex;flex-direction:column;padding-bottom:12px}
+  body:not(.more) .masthead{padding-block:6px 12px}
+  body:not(.more) .mapgrid{flex:1 1 auto;min-height:0;grid-template-rows:minmax(0,1fr)}
+  body:not(.more) .mapbox{min-height:0}
+  body:not(.more) .stage{flex:1 1 auto;height:auto;min-height:440px}
+}
 /* controls */
 .controls{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:flex-end;padding-block:10px 12px;border-top:1px solid var(--rule)}
 .tgroup{display:flex;flex-direction:column;gap:4px}
@@ -856,16 +878,17 @@ svg text{font-family:var(--f)}
 </style>
 </head>
 <body>
-<nav class="sitebar"><a href="https://olomo-umu.github.io/mom-lab/">Back to all labs</a></nav>
+<nav class="sitebar"><a href="https://olomo-umu.github.io/mom-lab/">Back to all labs</a><span class="pager"><button type="button" id="toMore">Tables, charts and sources</button></span></nav>
 <div class="wrap">
 <header class="masthead">
   <div>
     <h1>Uganda Electricity Atlas</h1>
     <p>Uganda's power system on one map, from the power stations on the Nile to the 33 kV lines that reach towns and villages. Flows on the lines come from a load-flow model of the grid. Change the hour, the season or demand, or switch a line out, and the map recalculates. Click anything on the map for details.</p>
   </div>
-  <p class="colophon"><b>Data to May 2026</b> from ERA, UETCL, UEDCL and the CCG Starter Data Kit. Positions are town-level, and flows, substation loads and supply areas are modelled. <a href="#srcpanel">Sources and method</a></p>
+  <p class="colophon"><b>Data to May 2026</b> from ERA, UETCL, UEDCL and the CCG Starter Data Kit. Positions are town-level, and flows, substation loads and supply areas are modelled. <a href="#srcpanel" id="srcLink">Sources and method</a></p>
 </header>
 
+<div class="backbar"><button type="button" id="toMap">Back to the map</button><b>Tables, charts and sources</b><span class="note">Values follow the hour, season and scenario set on the map.</span></div>
 <div class="controls" role="group" aria-label="Map settings">
   <div class="tgroup"><span class="tlabel" id="lblScen">Hour</span>
     <div class="tabs" id="scen" role="group" aria-labelledby="lblScen">
@@ -920,10 +943,10 @@ svg text{font-family:var(--f)}
   <aside class="side" id="side"></aside>
 </section>
 
-
+<div id="more">
 <section class="part" aria-labelledby="hTable">
   <h2 id="hTable">Every site in a table</h2>
-  <p class="lede">The same power stations, substations, lines and load centres as the map, with model values for the hour, season and settings above. Sort by any column. Show selects the site on the map.</p>
+  <p class="lede">The same power stations, substations, lines and load centres as the map, with model values for the hour, season and settings chosen on the map page. Sort by any column. Show selects the site on the map.</p>
   <div class="tblbar">
     <div class="tgroup"><span class="tlabel" id="lblTbl">Table</span>
       <div class="tabs" id="tblTabs" role="group" aria-labelledby="lblTbl">
@@ -970,7 +993,7 @@ svg text{font-family:var(--f)}
   <p class="lede">How power steps down to customers, where it is used, what it emits and how much more could be built.</p>
   <div class="charts">
     <figure class="chart"><h3>From power station to plug</h3><p class="cap">Voltage levels, with UETCL transformer capacity in July 2024</p><div id="chLad"></div></figure>
-    <figure class="chart"><h3>Power used and generated in each region</h3><p class="cap">Model, at the hour and season selected above</p><div id="chReg"></div></figure>
+    <figure class="chart"><h3>Power used and generated in each region</h3><p class="cap">Model, at the hour and season chosen on the map page</p><div id="chReg"></div></figure>
     <figure class="chart"><h3>Carbon intensity as demand grows</h3><p class="cap">Model at the selected hour, for both seasons</p><div id="chCI"></div></figure>
     <figure class="chart"><h3>Renewable potential and what is built</h3><p class="cap">GW; potential from the CCG Starter Data Kit (IRENA, ERA)</p><div id="chPot"></div></figure>
   </div>
@@ -1066,6 +1089,7 @@ svg text{font-family:var(--f)}
     </section>
   </div>
 </details>
+</div>
 </div>
 
 <script>/* Leaflet 1.9.4, BSD-2-Clause licence, (c) Volodymyr Agafonkin and CloudMade */
@@ -2188,6 +2212,14 @@ document.querySelectorAll('#season button').forEach(b => b.addEventListener('cli
 ['Lgen','Ltx','Lss','Lflow','Ldist','Lload','Lplan','Ldis','Losm','Lcand'].forEach(id => $(id).addEventListener('change', () => { render(); drawLegend(); }));
 $('Lmv').addEventListener('change', () => { if ($('Lmv').checked) loadMV(); render(); drawLegend(); });
 let sideTimer = null;
+function showPage(more, target){
+  document.body.classList.toggle('more', more);
+  if (more){ const t = target && $(target); if (t){ if (t.tagName === 'DETAILS') t.open = true; t.scrollIntoView({ block:'start' }); } else window.scrollTo(0, 0); }
+  else { window.scrollTo(0, 0); setTimeout(() => { lmap.invalidateSize({ animate:false }); syncVB(); if (R) render(); }, 0); }
+}
+$('toMore').addEventListener('click', () => showPage(true));
+$('toMap').addEventListener('click', () => showPage(false));
+$('srcLink').addEventListener('click', e => { e.preventDefault(); showPage(true, 'srcpanel'); });
 function refresh(full = true){
   R = solve(); render(); drawCharts(); drawTable(); writeHash();
   const active = document.activeElement && document.activeElement.closest && document.activeElement.closest('.ctrlrow');
@@ -2354,7 +2386,7 @@ function drawTable(){
   tbl.querySelectorAll('[data-sortk]').forEach(b => b.addEventListener('click', () => { const k = b.dataset.sortk; if (TS.k === k) TS.dir = -TS.dir; else { TS.k = k; TS.dir = TABLES[TS.t].cols.find(c => c.k === k).n ? -1 : 1; } drawTable(); }));
   tbl.querySelectorAll('[data-show]').forEach(b => b.addEventListener('click', () => { const row = rows[+b.dataset.show], [lon, lat] = T.at(row);
     S.sel = T.sel(row); fitTo(X(lon - 0.7), Y(lat + 0.5), X(lon + 0.7), Y(lat - 0.5)); refresh();
-    document.querySelector('.mapgrid').scrollIntoView({ behavior: reduce.matches ? 'auto' : 'smooth', block:'start' }); }));
+    showPage(false); document.querySelector('.mapgrid').scrollIntoView({ behavior: reduce.matches ? 'auto' : 'smooth', block:'start' }); }));
   if (focusK){ const b = tbl.querySelector(`[data-sortk="${focusK}"]`); if (b) b.focus(); }
 }
 document.querySelectorAll('#tblTabs button').forEach(b => b.addEventListener('click', () => { TS.t = b.dataset.t; TS.k = null; TS.dir = 1;
